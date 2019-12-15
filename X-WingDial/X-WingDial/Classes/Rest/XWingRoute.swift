@@ -32,7 +32,7 @@ extension XWingRoute: Endpoint {
     var path: String {
         switch self {
         case .starships(let faction):
-            return "/api/public/ships/\(faction)"
+            return "/api/public/starships/\(faction)"
         case .pilots(let starship):
             return "/api/public/pilots/\(starship)"
         }
