@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4C823A5A56C00141179 /* AppDelegate.swift */; };
+		DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */; };
+		DD82E4CD23A5A56C00141179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CC23A5A56C00141179 /* ViewController.swift */; };
+		DD82E4D023A5A56C00141179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4CE23A5A56C00141179 /* Main.storyboard */; };
+		DD82E4D323A5A56C00141179 /* X_WingDial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4D123A5A56C00141179 /* X_WingDial.xcdatamodeld */; };
+		DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D423A5A56E00141179 /* Assets.xcassets */; };
+		DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */; };
+		DD82E4E323A5A56E00141179 /* X_WingDialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD82E4DF23A5A56E00141179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD82E4BD23A5A56C00141179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD82E4C423A5A56C00141179;
+			remoteInfo = "X-WingDial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD82E4C523A5A56C00141179 /* X-WingDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X-WingDial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD82E4C823A5A56C00141179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD82E4CC23A5A56C00141179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD82E4CF23A5A56C00141179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD82E4D223A5A56C00141179 /* X_WingDial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = X_WingDial.xcdatamodel; sourceTree = "<group>"; };
+		DD82E4D423A5A56E00141179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD82E4D723A5A56E00141179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD82E4D923A5A56E00141179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD82E4DE23A5A56E00141179 /* X-WingDialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-WingDialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_WingDialTests.swift; sourceTree = "<group>"; };
+		DD82E4E423A5A56E00141179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD82E4C223A5A56C00141179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD82E4DB23A5A56E00141179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD82E4BC23A5A56C00141179 = {
+			isa = PBXGroup;
+			children = (
+				DD82E4C723A5A56C00141179 /* X-WingDial */,
+				DD82E4E123A5A56E00141179 /* X-WingDialTests */,
+				DD82E4C623A5A56C00141179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD82E4C623A5A56C00141179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD82E4C523A5A56C00141179 /* X-WingDial.app */,
+				DD82E4DE23A5A56E00141179 /* X-WingDialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD82E4C723A5A56C00141179 /* X-WingDial */ = {
+			isa = PBXGroup;
+			children = (
+				DD82E4C823A5A56C00141179 /* AppDelegate.swift */,
+				DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */,
+				DD82E4CC23A5A56C00141179 /* ViewController.swift */,
+				DD82E4CE23A5A56C00141179 /* Main.storyboard */,
+				DD82E4D423A5A56E00141179 /* Assets.xcassets */,
+				DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */,
+				DD82E4D923A5A56E00141179 /* Info.plist */,
+				DD82E4D123A5A56C00141179 /* X_WingDial.xcdatamodeld */,
+			);
+			path = "X-WingDial";
+			sourceTree = "<group>";
+		};
+		DD82E4E123A5A56E00141179 /* X-WingDialTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */,
+				DD82E4E423A5A56E00141179 /* Info.plist */,
+			);
+			path = "X-WingDialTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD82E4C423A5A56C00141179 /* X-WingDial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD82E4E723A5A56E00141179 /* Build configuration list for PBXNativeTarget "X-WingDial" */;
+			buildPhases = (
+				DD82E4C123A5A56C00141179 /* Sources */,
+				DD82E4C223A5A56C00141179 /* Frameworks */,
+				DD82E4C323A5A56C00141179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "X-WingDial";
+			productName = "X-WingDial";
+			productReference = DD82E4C523A5A56C00141179 /* X-WingDial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD82E4DD23A5A56E00141179 /* X-WingDialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD82E4EA23A5A56E00141179 /* Build configuration list for PBXNativeTarget "X-WingDialTests" */;
+			buildPhases = (
+				DD82E4DA23A5A56E00141179 /* Sources */,
+				DD82E4DB23A5A56E00141179 /* Frameworks */,
+				DD82E4DC23A5A56E00141179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD82E4E023A5A56E00141179 /* PBXTargetDependency */,
+			);
+			name = "X-WingDialTests";
+			productName = "X-WingDialTests";
+			productReference = DD82E4DE23A5A56E00141179 /* X-WingDialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD82E4BD23A5A56C00141179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Diogo Autilio";
+				TargetAttributes = {
+					DD82E4C423A5A56C00141179 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					DD82E4DD23A5A56E00141179 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = DD82E4C423A5A56C00141179;
+					};
+				};
+			};
+			buildConfigurationList = DD82E4C023A5A56C00141179 /* Build configuration list for PBXProject "X-WingDial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD82E4BC23A5A56C00141179;
+			productRefGroup = DD82E4C623A5A56C00141179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD82E4C423A5A56C00141179 /* X-WingDial */,
+				DD82E4DD23A5A56E00141179 /* X-WingDialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD82E4C323A5A56C00141179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */,
+				DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */,
+				DD82E4D023A5A56C00141179 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD82E4DC23A5A56E00141179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD82E4C123A5A56C00141179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD82E4CD23A5A56C00141179 /* ViewController.swift in Sources */,
+				DD82E4D323A5A56C00141179 /* X_WingDial.xcdatamodeld in Sources */,
+				DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */,
+				DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD82E4DA23A5A56E00141179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD82E4E323A5A56E00141179 /* X_WingDialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD82E4E023A5A56E00141179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD82E4C423A5A56C00141179 /* X-WingDial */;
+			targetProxy = DD82E4DF23A5A56E00141179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD82E4CE23A5A56C00141179 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD82E4CF23A5A56C00141179 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD82E4D723A5A56E00141179 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD82E4E523A5A56E00141179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD82E4E623A5A56E00141179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD82E4E823A5A56E00141179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "X-WingDial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.anykey.X-WingDial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD82E4E923A5A56E00141179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "X-WingDial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.anykey.X-WingDial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD82E4EB23A5A56E00141179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "X-WingDialTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.anykey.X-WingDialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/X-WingDial.app/X-WingDial";
+			};
+			name = Debug;
+		};
+		DD82E4EC23A5A56E00141179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "X-WingDialTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.anykey.X-WingDialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/X-WingDial.app/X-WingDial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD82E4C023A5A56C00141179 /* Build configuration list for PBXProject "X-WingDial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD82E4E523A5A56E00141179 /* Debug */,
+				DD82E4E623A5A56E00141179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD82E4E723A5A56E00141179 /* Build configuration list for PBXNativeTarget "X-WingDial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD82E4E823A5A56E00141179 /* Debug */,
+				DD82E4E923A5A56E00141179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD82E4EA23A5A56E00141179 /* Build configuration list for PBXNativeTarget "X-WingDialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD82E4EB23A5A56E00141179 /* Debug */,
+				DD82E4EC23A5A56E00141179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD82E4D123A5A56C00141179 /* X_WingDial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD82E4D223A5A56C00141179 /* X_WingDial.xcdatamodel */,
+			);
+			currentVersion = DD82E4D223A5A56C00141179 /* X_WingDial.xcdatamodel */;
+			path = X_WingDial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD82E4BD23A5A56C00141179 /* Project object */;
+}
