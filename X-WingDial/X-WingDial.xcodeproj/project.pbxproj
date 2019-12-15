@@ -13,6 +13,83 @@
 		DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D423A5A56E00141179 /* Assets.xcassets */; };
 		DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */; };
 		DD82E4E323A5A56E00141179 /* X_WingDialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */; };
+		DDFD448B23A67AB6001E6004 /* tie-ba-interceptor.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD443B23A67AB6001E6004 /* tie-ba-interceptor.json */; };
+		DDFD448C23A67AB6001E6004 /* tie-sf-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD443C23A67AB6001E6004 /* tie-sf-fighter.json */; };
+		DDFD448D23A67AB6001E6004 /* upsilon-class-command-shuttle.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD443D23A67AB6001E6004 /* upsilon-class-command-shuttle.json */; };
+		DDFD448E23A67AB6001E6004 /* tie-fo-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD443E23A67AB6001E6004 /* tie-fo-fighter.json */; };
+		DDFD448F23A67AB6001E6004 /* tie-vn-silencer.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD443F23A67AB6001E6004 /* tie-vn-silencer.json */; };
+		DDFD449023A67AB6001E6004 /* mg-100-starfortress-sf-17.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444123A67AB6001E6004 /* mg-100-starfortress-sf-17.json */; };
+		DDFD449123A67AB6001E6004 /* fireball.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444223A67AB6001E6004 /* fireball.json */; };
+		DDFD449223A67AB6001E6004 /* t-70-x-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444323A67AB6001E6004 /* t-70-x-wing.json */; };
+		DDFD449323A67AB6001E6004 /* resistance-transport.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444423A67AB6001E6004 /* resistance-transport.json */; };
+		DDFD449423A67AB6001E6004 /* resistance-transport-pod.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444523A67AB6001E6004 /* resistance-transport-pod.json */; };
+		DDFD449523A67AB6001E6004 /* scavenged-yt-1300.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444623A67AB6001E6004 /* scavenged-yt-1300.json */; };
+		DDFD449623A67AB6001E6004 /* rz-2-a-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444723A67AB6001E6004 /* rz-2-a-wing.json */; };
+		DDFD449723A67AB6001E6004 /* arc-170-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444923A67AB6001E6004 /* arc-170-starfighter.json */; };
+		DDFD449823A67AB6001E6004 /* v-19-torrent-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444A23A67AB6001E6004 /* v-19-torrent-starfighter.json */; };
+		DDFD449923A67AB6001E6004 /* delta-7-aethersprite.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444B23A67AB6001E6004 /* delta-7-aethersprite.json */; };
+		DDFD449A23A67AB6001E6004 /* btl-b-y-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444C23A67AB6001E6004 /* btl-b-y-wing.json */; };
+		DDFD449B23A67AB6001E6004 /* naboo-royal-n-1-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444D23A67AB6001E6004 /* naboo-royal-n-1-starfighter.json */; };
+		DDFD449C23A67AB6001E6004 /* quadrijet-transfer-spacetug.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD444F23A67AB6001E6004 /* quadrijet-transfer-spacetug.json */; };
+		DDFD449D23A67AB6001E6004 /* m12-l-kimogila-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445023A67AB6001E6004 /* m12-l-kimogila-fighter.json */; };
+		DDFD449E23A67AB6001E6004 /* m3-a-interceptor.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445123A67AB6001E6004 /* m3-a-interceptor.json */; };
+		DDFD449F23A67AB6001E6004 /* scurrg-h-6-bomber.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445223A67AB6001E6004 /* scurrg-h-6-bomber.json */; };
+		DDFD44A023A67AB6001E6004 /* kihraxz-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445323A67AB6001E6004 /* kihraxz-fighter.json */; };
+		DDFD44A123A67AB6001E6004 /* yv-666-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445423A67AB6001E6004 /* yv-666-light-freighter.json */; };
+		DDFD44A223A67AB6001E6004 /* escape-craft.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445523A67AB6001E6004 /* escape-craft.json */; };
+		DDFD44A323A67AB6001E6004 /* fang-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445623A67AB6001E6004 /* fang-fighter.json */; };
+		DDFD44A423A67AB6001E6004 /* starviper-class-attack-platform.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445723A67AB6001E6004 /* starviper-class-attack-platform.json */; };
+		DDFD44A523A67AB6001E6004 /* z-95-af4-headhunter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445823A67AB6001E6004 /* z-95-af4-headhunter.json */; };
+		DDFD44A623A67AB6001E6004 /* aggressor-assault-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445923A67AB6001E6004 /* aggressor-assault-fighter.json */; };
+		DDFD44A723A67AB6001E6004 /* modified-tie-ln-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445A23A67AB6001E6004 /* modified-tie-ln-fighter.json */; };
+		DDFD44A823A67AB6001E6004 /* btl-a4-y-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445B23A67AB6001E6004 /* btl-a4-y-wing.json */; };
+		DDFD44A923A67AB6001E6004 /* g-1a-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445C23A67AB6001E6004 /* g-1a-starfighter.json */; };
+		DDFD44AA23A67AB6001E6004 /* customized-yt-1300-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445D23A67AB6001E6004 /* customized-yt-1300-light-freighter.json */; };
+		DDFD44AB23A67AB6001E6004 /* lancer-class-pursuit-craft.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445E23A67AB6001E6004 /* lancer-class-pursuit-craft.json */; };
+		DDFD44AC23A67AB6001E6004 /* hwk-290-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD445F23A67AB6001E6004 /* hwk-290-light-freighter.json */; };
+		DDFD44AD23A67AB6001E6004 /* jumpmaster-5000.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446023A67AB6001E6004 /* jumpmaster-5000.json */; };
+		DDFD44AE23A67AB6001E6004 /* firespray-class-patrol-craft.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446123A67AB6001E6004 /* firespray-class-patrol-craft.json */; };
+		DDFD44AF23A67AB6001E6004 /* tie-ag-aggressor.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446323A67AB6001E6004 /* tie-ag-aggressor.json */; };
+		DDFD44B023A67AB7001E6004 /* tie-advanced-x1.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446423A67AB6001E6004 /* tie-advanced-x1.json */; };
+		DDFD44B123A67AB7001E6004 /* lambda-class-t-4a-shuttle.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446523A67AB6001E6004 /* lambda-class-t-4a-shuttle.json */; };
+		DDFD44B223A67AB7001E6004 /* vt-49-decimator.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446623A67AB6001E6004 /* vt-49-decimator.json */; };
+		DDFD44B323A67AB7001E6004 /* tie-interceptor.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446723A67AB6001E6004 /* tie-interceptor.json */; };
+		DDFD44B423A67AB7001E6004 /* tie-reaper.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446823A67AB6001E6004 /* tie-reaper.json */; };
+		DDFD44B523A67AB7001E6004 /* tie-ph-phantom.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446923A67AB6001E6004 /* tie-ph-phantom.json */; };
+		DDFD44B623A67AB7001E6004 /* alpha-class-star-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446A23A67AB6001E6004 /* alpha-class-star-wing.json */; };
+		DDFD44B723A67AB7001E6004 /* tie-sk-striker.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446B23A67AB6001E6004 /* tie-sk-striker.json */; };
+		DDFD44B823A67AB7001E6004 /* tie-d-defender.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446C23A67AB6001E6004 /* tie-d-defender.json */; };
+		DDFD44B923A67AB7001E6004 /* tie-sa-bomber.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446D23A67AB6001E6004 /* tie-sa-bomber.json */; };
+		DDFD44BA23A67AB7001E6004 /* tie-ln-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446E23A67AB6001E6004 /* tie-ln-fighter.json */; };
+		DDFD44BB23A67AB7001E6004 /* tie-ca-punisher.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD446F23A67AB6001E6004 /* tie-ca-punisher.json */; };
+		DDFD44BC23A67AB7001E6004 /* tie-advanced-v1.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447023A67AB6001E6004 /* tie-advanced-v1.json */; };
+		DDFD44BD23A67AB7001E6004 /* sith-infiltrator.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447223A67AB6001E6004 /* sith-infiltrator.json */; };
+		DDFD44BE23A67AB7001E6004 /* nantex-class-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447323A67AB6001E6004 /* nantex-class-starfighter.json */; };
+		DDFD44BF23A67AB7001E6004 /* vulture-class-droid-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447423A67AB6001E6004 /* vulture-class-droid-fighter.json */; };
+		DDFD44C023A67AB7001E6004 /* hyena-class-droid-bomber.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447523A67AB6001E6004 /* hyena-class-droid-bomber.json */; };
+		DDFD44C123A67AB7001E6004 /* belbullab-22-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447623A67AB6001E6004 /* belbullab-22-starfighter.json */; };
+		DDFD44C223A67AB7001E6004 /* vcx-100-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447823A67AB6001E6004 /* vcx-100-light-freighter.json */; };
+		DDFD44C323A67AB7001E6004 /* t-65-x-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447923A67AB6001E6004 /* t-65-x-wing.json */; };
+		DDFD44C423A67AB7001E6004 /* ut-60d-u-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447A23A67AB6001E6004 /* ut-60d-u-wing.json */; };
+		DDFD44C523A67AB7001E6004 /* btl-s8-k-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447B23A67AB6001E6004 /* btl-s8-k-wing.json */; };
+		DDFD44C623A67AB7001E6004 /* z-95-af4-headhunter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447C23A67AB6001E6004 /* z-95-af4-headhunter.json */; };
+		DDFD44C723A67AB7001E6004 /* btl-a4-y-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447D23A67AB6001E6004 /* btl-a4-y-wing.json */; };
+		DDFD44C823A67AB7001E6004 /* arc-170-starfighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447E23A67AB6001E6004 /* arc-170-starfighter.json */; };
+		DDFD44C923A67AB7001E6004 /* rz-1-a-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD447F23A67AB6001E6004 /* rz-1-a-wing.json */; };
+		DDFD44CA23A67AB7001E6004 /* yt-2400-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448023A67AB6001E6004 /* yt-2400-light-freighter.json */; };
+		DDFD44CB23A67AB7001E6004 /* modified-yt-1300-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448123A67AB6001E6004 /* modified-yt-1300-light-freighter.json */; };
+		DDFD44CC23A67AB7001E6004 /* tie-ln-fighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448223A67AB6001E6004 /* tie-ln-fighter.json */; };
+		DDFD44CD23A67AB7001E6004 /* attack-shuttle.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448323A67AB6001E6004 /* attack-shuttle.json */; };
+		DDFD44CE23A67AB7001E6004 /* sheathipede-class-shuttle.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448423A67AB6001E6004 /* sheathipede-class-shuttle.json */; };
+		DDFD44CF23A67AB7001E6004 /* e-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448523A67AB6001E6004 /* e-wing.json */; };
+		DDFD44D023A67AB7001E6004 /* a-sf-01-b-wing.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448623A67AB6001E6004 /* a-sf-01-b-wing.json */; };
+		DDFD44D123A67AB7001E6004 /* auzituck-gunship.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448723A67AB6001E6004 /* auzituck-gunship.json */; };
+		DDFD44D223A67AB7001E6004 /* hwk-290-light-freighter.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448823A67AB6001E6004 /* hwk-290-light-freighter.json */; };
+		DDFD44D323A67AB7001E6004 /* Ships.json in Resources */ = {isa = PBXBuildFile; fileRef = DDFD448A23A67AB6001E6004 /* Ships.json */; };
+		DDFD44DB23A67C37001E6004 /* Pilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D623A67C37001E6004 /* Pilot.swift */; };
+		DDFD44DC23A67C37001E6004 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D723A67C37001E6004 /* Action.swift */; };
+		DDFD44DD23A67C37001E6004 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D823A67C37001E6004 /* Stat.swift */; };
+		DDFD44DE23A67C37001E6004 /* DamageDeckCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D923A67C37001E6004 /* DamageDeckCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +113,83 @@
 		DD82E4DE23A5A56E00141179 /* X-WingDialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-WingDialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_WingDialTests.swift; sourceTree = "<group>"; };
 		DD82E4E423A5A56E00141179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFD443B23A67AB6001E6004 /* tie-ba-interceptor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-ba-interceptor.json"; sourceTree = "<group>"; };
+		DDFD443C23A67AB6001E6004 /* tie-sf-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-sf-fighter.json"; sourceTree = "<group>"; };
+		DDFD443D23A67AB6001E6004 /* upsilon-class-command-shuttle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "upsilon-class-command-shuttle.json"; sourceTree = "<group>"; };
+		DDFD443E23A67AB6001E6004 /* tie-fo-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-fo-fighter.json"; sourceTree = "<group>"; };
+		DDFD443F23A67AB6001E6004 /* tie-vn-silencer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-vn-silencer.json"; sourceTree = "<group>"; };
+		DDFD444123A67AB6001E6004 /* mg-100-starfortress-sf-17.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mg-100-starfortress-sf-17.json"; sourceTree = "<group>"; };
+		DDFD444223A67AB6001E6004 /* fireball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fireball.json; sourceTree = "<group>"; };
+		DDFD444323A67AB6001E6004 /* t-70-x-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "t-70-x-wing.json"; sourceTree = "<group>"; };
+		DDFD444423A67AB6001E6004 /* resistance-transport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "resistance-transport.json"; sourceTree = "<group>"; };
+		DDFD444523A67AB6001E6004 /* resistance-transport-pod.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "resistance-transport-pod.json"; sourceTree = "<group>"; };
+		DDFD444623A67AB6001E6004 /* scavenged-yt-1300.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "scavenged-yt-1300.json"; sourceTree = "<group>"; };
+		DDFD444723A67AB6001E6004 /* rz-2-a-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rz-2-a-wing.json"; sourceTree = "<group>"; };
+		DDFD444923A67AB6001E6004 /* arc-170-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "arc-170-starfighter.json"; sourceTree = "<group>"; };
+		DDFD444A23A67AB6001E6004 /* v-19-torrent-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "v-19-torrent-starfighter.json"; sourceTree = "<group>"; };
+		DDFD444B23A67AB6001E6004 /* delta-7-aethersprite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "delta-7-aethersprite.json"; sourceTree = "<group>"; };
+		DDFD444C23A67AB6001E6004 /* btl-b-y-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "btl-b-y-wing.json"; sourceTree = "<group>"; };
+		DDFD444D23A67AB6001E6004 /* naboo-royal-n-1-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "naboo-royal-n-1-starfighter.json"; sourceTree = "<group>"; };
+		DDFD444F23A67AB6001E6004 /* quadrijet-transfer-spacetug.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "quadrijet-transfer-spacetug.json"; sourceTree = "<group>"; };
+		DDFD445023A67AB6001E6004 /* m12-l-kimogila-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "m12-l-kimogila-fighter.json"; sourceTree = "<group>"; };
+		DDFD445123A67AB6001E6004 /* m3-a-interceptor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "m3-a-interceptor.json"; sourceTree = "<group>"; };
+		DDFD445223A67AB6001E6004 /* scurrg-h-6-bomber.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "scurrg-h-6-bomber.json"; sourceTree = "<group>"; };
+		DDFD445323A67AB6001E6004 /* kihraxz-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kihraxz-fighter.json"; sourceTree = "<group>"; };
+		DDFD445423A67AB6001E6004 /* yv-666-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "yv-666-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD445523A67AB6001E6004 /* escape-craft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "escape-craft.json"; sourceTree = "<group>"; };
+		DDFD445623A67AB6001E6004 /* fang-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "fang-fighter.json"; sourceTree = "<group>"; };
+		DDFD445723A67AB6001E6004 /* starviper-class-attack-platform.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "starviper-class-attack-platform.json"; sourceTree = "<group>"; };
+		DDFD445823A67AB6001E6004 /* z-95-af4-headhunter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "z-95-af4-headhunter.json"; sourceTree = "<group>"; };
+		DDFD445923A67AB6001E6004 /* aggressor-assault-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "aggressor-assault-fighter.json"; sourceTree = "<group>"; };
+		DDFD445A23A67AB6001E6004 /* modified-tie-ln-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "modified-tie-ln-fighter.json"; sourceTree = "<group>"; };
+		DDFD445B23A67AB6001E6004 /* btl-a4-y-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "btl-a4-y-wing.json"; sourceTree = "<group>"; };
+		DDFD445C23A67AB6001E6004 /* g-1a-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "g-1a-starfighter.json"; sourceTree = "<group>"; };
+		DDFD445D23A67AB6001E6004 /* customized-yt-1300-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "customized-yt-1300-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD445E23A67AB6001E6004 /* lancer-class-pursuit-craft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lancer-class-pursuit-craft.json"; sourceTree = "<group>"; };
+		DDFD445F23A67AB6001E6004 /* hwk-290-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hwk-290-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD446023A67AB6001E6004 /* jumpmaster-5000.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jumpmaster-5000.json"; sourceTree = "<group>"; };
+		DDFD446123A67AB6001E6004 /* firespray-class-patrol-craft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "firespray-class-patrol-craft.json"; sourceTree = "<group>"; };
+		DDFD446323A67AB6001E6004 /* tie-ag-aggressor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-ag-aggressor.json"; sourceTree = "<group>"; };
+		DDFD446423A67AB6001E6004 /* tie-advanced-x1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-advanced-x1.json"; sourceTree = "<group>"; };
+		DDFD446523A67AB6001E6004 /* lambda-class-t-4a-shuttle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lambda-class-t-4a-shuttle.json"; sourceTree = "<group>"; };
+		DDFD446623A67AB6001E6004 /* vt-49-decimator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vt-49-decimator.json"; sourceTree = "<group>"; };
+		DDFD446723A67AB6001E6004 /* tie-interceptor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-interceptor.json"; sourceTree = "<group>"; };
+		DDFD446823A67AB6001E6004 /* tie-reaper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-reaper.json"; sourceTree = "<group>"; };
+		DDFD446923A67AB6001E6004 /* tie-ph-phantom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-ph-phantom.json"; sourceTree = "<group>"; };
+		DDFD446A23A67AB6001E6004 /* alpha-class-star-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "alpha-class-star-wing.json"; sourceTree = "<group>"; };
+		DDFD446B23A67AB6001E6004 /* tie-sk-striker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-sk-striker.json"; sourceTree = "<group>"; };
+		DDFD446C23A67AB6001E6004 /* tie-d-defender.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-d-defender.json"; sourceTree = "<group>"; };
+		DDFD446D23A67AB6001E6004 /* tie-sa-bomber.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-sa-bomber.json"; sourceTree = "<group>"; };
+		DDFD446E23A67AB6001E6004 /* tie-ln-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-ln-fighter.json"; sourceTree = "<group>"; };
+		DDFD446F23A67AB6001E6004 /* tie-ca-punisher.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-ca-punisher.json"; sourceTree = "<group>"; };
+		DDFD447023A67AB6001E6004 /* tie-advanced-v1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-advanced-v1.json"; sourceTree = "<group>"; };
+		DDFD447223A67AB6001E6004 /* sith-infiltrator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sith-infiltrator.json"; sourceTree = "<group>"; };
+		DDFD447323A67AB6001E6004 /* nantex-class-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "nantex-class-starfighter.json"; sourceTree = "<group>"; };
+		DDFD447423A67AB6001E6004 /* vulture-class-droid-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vulture-class-droid-fighter.json"; sourceTree = "<group>"; };
+		DDFD447523A67AB6001E6004 /* hyena-class-droid-bomber.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hyena-class-droid-bomber.json"; sourceTree = "<group>"; };
+		DDFD447623A67AB6001E6004 /* belbullab-22-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "belbullab-22-starfighter.json"; sourceTree = "<group>"; };
+		DDFD447823A67AB6001E6004 /* vcx-100-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vcx-100-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD447923A67AB6001E6004 /* t-65-x-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "t-65-x-wing.json"; sourceTree = "<group>"; };
+		DDFD447A23A67AB6001E6004 /* ut-60d-u-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ut-60d-u-wing.json"; sourceTree = "<group>"; };
+		DDFD447B23A67AB6001E6004 /* btl-s8-k-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "btl-s8-k-wing.json"; sourceTree = "<group>"; };
+		DDFD447C23A67AB6001E6004 /* z-95-af4-headhunter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "z-95-af4-headhunter.json"; sourceTree = "<group>"; };
+		DDFD447D23A67AB6001E6004 /* btl-a4-y-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "btl-a4-y-wing.json"; sourceTree = "<group>"; };
+		DDFD447E23A67AB6001E6004 /* arc-170-starfighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "arc-170-starfighter.json"; sourceTree = "<group>"; };
+		DDFD447F23A67AB6001E6004 /* rz-1-a-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rz-1-a-wing.json"; sourceTree = "<group>"; };
+		DDFD448023A67AB6001E6004 /* yt-2400-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "yt-2400-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD448123A67AB6001E6004 /* modified-yt-1300-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "modified-yt-1300-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD448223A67AB6001E6004 /* tie-ln-fighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tie-ln-fighter.json"; sourceTree = "<group>"; };
+		DDFD448323A67AB6001E6004 /* attack-shuttle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "attack-shuttle.json"; sourceTree = "<group>"; };
+		DDFD448423A67AB6001E6004 /* sheathipede-class-shuttle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sheathipede-class-shuttle.json"; sourceTree = "<group>"; };
+		DDFD448523A67AB6001E6004 /* e-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "e-wing.json"; sourceTree = "<group>"; };
+		DDFD448623A67AB6001E6004 /* a-sf-01-b-wing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "a-sf-01-b-wing.json"; sourceTree = "<group>"; };
+		DDFD448723A67AB6001E6004 /* auzituck-gunship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "auzituck-gunship.json"; sourceTree = "<group>"; };
+		DDFD448823A67AB6001E6004 /* hwk-290-light-freighter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hwk-290-light-freighter.json"; sourceTree = "<group>"; };
+		DDFD448A23A67AB6001E6004 /* Ships.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ships.json; sourceTree = "<group>"; };
+		DDFD44D623A67C37001E6004 /* Pilot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pilot.swift; sourceTree = "<group>"; };
+		DDFD44D723A67C37001E6004 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DDFD44D823A67C37001E6004 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		DDFD44D923A67C37001E6004 /* DamageDeckCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageDeckCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +231,14 @@
 		DD82E4C723A5A56C00141179 /* X-WingDial */ = {
 			isa = PBXGroup;
 			children = (
+				DDFD44D423A67C10001E6004 /* Model */,
+				DD82E4D923A5A56E00141179 /* Info.plist */,
 				DD82E4C823A5A56C00141179 /* AppDelegate.swift */,
 				DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */,
 				DD82E4CC23A5A56C00141179 /* ViewController.swift */,
 				DD82E4D423A5A56E00141179 /* Assets.xcassets */,
+				DDFD443823A67A67001E6004 /* Json */,
 				DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */,
-				DD82E4D923A5A56E00141179 /* Info.plist */,
 			);
 			path = "X-WingDial";
 			sourceTree = "<group>";
@@ -94,6 +250,169 @@
 				DD82E4E423A5A56E00141179 /* Info.plist */,
 			);
 			path = "X-WingDialTests";
+			sourceTree = "<group>";
+		};
+		DDFD443823A67A67001E6004 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD443923A67AB6001E6004 /* Pilots */,
+				DDFD448923A67AB6001E6004 /* Ships */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		DDFD443923A67AB6001E6004 /* Pilots */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD443A23A67AB6001E6004 /* first-order */,
+				DDFD444023A67AB6001E6004 /* resistance */,
+				DDFD444823A67AB6001E6004 /* galactic-republic */,
+				DDFD444E23A67AB6001E6004 /* scum-and-villainy */,
+				DDFD446223A67AB6001E6004 /* galactic-empire */,
+				DDFD447123A67AB6001E6004 /* separatist-alliance */,
+				DDFD447723A67AB6001E6004 /* rebel-alliance */,
+			);
+			path = Pilots;
+			sourceTree = "<group>";
+		};
+		DDFD443A23A67AB6001E6004 /* first-order */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD443B23A67AB6001E6004 /* tie-ba-interceptor.json */,
+				DDFD443C23A67AB6001E6004 /* tie-sf-fighter.json */,
+				DDFD443D23A67AB6001E6004 /* upsilon-class-command-shuttle.json */,
+				DDFD443E23A67AB6001E6004 /* tie-fo-fighter.json */,
+				DDFD443F23A67AB6001E6004 /* tie-vn-silencer.json */,
+			);
+			path = "first-order";
+			sourceTree = "<group>";
+		};
+		DDFD444023A67AB6001E6004 /* resistance */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD444123A67AB6001E6004 /* mg-100-starfortress-sf-17.json */,
+				DDFD444223A67AB6001E6004 /* fireball.json */,
+				DDFD444323A67AB6001E6004 /* t-70-x-wing.json */,
+				DDFD444423A67AB6001E6004 /* resistance-transport.json */,
+				DDFD444523A67AB6001E6004 /* resistance-transport-pod.json */,
+				DDFD444623A67AB6001E6004 /* scavenged-yt-1300.json */,
+				DDFD444723A67AB6001E6004 /* rz-2-a-wing.json */,
+			);
+			path = resistance;
+			sourceTree = "<group>";
+		};
+		DDFD444823A67AB6001E6004 /* galactic-republic */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD444923A67AB6001E6004 /* arc-170-starfighter.json */,
+				DDFD444A23A67AB6001E6004 /* v-19-torrent-starfighter.json */,
+				DDFD444B23A67AB6001E6004 /* delta-7-aethersprite.json */,
+				DDFD444C23A67AB6001E6004 /* btl-b-y-wing.json */,
+				DDFD444D23A67AB6001E6004 /* naboo-royal-n-1-starfighter.json */,
+			);
+			path = "galactic-republic";
+			sourceTree = "<group>";
+		};
+		DDFD444E23A67AB6001E6004 /* scum-and-villainy */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD444F23A67AB6001E6004 /* quadrijet-transfer-spacetug.json */,
+				DDFD445023A67AB6001E6004 /* m12-l-kimogila-fighter.json */,
+				DDFD445123A67AB6001E6004 /* m3-a-interceptor.json */,
+				DDFD445223A67AB6001E6004 /* scurrg-h-6-bomber.json */,
+				DDFD445323A67AB6001E6004 /* kihraxz-fighter.json */,
+				DDFD445423A67AB6001E6004 /* yv-666-light-freighter.json */,
+				DDFD445523A67AB6001E6004 /* escape-craft.json */,
+				DDFD445623A67AB6001E6004 /* fang-fighter.json */,
+				DDFD445723A67AB6001E6004 /* starviper-class-attack-platform.json */,
+				DDFD445823A67AB6001E6004 /* z-95-af4-headhunter.json */,
+				DDFD445923A67AB6001E6004 /* aggressor-assault-fighter.json */,
+				DDFD445A23A67AB6001E6004 /* modified-tie-ln-fighter.json */,
+				DDFD445B23A67AB6001E6004 /* btl-a4-y-wing.json */,
+				DDFD445C23A67AB6001E6004 /* g-1a-starfighter.json */,
+				DDFD445D23A67AB6001E6004 /* customized-yt-1300-light-freighter.json */,
+				DDFD445E23A67AB6001E6004 /* lancer-class-pursuit-craft.json */,
+				DDFD445F23A67AB6001E6004 /* hwk-290-light-freighter.json */,
+				DDFD446023A67AB6001E6004 /* jumpmaster-5000.json */,
+				DDFD446123A67AB6001E6004 /* firespray-class-patrol-craft.json */,
+			);
+			path = "scum-and-villainy";
+			sourceTree = "<group>";
+		};
+		DDFD446223A67AB6001E6004 /* galactic-empire */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD446323A67AB6001E6004 /* tie-ag-aggressor.json */,
+				DDFD446423A67AB6001E6004 /* tie-advanced-x1.json */,
+				DDFD446523A67AB6001E6004 /* lambda-class-t-4a-shuttle.json */,
+				DDFD446623A67AB6001E6004 /* vt-49-decimator.json */,
+				DDFD446723A67AB6001E6004 /* tie-interceptor.json */,
+				DDFD446823A67AB6001E6004 /* tie-reaper.json */,
+				DDFD446923A67AB6001E6004 /* tie-ph-phantom.json */,
+				DDFD446A23A67AB6001E6004 /* alpha-class-star-wing.json */,
+				DDFD446B23A67AB6001E6004 /* tie-sk-striker.json */,
+				DDFD446C23A67AB6001E6004 /* tie-d-defender.json */,
+				DDFD446D23A67AB6001E6004 /* tie-sa-bomber.json */,
+				DDFD446E23A67AB6001E6004 /* tie-ln-fighter.json */,
+				DDFD446F23A67AB6001E6004 /* tie-ca-punisher.json */,
+				DDFD447023A67AB6001E6004 /* tie-advanced-v1.json */,
+			);
+			path = "galactic-empire";
+			sourceTree = "<group>";
+		};
+		DDFD447123A67AB6001E6004 /* separatist-alliance */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD447223A67AB6001E6004 /* sith-infiltrator.json */,
+				DDFD447323A67AB6001E6004 /* nantex-class-starfighter.json */,
+				DDFD447423A67AB6001E6004 /* vulture-class-droid-fighter.json */,
+				DDFD447523A67AB6001E6004 /* hyena-class-droid-bomber.json */,
+				DDFD447623A67AB6001E6004 /* belbullab-22-starfighter.json */,
+			);
+			path = "separatist-alliance";
+			sourceTree = "<group>";
+		};
+		DDFD447723A67AB6001E6004 /* rebel-alliance */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD447823A67AB6001E6004 /* vcx-100-light-freighter.json */,
+				DDFD447923A67AB6001E6004 /* t-65-x-wing.json */,
+				DDFD447A23A67AB6001E6004 /* ut-60d-u-wing.json */,
+				DDFD447B23A67AB6001E6004 /* btl-s8-k-wing.json */,
+				DDFD447C23A67AB6001E6004 /* z-95-af4-headhunter.json */,
+				DDFD447D23A67AB6001E6004 /* btl-a4-y-wing.json */,
+				DDFD447E23A67AB6001E6004 /* arc-170-starfighter.json */,
+				DDFD447F23A67AB6001E6004 /* rz-1-a-wing.json */,
+				DDFD448023A67AB6001E6004 /* yt-2400-light-freighter.json */,
+				DDFD448123A67AB6001E6004 /* modified-yt-1300-light-freighter.json */,
+				DDFD448223A67AB6001E6004 /* tie-ln-fighter.json */,
+				DDFD448323A67AB6001E6004 /* attack-shuttle.json */,
+				DDFD448423A67AB6001E6004 /* sheathipede-class-shuttle.json */,
+				DDFD448523A67AB6001E6004 /* e-wing.json */,
+				DDFD448623A67AB6001E6004 /* a-sf-01-b-wing.json */,
+				DDFD448723A67AB6001E6004 /* auzituck-gunship.json */,
+				DDFD448823A67AB6001E6004 /* hwk-290-light-freighter.json */,
+			);
+			path = "rebel-alliance";
+			sourceTree = "<group>";
+		};
+		DDFD448923A67AB6001E6004 /* Ships */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD448A23A67AB6001E6004 /* Ships.json */,
+			);
+			path = Ships;
+			sourceTree = "<group>";
+		};
+		DDFD44D423A67C10001E6004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD44D723A67C37001E6004 /* Action.swift */,
+				DDFD44D923A67C37001E6004 /* DamageDeckCore.swift */,
+				DDFD44D623A67C37001E6004 /* Pilot.swift */,
+				DDFD44D823A67C37001E6004 /* Stat.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +496,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFD44C323A67AB7001E6004 /* t-65-x-wing.json in Resources */,
+				DDFD44C023A67AB7001E6004 /* hyena-class-droid-bomber.json in Resources */,
+				DDFD44CC23A67AB7001E6004 /* tie-ln-fighter.json in Resources */,
+				DDFD44B623A67AB7001E6004 /* alpha-class-star-wing.json in Resources */,
+				DDFD44AC23A67AB6001E6004 /* hwk-290-light-freighter.json in Resources */,
+				DDFD449423A67AB6001E6004 /* resistance-transport-pod.json in Resources */,
 				DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */,
+				DDFD44AE23A67AB6001E6004 /* firespray-class-patrol-craft.json in Resources */,
+				DDFD44BC23A67AB7001E6004 /* tie-advanced-v1.json in Resources */,
+				DDFD448D23A67AB6001E6004 /* upsilon-class-command-shuttle.json in Resources */,
+				DDFD44CD23A67AB7001E6004 /* attack-shuttle.json in Resources */,
+				DDFD44BB23A67AB7001E6004 /* tie-ca-punisher.json in Resources */,
+				DDFD44B123A67AB7001E6004 /* lambda-class-t-4a-shuttle.json in Resources */,
+				DDFD44C823A67AB7001E6004 /* arc-170-starfighter.json in Resources */,
+				DDFD449923A67AB6001E6004 /* delta-7-aethersprite.json in Resources */,
+				DDFD44B823A67AB7001E6004 /* tie-d-defender.json in Resources */,
+				DDFD449A23A67AB6001E6004 /* btl-b-y-wing.json in Resources */,
+				DDFD449023A67AB6001E6004 /* mg-100-starfortress-sf-17.json in Resources */,
+				DDFD44BF23A67AB7001E6004 /* vulture-class-droid-fighter.json in Resources */,
+				DDFD44C223A67AB7001E6004 /* vcx-100-light-freighter.json in Resources */,
+				DDFD44AD23A67AB6001E6004 /* jumpmaster-5000.json in Resources */,
+				DDFD44BA23A67AB7001E6004 /* tie-ln-fighter.json in Resources */,
+				DDFD44AF23A67AB6001E6004 /* tie-ag-aggressor.json in Resources */,
+				DDFD44B723A67AB7001E6004 /* tie-sk-striker.json in Resources */,
+				DDFD44A823A67AB6001E6004 /* btl-a4-y-wing.json in Resources */,
+				DDFD44A423A67AB6001E6004 /* starviper-class-attack-platform.json in Resources */,
+				DDFD448C23A67AB6001E6004 /* tie-sf-fighter.json in Resources */,
+				DDFD44C623A67AB7001E6004 /* z-95-af4-headhunter.json in Resources */,
 				DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */,
+				DDFD44B523A67AB7001E6004 /* tie-ph-phantom.json in Resources */,
+				DDFD449C23A67AB6001E6004 /* quadrijet-transfer-spacetug.json in Resources */,
+				DDFD44A223A67AB6001E6004 /* escape-craft.json in Resources */,
+				DDFD44C523A67AB7001E6004 /* btl-s8-k-wing.json in Resources */,
+				DDFD449523A67AB6001E6004 /* scavenged-yt-1300.json in Resources */,
+				DDFD44CA23A67AB7001E6004 /* yt-2400-light-freighter.json in Resources */,
+				DDFD449623A67AB6001E6004 /* rz-2-a-wing.json in Resources */,
+				DDFD44C423A67AB7001E6004 /* ut-60d-u-wing.json in Resources */,
+				DDFD44A023A67AB6001E6004 /* kihraxz-fighter.json in Resources */,
+				DDFD44BD23A67AB7001E6004 /* sith-infiltrator.json in Resources */,
+				DDFD448B23A67AB6001E6004 /* tie-ba-interceptor.json in Resources */,
+				DDFD44A923A67AB6001E6004 /* g-1a-starfighter.json in Resources */,
+				DDFD44CB23A67AB7001E6004 /* modified-yt-1300-light-freighter.json in Resources */,
+				DDFD44D223A67AB7001E6004 /* hwk-290-light-freighter.json in Resources */,
+				DDFD44C923A67AB7001E6004 /* rz-1-a-wing.json in Resources */,
+				DDFD44AA23A67AB6001E6004 /* customized-yt-1300-light-freighter.json in Resources */,
+				DDFD448F23A67AB6001E6004 /* tie-vn-silencer.json in Resources */,
+				DDFD449E23A67AB6001E6004 /* m3-a-interceptor.json in Resources */,
+				DDFD44B923A67AB7001E6004 /* tie-sa-bomber.json in Resources */,
+				DDFD448E23A67AB6001E6004 /* tie-fo-fighter.json in Resources */,
+				DDFD44A723A67AB6001E6004 /* modified-tie-ln-fighter.json in Resources */,
+				DDFD44BE23A67AB7001E6004 /* nantex-class-starfighter.json in Resources */,
+				DDFD44B323A67AB7001E6004 /* tie-interceptor.json in Resources */,
+				DDFD44AB23A67AB6001E6004 /* lancer-class-pursuit-craft.json in Resources */,
+				DDFD449B23A67AB6001E6004 /* naboo-royal-n-1-starfighter.json in Resources */,
+				DDFD449F23A67AB6001E6004 /* scurrg-h-6-bomber.json in Resources */,
+				DDFD44A323A67AB6001E6004 /* fang-fighter.json in Resources */,
+				DDFD44D123A67AB7001E6004 /* auzituck-gunship.json in Resources */,
+				DDFD44C723A67AB7001E6004 /* btl-a4-y-wing.json in Resources */,
+				DDFD44A523A67AB6001E6004 /* z-95-af4-headhunter.json in Resources */,
+				DDFD44D323A67AB7001E6004 /* Ships.json in Resources */,
+				DDFD449723A67AB6001E6004 /* arc-170-starfighter.json in Resources */,
+				DDFD44C123A67AB7001E6004 /* belbullab-22-starfighter.json in Resources */,
+				DDFD44CE23A67AB7001E6004 /* sheathipede-class-shuttle.json in Resources */,
+				DDFD44B223A67AB7001E6004 /* vt-49-decimator.json in Resources */,
+				DDFD449123A67AB6001E6004 /* fireball.json in Resources */,
+				DDFD449D23A67AB6001E6004 /* m12-l-kimogila-fighter.json in Resources */,
+				DDFD44B423A67AB7001E6004 /* tie-reaper.json in Resources */,
+				DDFD449823A67AB6001E6004 /* v-19-torrent-starfighter.json in Resources */,
+				DDFD44D023A67AB7001E6004 /* a-sf-01-b-wing.json in Resources */,
+				DDFD44CF23A67AB7001E6004 /* e-wing.json in Resources */,
+				DDFD449323A67AB6001E6004 /* resistance-transport.json in Resources */,
+				DDFD44A623A67AB6001E6004 /* aggressor-assault-fighter.json in Resources */,
+				DDFD449223A67AB6001E6004 /* t-70-x-wing.json in Resources */,
+				DDFD44A123A67AB6001E6004 /* yv-666-light-freighter.json in Resources */,
+				DDFD44B023A67AB7001E6004 /* tie-advanced-x1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +589,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD82E4CD23A5A56C00141179 /* ViewController.swift in Sources */,
+				DDFD44DC23A67C37001E6004 /* Action.swift in Sources */,
+				DDFD44DB23A67C37001E6004 /* Pilot.swift in Sources */,
 				DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */,
+				DDFD44DD23A67C37001E6004 /* Stat.swift in Sources */,
+				DDFD44DE23A67C37001E6004 /* DamageDeckCore.swift in Sources */,
 				DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
