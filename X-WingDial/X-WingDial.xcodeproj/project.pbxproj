@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -90,6 +90,7 @@
 		DDFD44DC23A67C37001E6004 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D723A67C37001E6004 /* Action.swift */; };
 		DDFD44DD23A67C37001E6004 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D823A67C37001E6004 /* Stat.swift */; };
 		DDFD44DE23A67C37001E6004 /* DamageDeckCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44D923A67C37001E6004 /* DamageDeckCore.swift */; };
+		DDFD44E223A67DB2001E6004 /* SketchKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDFD44E123A67DB2001E6004 /* SketchKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFD44E223A67DB2001E6004 /* SketchKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,13 +233,10 @@
 		DD82E4C723A5A56C00141179 /* X-WingDial */ = {
 			isa = PBXGroup;
 			children = (
-				DDFD44D423A67C10001E6004 /* Model */,
+				DDFD44E323A67DBB001E6004 /* Classes */,
 				DD82E4D923A5A56E00141179 /* Info.plist */,
-				DD82E4C823A5A56C00141179 /* AppDelegate.swift */,
-				DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */,
 				DD82E4CC23A5A56C00141179 /* ViewController.swift */,
 				DD82E4D423A5A56E00141179 /* Assets.xcassets */,
-				DDFD443823A67A67001E6004 /* Json */,
 				DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */,
 			);
 			path = "X-WingDial";
@@ -415,6 +414,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DDFD44DF23A67D4A001E6004 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DD82E4C823A5A56C00141179 /* AppDelegate.swift */,
+				DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DDFD44E323A67DBB001E6004 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD44DF23A67D4A001E6004 /* AppDelegate */,
+				DDFD443823A67A67001E6004 /* Json */,
+				DDFD44D423A67C10001E6004 /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +449,9 @@
 			dependencies = (
 			);
 			name = "X-WingDial";
+			packageProductDependencies = (
+				DDFD44E123A67DB2001E6004 /* SketchKit */,
+			);
 			productName = "X-WingDial";
 			productReference = DD82E4C523A5A56C00141179 /* X-WingDial.app */;
 			productType = "com.apple.product-type.application";
@@ -481,6 +502,9 @@
 				Base,
 			);
 			mainGroup = DD82E4BC23A5A56C00141179;
+			packageReferences = (
+				DDFD44E023A67DB2001E6004 /* XCRemoteSwiftPackageReference "SketchKit" */,
+			);
 			productRefGroup = DD82E4C623A5A56C00141179 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -849,6 +873,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDFD44E023A67DB2001E6004 /* XCRemoteSwiftPackageReference "SketchKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dogo/SketchKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDFD44E123A67DB2001E6004 /* SketchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDFD44E023A67DB2001E6004 /* XCRemoteSwiftPackageReference "SketchKit" */;
+			productName = SketchKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD82E4BD23A5A56C00141179 /* Project object */;
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SketchKit",
+        "repositoryURL": "https://github.com/dogo/SketchKit",
+        "state": {
+          "branch": null,
+          "revision": "40642d6a971fb0c56e8e99a229717e5a98cdb41d",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
