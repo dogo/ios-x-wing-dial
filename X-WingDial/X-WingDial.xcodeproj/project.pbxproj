@@ -10,8 +10,6 @@
 		DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4C823A5A56C00141179 /* AppDelegate.swift */; };
 		DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */; };
 		DD82E4CD23A5A56C00141179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CC23A5A56C00141179 /* ViewController.swift */; };
-		DD82E4D023A5A56C00141179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4CE23A5A56C00141179 /* Main.storyboard */; };
-		DD82E4D323A5A56C00141179 /* X_WingDial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4D123A5A56C00141179 /* X_WingDial.xcdatamodeld */; };
 		DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D423A5A56E00141179 /* Assets.xcassets */; };
 		DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */; };
 		DD82E4E323A5A56E00141179 /* X_WingDialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */; };
@@ -32,8 +30,6 @@
 		DD82E4C823A5A56C00141179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD82E4CC23A5A56C00141179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD82E4CF23A5A56C00141179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD82E4D223A5A56C00141179 /* X_WingDial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = X_WingDial.xcdatamodel; sourceTree = "<group>"; };
 		DD82E4D423A5A56E00141179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD82E4D723A5A56E00141179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD82E4D923A5A56E00141179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,11 +80,9 @@
 				DD82E4C823A5A56C00141179 /* AppDelegate.swift */,
 				DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */,
 				DD82E4CC23A5A56C00141179 /* ViewController.swift */,
-				DD82E4CE23A5A56C00141179 /* Main.storyboard */,
 				DD82E4D423A5A56E00141179 /* Assets.xcassets */,
 				DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */,
 				DD82E4D923A5A56E00141179 /* Info.plist */,
-				DD82E4D123A5A56C00141179 /* X_WingDial.xcdatamodeld */,
 			);
 			path = "X-WingDial";
 			sourceTree = "<group>";
@@ -185,7 +179,6 @@
 			files = (
 				DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */,
 				DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */,
-				DD82E4D023A5A56C00141179 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD82E4CD23A5A56C00141179 /* ViewController.swift in Sources */,
-				DD82E4D323A5A56C00141179 /* X_WingDial.xcdatamodeld in Sources */,
 				DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */,
 				DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */,
 			);
@@ -229,14 +221,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD82E4CE23A5A56C00141179 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD82E4CF23A5A56C00141179 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -469,19 +453,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DD82E4D123A5A56C00141179 /* X_WingDial.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DD82E4D223A5A56C00141179 /* X_WingDial.xcdatamodel */,
-			);
-			currentVersion = DD82E4D223A5A56C00141179 /* X_WingDial.xcdatamodel */;
-			path = X_WingDial.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DD82E4BD23A5A56C00141179 /* Project object */;
 }
