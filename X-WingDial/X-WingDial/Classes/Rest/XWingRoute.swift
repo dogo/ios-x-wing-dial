@@ -17,31 +17,31 @@ protocol Endpoint {
 }
 
 enum XWingRoute {
-    case starships(_ faction: String)
-    case pilots(_ starship: String)
+    case factions
+    case pilots(_ faction: String, _ starship: String)
 }
 
 extension XWingRoute: Endpoint {
 
     /// The target's base `URL`.
     var baseURL: String {
-        return "https://swdestinydb.com"
+        return "https://djogopatrao.github.io"
     }
 
     /// The path to be appended to `baseURL` to form the full `URL`.
     var path: String {
         switch self {
-        case .starships(let faction):
-            return "/api/public/starships/\(faction)"
-        case .pilots(let starship):
-            return "/api/public/pilots/\(starship)"
+        case .factions:
+            return "/xwing_dial/data/data.json"
+        case .pilots(let faction, let starship):
+            return "/xwing_dial/data/pilots/\(faction)/\(starship).json"
         }
     }
 
     /// The HTTP method used in the request.
     var method: HttpMethod {
         switch self {
-        case .starships, .pilots:
+        case .factions, .pilots:
             return .get
         }
     }

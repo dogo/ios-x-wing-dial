@@ -20,24 +20,24 @@ final class XWingAPI: APIClient, XWingService {
         self.init(configuration: .default)
     }
 
-    func fetchStarships(faction: String, completion: @escaping (Result<[Starship]?, APIError>) -> Void) {
+    func fetchFactions(completion: @escaping (Result<XWing?, APIError>) -> Void) {
 
-        let endpoint: XWingRoute = .starships(faction)
+        let endpoint: XWingRoute = .factions
         let request = endpoint.request
 
-        self.request(request, decode: { json -> [Starship]? in
-            guard let result = json as? [Starship] else { return nil }
+        self.request(request, decode: { json -> XWing? in
+            guard let result = json as? XWing else { return nil }
             return result
         }, completion: completion)
     }
 
-    func fetchPilots(starship: String, completion: @escaping (Result<[Pilot]?, APIError>) -> Void) {
+    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship?, APIError>) -> Void) {
 
-        let endpoint: XWingRoute = .pilots(starship)
+        let endpoint: XWingRoute = .pilots(faction, starship)
         let request = endpoint.request
 
-        self.request(request, decode: { json -> [Pilot]? in
-            guard let result = json as? [Pilot] else { return nil }
+        self.request(request, decode: { json -> Starship? in
+            guard let result = json as? Starship else { return nil }
             return result
         }, completion: completion)
     }

@@ -10,9 +10,9 @@ import Foundation
 
 protocol XWingService {
 
-    func fetchStarships(faction: String, completion: @escaping (Result<[Starship]?, APIError>) -> Void)
+    func fetchFactions(completion: @escaping (Result<XWing?, APIError>) -> Void)
 
-    func fetchPilots(starship: String, completion: @escaping (Result<[Pilot]?, APIError>) -> Void)
+    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship?, APIError>) -> Void)
 
     func cancelAllRequests()
 }
