@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Reusable",
+        "repositoryURL": "https://github.com/AliSoftware/Reusable",
+        "state": {
+          "branch": "master",
+          "revision": "8d05d4ff9684e42975d1f5efe54eeaa76fa924c5",
+          "version": null
+        }
+      },
+      {
         "package": "SketchKit",
         "repositoryURL": "https://github.com/dogo/SketchKit",
         "state": {

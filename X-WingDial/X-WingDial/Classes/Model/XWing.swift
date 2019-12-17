@@ -9,29 +9,21 @@
 import Foundation
 
 struct XWing: Codable {
-    let ships: Ships
+    let ships: [Ship]
 }
 
-struct Faction: Codable {
+struct Ship: Codable {
+    let path: String
     let title: String
+    let faction: Faction
 }
 
-struct Ships: Codable {
-    let rebelAlliance: [String: Faction]
-    let galacticEmpire: [String: Faction]
-    let scumAndVillainy: [String: Faction]
-    let firstOrder: [String: Faction]
-    let galacticRepublic: [String: Faction]
-    let resistance: [String: Faction]
-    let separatistAlliance: [String: Faction]
-
-    enum CodingKeys: String, CodingKey {
-        case rebelAlliance = "rebel-alliance"
-        case galacticEmpire = "galactic-empire"
-        case scumAndVillainy = "scum-and-villainy"
-        case firstOrder = "first-order"
-        case galacticRepublic = "galactic-republic"
-        case resistance
-        case separatistAlliance = "separatist-alliance"
-    }
+enum Faction: String, Codable {
+    case firstOrder = "first-order"
+    case galacticEmpire = "galactic-empire"
+    case galacticRepublic = "galactic-republic"
+    case rebelAlliance = "rebel-alliance"
+    case resistance = "resistance"
+    case scumAndVillainy = "scum-and-villainy"
+    case separatistAlliance = "separatist-alliance"
 }
