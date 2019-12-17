@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FactionsViewController: UIViewController {
 
     let api = XWingAPI()
     private let factionsView = FactionsTableView()

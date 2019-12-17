@@ -16,13 +16,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
 
-         let viewController = ViewController()
-
          if let windowScene = scene as? UIWindowScene {
-             let window = UIWindow(windowScene: windowScene)
-             window.rootViewController = viewController
-             self.window = window
-             window.makeKeyAndVisible()
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = XWingTabBarViewController()
+            self.window = window
+            window.makeKeyAndVisible()
          }
     }
 }
