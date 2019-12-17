@@ -26,4 +26,9 @@ enum Faction: String, Codable {
     case resistance = "resistance"
     case scumAndVillainy = "scum-and-villainy"
     case separatistAlliance = "separatist-alliance"
+
+    var name: String {
+        return self.rawValue.capitalized.replacingOccurrences(of: "-", with: " ")
+    }
 }
+

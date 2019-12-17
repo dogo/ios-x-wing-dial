@@ -34,7 +34,7 @@ final class FactionsTableCell: UITableViewCell, Reusable {
     }
 
     internal func configureCell(xwing: Ship) {
-        titleLabel.text = xwing.title
+        titleLabel.text = xwing.faction.name
         factionImageView.backgroundColor = .red
     }
 
