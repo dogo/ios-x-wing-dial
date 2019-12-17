@@ -1,8 +1,8 @@
 //
-//  FactionsTableCell.swift
+//  FactionHeaderView.swift
 //  X-WingDial
 //
-//  Created by Diogo Autilio on 16/12/19.
+//  Created by Diogo Autilio on 17/12/19.
 //  Copyright © 2019 Diogo Autilio. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import Reusable
 import Kingfisher
 
-final class FactionsTableCell: UITableViewCell, Reusable {
+final class FactionHeaderView: UITableViewHeaderFooterView, Reusable {
 
     var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
@@ -24,8 +24,8 @@ final class FactionsTableCell: UITableViewCell, Reusable {
         return image
     }()
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
         setupBaseView()
     }
 
@@ -34,9 +34,9 @@ final class FactionsTableCell: UITableViewCell, Reusable {
         fatalError("init(coder:) has not been implemented")
     }
 
-    internal func configureCell(with faction: Ship) {
-        titleLabel.text = faction.title
-        //factionImageView.kf.setImage(with: faction.icon)
+    internal func configureHeader(with faction: Faction) {
+        titleLabel.text = faction.name
+        factionImageView.kf.setImage(with: faction.icon)
     }
 
     override func prepareForReuse() {
@@ -44,20 +44,16 @@ final class FactionsTableCell: UITableViewCell, Reusable {
         titleLabel.text = nil
         factionImageView.image = nil
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        // just hightlight
-    }
 }
 
-extension FactionsTableCell: BaseViewConfiguration {
+extension FactionHeaderView: BaseViewConfiguration {
 
-    internal func buildViewHierarchy() {
+    func buildViewHierarchy() {
         contentView.addSubview(factionImageView)
         contentView.addSubview(titleLabel)
     }
 
-    internal func setupConstraints() {
+    func setupConstraints() {
         factionImageView.layout.applyConstraint { view in
             view.centerYAnchor(equalTo: contentView.centerYAnchor)
             view.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
@@ -69,9 +65,5 @@ extension FactionsTableCell: BaseViewConfiguration {
             view.centerYAnchor(equalTo: contentView.centerYAnchor)
             view.leadingAnchor(equalTo: factionImageView.trailingAnchor, constant: 12)
         }
-    }
-
-    internal func configureViews() {
-        accessoryType = .disclosureIndicator
     }
 }

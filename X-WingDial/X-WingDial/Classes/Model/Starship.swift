@@ -46,4 +46,3 @@ struct Stat: Codable {
     let type: String
     let value: Int
 }
-

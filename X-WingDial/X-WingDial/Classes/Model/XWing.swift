@@ -12,14 +12,21 @@ struct XWing: Codable {
     let factions: [Faction]
 }
 
-struct Faction: Codable {
+struct Faction: Codable, Hashable {
     let name: String
     let icon: URL
     let ships: [Ship]
+
+    static func == (lhs: Faction, rhs: Faction) -> Bool {
+          return lhs.name == rhs.name
+      }
+
+      func hash(into hasher: inout Hasher) {
+          hasher.combine(name)
+      }
 }
 
 struct Ship: Codable {
     let path: String
     let title: String
 }
-

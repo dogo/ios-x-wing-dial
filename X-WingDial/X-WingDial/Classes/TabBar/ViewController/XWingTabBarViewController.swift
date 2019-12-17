@@ -18,9 +18,9 @@ final class XWingTabBarViewController: UITabBarController {
         homeTab.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
 
         // Create UIViewController Tab
-        let Dialstab = UINavigationController(rootViewController: UIViewController())
-        Dialstab.tabBarItem = UITabBarItem(title: "Dials", image: nil, selectedImage: nil)
+        let dialstab = UINavigationController(rootViewController: UIViewController())
+        dialstab.tabBarItem = UITabBarItem(title: "Dials", image: nil, selectedImage: nil)
 
-        self.viewControllers = [homeTab, Dialstab]
+        self.viewControllers = [homeTab, dialstab]
     }
 }
