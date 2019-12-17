@@ -21,6 +21,7 @@
 		DDD0932123A84800000807B5 /* FactionsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932023A84800000807B5 /* FactionsDatasource.swift */; };
 		DDD0932E23A93FF8000807B5 /* XWingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932D23A93FF8000807B5 /* XWingTabBarViewController.swift */; };
 		DDD0933023A9404F000807B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932F23A9404F000807B5 /* main.swift */; };
+		DDD0933323A989F6000807B5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DDD0933223A989F6000807B5 /* Kingfisher */; };
 		DDFD44E223A67DB2001E6004 /* SketchKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDFD44E123A67DB2001E6004 /* SketchKit */; };
 		DDFD44E723A67E57001E6004 /* BaseViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44E623A67E57001E6004 /* BaseViewConfiguration.swift */; };
 		DDFD44F823A68443001E6004 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44F023A68443001E6004 /* APIError.swift */; };
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD0933323A989F6000807B5 /* Kingfisher in Frameworks */,
 				DDFD44E223A67DB2001E6004 /* SketchKit in Frameworks */,
 				DDD0931E23A847BB000807B5 /* Reusable in Frameworks */,
 			);
@@ -279,6 +281,7 @@
 			packageProductDependencies = (
 				DDFD44E123A67DB2001E6004 /* SketchKit */,
 				DDD0931D23A847BB000807B5 /* Reusable */,
+				DDD0933223A989F6000807B5 /* Kingfisher */,
 			);
 			productName = "X-WingDial";
 			productReference = DD82E4C523A5A56C00141179 /* X-WingDial.app */;
@@ -333,6 +336,7 @@
 			packageReferences = (
 				DDFD44E023A67DB2001E6004 /* XCRemoteSwiftPackageReference "SketchKit" */,
 				DDD0931C23A847BB000807B5 /* XCRemoteSwiftPackageReference "Reusable" */,
+				DDD0933123A989F6000807B5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = DD82E4C623A5A56C00141179 /* Products */;
 			projectDirPath = "";
@@ -651,6 +655,14 @@
 				kind = branch;
 			};
 		};
+		DDD0933123A989F6000807B5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
 		DDFD44E023A67DB2001E6004 /* XCRemoteSwiftPackageReference "SketchKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dogo/SketchKit";
@@ -666,6 +678,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DDD0931C23A847BB000807B5 /* XCRemoteSwiftPackageReference "Reusable" */;
 			productName = Reusable;
+		};
+		DDD0933223A989F6000807B5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD0933123A989F6000807B5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		DDFD44E123A67DB2001E6004 /* SketchKit */ = {
 			isa = XCSwiftPackageProductDependency;

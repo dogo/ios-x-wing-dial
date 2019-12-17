@@ -12,7 +12,7 @@ final class FactionsDatasource: NSObject {
 
     private var tableView: UITableView?
 
-    var factions: [Ship] = [] {
+    var factions: [Faction] = [] {
         didSet {
             self.tableView?.reloadData()
         }
@@ -26,7 +26,7 @@ final class FactionsDatasource: NSObject {
     }
 
     func updateDatasource(_ data: XWing) {
-        factions = data.ships
+        factions = data.factions
     }
 }
 
@@ -38,7 +38,7 @@ extension FactionsDatasource: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: FactionsTableCell.self)
-        cell.configureCell(xwing: factions[indexPath.row])
+        cell.configureCell(faction: factions[indexPath.row])
         return cell
     }
 }

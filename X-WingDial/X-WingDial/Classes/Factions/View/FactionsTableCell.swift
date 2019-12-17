@@ -8,6 +8,7 @@
 
 import UIKit
 import Reusable
+import Kingfisher
 
 final class FactionsTableCell: UITableViewCell, Reusable {
 
@@ -33,9 +34,9 @@ final class FactionsTableCell: UITableViewCell, Reusable {
         fatalError("init(coder:) has not been implemented")
     }
 
-    internal func configureCell(xwing: Ship) {
-        titleLabel.text = xwing.faction.name
-        factionImageView.backgroundColor = .red
+    internal func configureCell(faction: Faction) {
+        titleLabel.text = faction.name
+        factionImageView.kf.setImage(with: faction.icon)
     }
 
     override func prepareForReuse() {
