@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1B5BEA23A9D75D00F5B413 /* AppearanceProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1B5BE923A9D75D00F5B413 /* AppearanceProxyHelper.swift */; };
 		DD5639EF23A83AEA007B1B06 /* XWing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639EE23A83AEA007B1B06 /* XWing.swift */; };
 		DD5639F123A84451007B1B06 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F023A84451007B1B06 /* Starship.swift */; };
 		DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F723A846A6007B1B06 /* FactionsTableView.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD1B5BE923A9D75D00F5B413 /* AppearanceProxyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceProxyHelper.swift; sourceTree = "<group>"; };
 		DD5639EE23A83AEA007B1B06 /* XWing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWing.swift; sourceTree = "<group>"; };
 		DD5639F023A84451007B1B06 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		DD5639F723A846A6007B1B06 /* FactionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsTableView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD1B5BE823A9D74B00F5B413 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				DD1B5BE923A9D75D00F5B413 /* AppearanceProxyHelper.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
 		DD5639F223A84637007B1B06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFD44DF23A67D4A001E6004 /* AppDelegate */,
+				DD1B5BE823A9D74B00F5B413 /* Appearance */,
 				DDFD44E423A67E23001E6004 /* Base */,
 				DDFD44D423A67C10001E6004 /* Model */,
 				DDFD44EA23A68443001E6004 /* Rest */,
@@ -442,6 +453,7 @@
 				DDD0933823A99096000807B5 /* Split.swift in Sources */,
 				DDFD44FB23A68443001E6004 /* HttpStatusCode.swift in Sources */,
 				DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */,
+				DD1B5BEA23A9D75D00F5B413 /* AppearanceProxyHelper.swift in Sources */,
 				DDFD44E723A67E57001E6004 /* BaseViewConfiguration.swift in Sources */,
 				DDFD450123A684EC001E6004 /* XWingRoute.swift in Sources */,
 				DDD0932123A84800000807B5 /* FactionsDatasource.swift in Sources */,

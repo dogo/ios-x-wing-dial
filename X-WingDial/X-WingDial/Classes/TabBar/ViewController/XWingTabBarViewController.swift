@@ -15,11 +15,15 @@ final class XWingTabBarViewController: UITabBarController {
 
         // Create FactionsViewController Tab
         let homeTab = UINavigationController(rootViewController: FactionsViewController())
-        homeTab.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
+        homeTab.tabBarItem = UITabBarItem(title: "Home",
+                                          image: UIImage(named: "ic_battle_droid_off"),
+                                          selectedImage: UIImage(named: "ic_battle_droid_on"))
 
         // Create UIViewController Tab
         let dialstab = UINavigationController(rootViewController: UIViewController())
-        dialstab.tabBarItem = UITabBarItem(title: "Dials", image: nil, selectedImage: nil)
+        dialstab.tabBarItem = UITabBarItem(title: "Dials",
+                                           image: UIImage(named: "ic_dial_off"),
+                                           selectedImage: UIImage(named: "ic_dial_on"))
 
         self.viewControllers = [homeTab, dialstab]
     }
