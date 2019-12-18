@@ -15,6 +15,13 @@ final class DialView: UIView {
     private var dialImage: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.contentMode = .scaleAspectFill
+        image.isUserInteractionEnabled = true
+        return image
+    }()
+
+    private var dialSelector: UIImageView = {
+        let image = UIImageView(frame: .zero)
+        image.contentMode = .scaleAspectFill
         return image
     }()
 
@@ -28,12 +35,23 @@ final class DialView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+        if let touch = touches.first, touch.view === dialImage {
+            let position = touch.location(in: self)
+            let target = dialImage.center
+            let angle = atan2(target.y - position.y, target.x - position.x)
+            dialImage.transform = CGAffineTransform(rotationAngle: angle)
+        }
+    }
 }
 
 extension DialView: BaseViewConfiguration {
 
     func buildViewHierarchy() {
         self.addSubview(dialImage)
+        self.addSubview(dialSelector)
     }
 
     func setupConstraints() {
@@ -41,9 +59,15 @@ extension DialView: BaseViewConfiguration {
             view.centerYAnchor(equalTo: self.centerYAnchor)
             view.centerXAnchor(equalTo: self.centerXAnchor)
         }
+
+        dialSelector.layout.applyConstraint { view in
+            view.centerYAnchor(equalTo: self.centerYAnchor, constant: -92)
+            view.centerXAnchor(equalTo: self.centerXAnchor)
+        }
     }
 
     func configureViews() {
+        dialSelector.image = UIImage(named: "dial_selector")
         dialImage.image = UIImage(named: "\(dialPath)_dial")
         backgroundColor = .white
     }

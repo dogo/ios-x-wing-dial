@@ -39,6 +39,15 @@ final class DialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        fetchStarShipPilot()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = ship.title
+    }
+
+    private func fetchStarShipPilot() {
         api.fetchPilots(faction: faction, starship: ship.path) { result in
             switch result {
             case .success(let data):
@@ -48,10 +57,5 @@ final class DialViewController: UIViewController {
                 debugPrint(error)
             }
         }
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationItem.title = ship.title
     }
 }

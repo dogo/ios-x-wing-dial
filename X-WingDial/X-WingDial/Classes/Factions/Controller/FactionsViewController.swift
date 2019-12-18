@@ -27,6 +27,11 @@ class FactionsViewController: UIViewController {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "X-Wing Dial Manager"
+    }
+
     private func fetchFactionAndShips() {
         api.fetchFactions { [weak self] result in
             switch result {
