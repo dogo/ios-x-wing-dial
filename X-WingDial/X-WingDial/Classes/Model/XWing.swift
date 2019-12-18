@@ -15,14 +15,15 @@ struct XWing: Codable {
 struct Faction: Codable, Hashable {
     let name: String
     let icon: URL
+    let path: String
     let ships: [Ship]
 
     static func == (lhs: Faction, rhs: Faction) -> Bool {
-          return lhs.name == rhs.name
+          return lhs.path == rhs.path
       }
 
       func hash(into hasher: inout Hasher) {
-          hasher.combine(name)
+          hasher.combine(path)
       }
 }
 

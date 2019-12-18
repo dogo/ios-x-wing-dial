@@ -10,7 +10,7 @@
 		DD5639EF23A83AEA007B1B06 /* XWing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639EE23A83AEA007B1B06 /* XWing.swift */; };
 		DD5639F123A84451007B1B06 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F023A84451007B1B06 /* Starship.swift */; };
 		DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F723A846A6007B1B06 /* FactionsTableView.swift */; };
-		DD5639FA23A846E6007B1B06 /* FactionsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F923A846E6007B1B06 /* FactionsTableCell.swift */; };
+		DD5639FA23A846E6007B1B06 /* StarshipTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F923A846E6007B1B06 /* StarshipTableCell.swift */; };
 		DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4C823A5A56C00141179 /* AppDelegate.swift */; };
 		DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */; };
 		DD82E4CD23A5A56C00141179 /* FactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CC23A5A56C00141179 /* FactionsViewController.swift */; };
@@ -25,6 +25,9 @@
 		DDD0933623A98F58000807B5 /* SectionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0933523A98F58000807B5 /* SectionsBuilder.swift */; };
 		DDD0933823A99096000807B5 /* Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0933723A99096000807B5 /* Split.swift */; };
 		DDD0933A23A99BBA000807B5 /* FactionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0933923A99BBA000807B5 /* FactionHeaderView.swift */; };
+		DDD0934023A9A445000807B5 /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0933F23A9A445000807B5 /* DialViewController.swift */; };
+		DDD0934423A9A4F8000807B5 /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0934323A9A4F8000807B5 /* DialView.swift */; };
+		DDD0934623A9A753000807B5 /* BaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0934523A9A753000807B5 /* BaseDelegate.swift */; };
 		DDFD44E223A67DB2001E6004 /* SketchKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDFD44E123A67DB2001E6004 /* SketchKit */; };
 		DDFD44E723A67E57001E6004 /* BaseViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44E623A67E57001E6004 /* BaseViewConfiguration.swift */; };
 		DDFD44F823A68443001E6004 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFD44F023A68443001E6004 /* APIError.swift */; };
@@ -51,7 +54,7 @@
 		DD5639EE23A83AEA007B1B06 /* XWing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWing.swift; sourceTree = "<group>"; };
 		DD5639F023A84451007B1B06 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		DD5639F723A846A6007B1B06 /* FactionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsTableView.swift; sourceTree = "<group>"; };
-		DD5639F923A846E6007B1B06 /* FactionsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsTableCell.swift; sourceTree = "<group>"; };
+		DD5639F923A846E6007B1B06 /* StarshipTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTableCell.swift; sourceTree = "<group>"; };
 		DD82E4C523A5A56C00141179 /* X-WingDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X-WingDial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD82E4C823A5A56C00141179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +71,9 @@
 		DDD0933523A98F58000807B5 /* SectionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsBuilder.swift; sourceTree = "<group>"; };
 		DDD0933723A99096000807B5 /* Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Split.swift; sourceTree = "<group>"; };
 		DDD0933923A99BBA000807B5 /* FactionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionHeaderView.swift; sourceTree = "<group>"; };
+		DDD0933F23A9A445000807B5 /* DialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
+		DDD0934323A9A4F8000807B5 /* DialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
+		DDD0934523A9A753000807B5 /* BaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
 		DDFD44E623A67E57001E6004 /* BaseViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewConfiguration.swift; sourceTree = "<group>"; };
 		DDFD44F023A68443001E6004 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		DDFD44F123A68443001E6004 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 		DD5639F223A84637007B1B06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DDD0933E23A9A434000807B5 /* Dial */,
 				DD5639F423A8464D007B1B06 /* Factions */,
 				DDD0932923A93EFD000807B5 /* TabBar */,
 			);
@@ -131,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5639F723A846A6007B1B06 /* FactionsTableView.swift */,
-				DD5639F923A846E6007B1B06 /* FactionsTableCell.swift */,
+				DD5639F923A846E6007B1B06 /* StarshipTableCell.swift */,
 				DDD0933923A99BBA000807B5 /* FactionHeaderView.swift */,
 			);
 			path = View;
@@ -208,6 +215,39 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		DDD0933E23A9A434000807B5 /* Dial */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0934123A9A449000807B5 /* Controller */,
+				DDD0934223A9A4EE000807B5 /* View */,
+			);
+			path = Dial;
+			sourceTree = "<group>";
+		};
+		DDD0934123A9A449000807B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0933F23A9A445000807B5 /* DialViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDD0934223A9A4EE000807B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0934323A9A4F8000807B5 /* DialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDD0934723A9A760000807B5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0934523A9A753000807B5 /* BaseDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		DDFD44D423A67C10001E6004 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +283,7 @@
 		DDFD44E423A67E23001E6004 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				DDD0934723A9A760000807B5 /* Protocol */,
 				DDFD44E523A67E2A001E6004 /* View */,
 			);
 			path = Base;
@@ -390,13 +431,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD82E4CD23A5A56C00141179 /* FactionsViewController.swift in Sources */,
-				DD5639FA23A846E6007B1B06 /* FactionsTableCell.swift in Sources */,
+				DD5639FA23A846E6007B1B06 /* StarshipTableCell.swift in Sources */,
 				DDD0933A23A99BBA000807B5 /* FactionHeaderView.swift in Sources */,
 				DD5639F123A84451007B1B06 /* Starship.swift in Sources */,
 				DDFD450323A684EC001E6004 /* XWingServiceImpl.swift in Sources */,
 				DDD0932E23A93FF8000807B5 /* XWingTabBarViewController.swift in Sources */,
 				DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */,
 				DDFD44F923A68443001E6004 /* APIClient.swift in Sources */,
+				DDD0934023A9A445000807B5 /* DialViewController.swift in Sources */,
 				DDD0933823A99096000807B5 /* Split.swift in Sources */,
 				DDFD44FB23A68443001E6004 /* HttpStatusCode.swift in Sources */,
 				DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */,
@@ -410,7 +452,9 @@
 				DDFD450223A684EC001E6004 /* XWingService.swift in Sources */,
 				DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */,
 				DDFD44F823A68443001E6004 /* APIError.swift in Sources */,
+				DDD0934423A9A4F8000807B5 /* DialView.swift in Sources */,
 				DDD0933623A98F58000807B5 /* SectionsBuilder.swift in Sources */,
+				DDD0934623A9A753000807B5 /* BaseDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

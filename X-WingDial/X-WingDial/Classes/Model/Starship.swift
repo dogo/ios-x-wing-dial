@@ -16,7 +16,7 @@ struct Starship: Codable {
     let faction: String
     let stats: [Stat]
     let actions: [Action]
-    let icon: String
+    let icon: String?
     let pilots: [Pilot]
 }
 
@@ -27,12 +27,13 @@ struct Action: Codable {
 
 struct Pilot: Codable {
     let name: String
-    let caption: String
+    let caption: String?
     let initiative: Int
     let limited: Int
-    let xws, ability: String
-    let shipAbility: ShipAbility
-    let slots: [String]
+    let xws: String
+    let ability: String?
+    let shipAbility: ShipAbility?
+    let slots: [String]?
     let hyperspace: Bool
 }
 

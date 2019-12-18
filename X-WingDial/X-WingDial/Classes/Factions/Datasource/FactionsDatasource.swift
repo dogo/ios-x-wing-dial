@@ -13,15 +13,17 @@ final class FactionsDatasource: NSObject {
     private var tableView: UITableView?
     private var sections: [Faction] = []
     private var starships: [Faction: [Ship]] = [ : ]
+    private weak var baseDelegate: BaseDelegate?
 
-    required init(tableView: UITableView) {
+    required init(tableView: UITableView, baseDelegate: BaseDelegate) {
         super.init()
         self.tableView = tableView
-        tableView.register(cellType: FactionsTableCell.self)
+        tableView.register(cellType: StarshipTableCell.self)
         tableView.register(headerFooterViewType: FactionHeaderView.self)
         self.tableView?.sectionIndexColor = .gray
         self.tableView?.dataSource = self
         self.tableView?.delegate = self
+        self.baseDelegate = baseDelegate
     }
 
     func updateDatasource(_ data: XWing) {
@@ -30,8 +32,12 @@ final class FactionsDatasource: NSObject {
         self.tableView?.reloadData()
     }
 
-    func getFaction(at index: IndexPath) -> Ship? {
+    func getShip(at index: IndexPath) -> Ship? {
         return (starships[sections[index.section]]?[index.row])
+    }
+
+    func getFaction(at index: IndexPath) -> Faction {
+        return sections[index.section]
     }
 }
 
@@ -49,9 +55,9 @@ extension FactionsDatasource: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: FactionsTableCell.self)
-        if let faction = getFaction(at: indexPath) {
-            cell.configureCell(with: faction)
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: StarshipTableCell.self)
+        if let ship = getShip(at: indexPath) {
+            cell.configureCell(with: ship)
         }
         return cell
     }
@@ -65,7 +71,7 @@ extension FactionsDatasource: UITableViewDelegate {
         return header
     }
 
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 53
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        baseDelegate?.didSelectRowAt(indexPath)
     }
 }

@@ -10,14 +10,15 @@ import UIKit
 
 final class FactionsTableView: UITableView {
 
-    var didSelectSet: ((XWing) -> Void)?
+    var didSelectShip: ((Faction, Ship) -> Void)?
 
     private var tableViewDatasource: FactionsDatasource?
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
-        self.delegate = self
-        tableViewDatasource = FactionsDatasource(tableView: self)
+        self.rowHeight = 44.0
+        self.sectionHeaderHeight = 53
+        tableViewDatasource = FactionsDatasource(tableView: self, baseDelegate: self)
     }
 
     @available(*, unavailable)
@@ -28,21 +29,14 @@ final class FactionsTableView: UITableView {
     func updateSetList(_ xwing: XWing) {
         tableViewDatasource?.updateDatasource(xwing)
     }
-
-    // MARK: - <BaseDelegate>
-
-    internal func didSelectRowAt(index: IndexPath) {
-        //didSelectSet?(set)
-    }
 }
 
-extension FactionsTableView: UITableViewDelegate {
+extension FactionsTableView: BaseDelegate {
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 53
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        didSelectRowAt(index: indexPath)
+    internal func didSelectRowAt(_ index: IndexPath) {
+        if let ship = tableViewDatasource?.getShip(at: index),
+            let faction = tableViewDatasource?.getFaction(at: index) {
+            didSelectShip?(faction, ship)
+        }
     }
 }
