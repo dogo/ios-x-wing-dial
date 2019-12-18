@@ -10,10 +10,14 @@ import UIKit
 
 final class DialViewController: UIViewController {
 
-    private let dialView = DialView()
     private let api = XWingAPI()
     private let ship: Ship
     private let faction: String
+
+    private lazy var dialView: DialView = {
+        let view = DialView(with: ship.path)
+        return view
+    }()
 
     // MARK: - Life Cycle
 

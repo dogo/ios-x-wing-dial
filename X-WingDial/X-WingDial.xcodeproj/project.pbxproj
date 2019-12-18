@@ -270,12 +270,12 @@
 		DDFD44E323A67DBB001E6004 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0933423A98F4E000807B5 /* Util */,
 				DDFD44DF23A67D4A001E6004 /* AppDelegate */,
 				DDFD44E423A67E23001E6004 /* Base */,
 				DDFD44D423A67C10001E6004 /* Model */,
 				DDFD44EA23A68443001E6004 /* Rest */,
 				DD5639F223A84637007B1B06 /* Screens */,
+				DDD0933423A98F4E000807B5 /* Util */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
