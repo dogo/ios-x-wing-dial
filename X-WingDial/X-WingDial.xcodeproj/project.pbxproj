@@ -18,6 +18,10 @@
 		DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D423A5A56E00141179 /* Assets.xcassets */; };
 		DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */; };
 		DD82E4E323A5A56E00141179 /* X_WingDialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */; };
+		DDB026A323B01446000584C1 /* ActiveDialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026A223B01446000584C1 /* ActiveDialsViewController.swift */; };
+		DDB026A723B01473000584C1 /* ActiveDialsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026A623B01473000584C1 /* ActiveDialsCollection.swift */; };
+		DDB026A923B01566000584C1 /* ActiveDialCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026A823B01566000584C1 /* ActiveDialCollectionCell.swift */; };
+		DDB026AC23B016C1000584C1 /* ActiveDialsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026AB23B016C1000584C1 /* ActiveDialsDatasource.swift */; };
 		DDD0931E23A847BB000807B5 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = DDD0931D23A847BB000807B5 /* Reusable */; };
 		DDD0932123A84800000807B5 /* FactionsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932023A84800000807B5 /* FactionsDatasource.swift */; };
 		DDD0932E23A93FF8000807B5 /* XWingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932D23A93FF8000807B5 /* XWingTabBarViewController.swift */; };
@@ -67,6 +71,10 @@
 		DD82E4DE23A5A56E00141179 /* X-WingDialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-WingDialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_WingDialTests.swift; sourceTree = "<group>"; };
 		DD82E4E423A5A56E00141179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB026A223B01446000584C1 /* ActiveDialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialsViewController.swift; sourceTree = "<group>"; };
+		DDB026A623B01473000584C1 /* ActiveDialsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialsCollection.swift; sourceTree = "<group>"; };
+		DDB026A823B01566000584C1 /* ActiveDialCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialCollectionCell.swift; sourceTree = "<group>"; };
+		DDB026AB23B016C1000584C1 /* ActiveDialsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialsDatasource.swift; sourceTree = "<group>"; };
 		DDD0932023A84800000807B5 /* FactionsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsDatasource.swift; sourceTree = "<group>"; };
 		DDD0932D23A93FF8000807B5 /* XWingTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWingTabBarViewController.swift; sourceTree = "<group>"; };
 		DDD0932F23A9404F000807B5 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 		DD5639F223A84637007B1B06 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DDB026A123B0142B000584C1 /* ActiveDials */,
 				DDD0933E23A9A434000807B5 /* Dial */,
 				DD5639F423A8464D007B1B06 /* Factions */,
 				DDD0932923A93EFD000807B5 /* TabBar */,
@@ -190,6 +199,41 @@
 				DD82E4E423A5A56E00141179 /* Info.plist */,
 			);
 			path = "X-WingDialTests";
+			sourceTree = "<group>";
+		};
+		DDB026A123B0142B000584C1 /* ActiveDials */ = {
+			isa = PBXGroup;
+			children = (
+				DDB026A423B01449000584C1 /* Controller */,
+				DDB026AA23B016B1000584C1 /* Datasource */,
+				DDB026A523B01453000584C1 /* View */,
+			);
+			path = ActiveDials;
+			sourceTree = "<group>";
+		};
+		DDB026A423B01449000584C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDB026A223B01446000584C1 /* ActiveDialsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDB026A523B01453000584C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDB026A823B01566000584C1 /* ActiveDialCollectionCell.swift */,
+				DDB026A623B01473000584C1 /* ActiveDialsCollection.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDB026AA23B016B1000584C1 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				DDB026AB23B016C1000584C1 /* ActiveDialsDatasource.swift */,
+			);
+			path = Datasource;
 			sourceTree = "<group>";
 		};
 		DDD0931F23A847EE000807B5 /* Datasource */ = {
@@ -443,13 +487,16 @@
 			files = (
 				DD82E4CD23A5A56C00141179 /* FactionsViewController.swift in Sources */,
 				DD5639FA23A846E6007B1B06 /* StarshipTableCell.swift in Sources */,
+				DDB026AC23B016C1000584C1 /* ActiveDialsDatasource.swift in Sources */,
 				DDD0933A23A99BBA000807B5 /* FactionHeaderView.swift in Sources */,
 				DD5639F123A84451007B1B06 /* Starship.swift in Sources */,
 				DDFD450323A684EC001E6004 /* XWingServiceImpl.swift in Sources */,
 				DDD0932E23A93FF8000807B5 /* XWingTabBarViewController.swift in Sources */,
 				DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */,
+				DDB026A723B01473000584C1 /* ActiveDialsCollection.swift in Sources */,
 				DDFD44F923A68443001E6004 /* APIClient.swift in Sources */,
 				DDD0934023A9A445000807B5 /* DialViewController.swift in Sources */,
+				DDB026A923B01566000584C1 /* ActiveDialCollectionCell.swift in Sources */,
 				DDD0933823A99096000807B5 /* Split.swift in Sources */,
 				DDFD44FB23A68443001E6004 /* HttpStatusCode.swift in Sources */,
 				DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */,
@@ -461,6 +508,7 @@
 				DD5639EF23A83AEA007B1B06 /* XWing.swift in Sources */,
 				DDFD44FA23A68443001E6004 /* HTTPMethod.swift in Sources */,
 				DDD0933023A9404F000807B5 /* main.swift in Sources */,
+				DDB026A323B01446000584C1 /* ActiveDialsViewController.swift in Sources */,
 				DDFD450223A684EC001E6004 /* XWingService.swift in Sources */,
 				DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */,
 				DDFD44F823A68443001E6004 /* APIError.swift in Sources */,

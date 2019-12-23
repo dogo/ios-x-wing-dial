@@ -20,7 +20,7 @@ final class XWingTabBarViewController: UITabBarController {
                                           selectedImage: UIImage(named: "ic_battle_droid_on"))
 
         // Create UIViewController Tab
-        let dialstab = UINavigationController(rootViewController: UIViewController())
+        let dialstab = UINavigationController(rootViewController: ActiveDialsViewController())
         dialstab.tabBarItem = UITabBarItem(title: "Dials",
                                            image: UIImage(named: "ic_dial_off"),
                                            selectedImage: UIImage(named: "ic_dial_on"))
