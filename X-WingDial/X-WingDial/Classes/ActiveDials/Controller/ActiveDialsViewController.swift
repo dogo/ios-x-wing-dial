@@ -18,6 +18,6 @@ final class ActiveDialsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Active Dials"
+        self.navigationItem.title = L10n.activeDials
     }
 }

@@ -18,10 +18,13 @@
 		DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D423A5A56E00141179 /* Assets.xcassets */; };
 		DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */; };
 		DD82E4E323A5A56E00141179 /* X_WingDialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */; };
+		DD9BADFA23BFA1CF00C02389 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BADF823BFA1CF00C02389 /* LocalizableStrings.swift */; };
+		DD9BADFB23BFA1CF00C02389 /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BADF923BFA1CF00C02389 /* ImageAssets.swift */; };
 		DDB026A323B01446000584C1 /* ActiveDialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026A223B01446000584C1 /* ActiveDialsViewController.swift */; };
 		DDB026A723B01473000584C1 /* ActiveDialsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026A623B01473000584C1 /* ActiveDialsCollection.swift */; };
 		DDB026A923B01566000584C1 /* ActiveDialCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026A823B01566000584C1 /* ActiveDialCollectionCell.swift */; };
 		DDB026AC23B016C1000584C1 /* ActiveDialsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB026AB23B016C1000584C1 /* ActiveDialsDatasource.swift */; };
+		DDB026C523B10E88000584C1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDB026C323B10E88000584C1 /* Localizable.strings */; };
 		DDD0931E23A847BB000807B5 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = DDD0931D23A847BB000807B5 /* Reusable */; };
 		DDD0932123A84800000807B5 /* FactionsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932023A84800000807B5 /* FactionsDatasource.swift */; };
 		DDD0932E23A93FF8000807B5 /* XWingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0932D23A93FF8000807B5 /* XWingTabBarViewController.swift */; };
@@ -71,10 +74,13 @@
 		DD82E4DE23A5A56E00141179 /* X-WingDialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-WingDialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD82E4E223A5A56E00141179 /* X_WingDialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_WingDialTests.swift; sourceTree = "<group>"; };
 		DD82E4E423A5A56E00141179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9BADF823BFA1CF00C02389 /* LocalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		DD9BADF923BFA1CF00C02389 /* ImageAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
 		DDB026A223B01446000584C1 /* ActiveDialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialsViewController.swift; sourceTree = "<group>"; };
 		DDB026A623B01473000584C1 /* ActiveDialsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialsCollection.swift; sourceTree = "<group>"; };
 		DDB026A823B01566000584C1 /* ActiveDialCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialCollectionCell.swift; sourceTree = "<group>"; };
 		DDB026AB23B016C1000584C1 /* ActiveDialsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDialsDatasource.swift; sourceTree = "<group>"; };
+		DDB026C423B10E88000584C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDD0932023A84800000807B5 /* FactionsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsDatasource.swift; sourceTree = "<group>"; };
 		DDD0932D23A93FF8000807B5 /* XWingTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWingTabBarViewController.swift; sourceTree = "<group>"; };
 		DDD0932F23A9404F000807B5 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFD44E323A67DBB001E6004 /* Classes */,
+				DDB026C223B10E88000584C1 /* Localization */,
 				DD82E4D923A5A56E00141179 /* Info.plist */,
 				DD82E4D423A5A56E00141179 /* Assets.xcassets */,
 				DD82E4D623A5A56E00141179 /* LaunchScreen.storyboard */,
@@ -234,6 +241,23 @@
 				DDB026AB23B016C1000584C1 /* ActiveDialsDatasource.swift */,
 			);
 			path = Datasource;
+			sourceTree = "<group>";
+		};
+		DDB026C123B10DC1000584C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD9BADF923BFA1CF00C02389 /* ImageAssets.swift */,
+				DD9BADF823BFA1CF00C02389 /* LocalizableStrings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDB026C223B10E88000584C1 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DDB026C323B10E88000584C1 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		DDD0931F23A847EE000807B5 /* Datasource */ = {
@@ -328,6 +352,7 @@
 				DD1B5BE823A9D74B00F5B413 /* Appearance */,
 				DDFD44E423A67E23001E6004 /* Base */,
 				DDFD44D423A67C10001E6004 /* Model */,
+				DDB026C123B10DC1000584C1 /* Resources */,
 				DDFD44EA23A68443001E6004 /* Rest */,
 				DD5639F223A84637007B1B06 /* Screens */,
 				DDD0933423A98F4E000807B5 /* Util */,
@@ -382,6 +407,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD82E4E723A5A56E00141179 /* Build configuration list for PBXNativeTarget "X-WingDial" */;
 			buildPhases = (
+				DDB026C023B10D89000584C1 /* [SwiftGen] Run Script */,
 				DD82E4C123A5A56C00141179 /* Sources */,
 				DD82E4C223A5A56C00141179 /* Frameworks */,
 				DD82E4C323A5A56C00141179 /* Resources */,
@@ -467,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD82E4D823A5A56E00141179 /* LaunchScreen.storyboard in Resources */,
+				DDB026C523B10E88000584C1 /* Localizable.strings in Resources */,
 				DD82E4D523A5A56E00141179 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +507,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DDB026C023B10D89000584C1 /* [SwiftGen] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftGen] Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if mint run swiftgen >/dev/null; then\n  mint run swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD82E4C123A5A56C00141179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -487,6 +535,7 @@
 			files = (
 				DD82E4CD23A5A56C00141179 /* FactionsViewController.swift in Sources */,
 				DD5639FA23A846E6007B1B06 /* StarshipTableCell.swift in Sources */,
+				DD9BADFB23BFA1CF00C02389 /* ImageAssets.swift in Sources */,
 				DDB026AC23B016C1000584C1 /* ActiveDialsDatasource.swift in Sources */,
 				DDD0933A23A99BBA000807B5 /* FactionHeaderView.swift in Sources */,
 				DD5639F123A84451007B1B06 /* Starship.swift in Sources */,
@@ -512,6 +561,7 @@
 				DDFD450223A684EC001E6004 /* XWingService.swift in Sources */,
 				DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */,
 				DDFD44F823A68443001E6004 /* APIError.swift in Sources */,
+				DD9BADFA23BFA1CF00C02389 /* LocalizableStrings.swift in Sources */,
 				DDD0934423A9A4F8000807B5 /* DialView.swift in Sources */,
 				DDD0933623A98F58000807B5 /* SectionsBuilder.swift in Sources */,
 				DDD0934623A9A753000807B5 /* BaseDelegate.swift in Sources */,
@@ -543,6 +593,14 @@
 				DD82E4D723A5A56E00141179 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DDB026C323B10E88000584C1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDB026C423B10E88000584C1 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -598,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -652,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

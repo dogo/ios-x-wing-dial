@@ -67,7 +67,7 @@ extension DialView: BaseViewConfiguration {
     }
 
     func configureViews() {
-        dialSelector.image = UIImage(named: "dial_selector")
+        dialSelector.image = Asset.dialSelector.image
         dialImage.image = UIImage(named: "\(dialPath)_dial")
         backgroundColor = .white
     }

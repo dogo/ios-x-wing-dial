@@ -13,7 +13,7 @@ final class ActiveDialCollectionCell: UICollectionViewCell, Reusable {
 
     let dialImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "btl-s8-k-wing_dial")
+        imageView.image = Asset.btlS8KWingDial.image
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()

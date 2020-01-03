@@ -29,7 +29,7 @@ class FactionsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "X-Wing Companion"
+        self.navigationItem.title = L10n.xWingCompanion
     }
 
     private func fetchFactionAndShips() {
