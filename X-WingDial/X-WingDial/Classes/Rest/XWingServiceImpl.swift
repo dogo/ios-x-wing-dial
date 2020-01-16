@@ -16,11 +16,11 @@ final class XWingServiceImpl: XWingService {
         self.api = api
     }
 
-    func fetchFactions(completion: @escaping (Result<XWing?, APIError>) -> Void) {
+    func fetchFactions(completion: @escaping (Result<XWing, APIError>) -> Void) {
         return api.fetchFactions(completion: completion)
     }
 
-    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship?, APIError>) -> Void) {
+    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship, APIError>) -> Void) {
         return api.fetchPilots(faction: faction, starship: starship, completion: completion)
     }
 

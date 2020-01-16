@@ -20,7 +20,7 @@ final class XWingAPI: APIClient, XWingService {
         self.init(configuration: .default)
     }
 
-    func fetchFactions(completion: @escaping (Result<XWing?, APIError>) -> Void) {
+    func fetchFactions(completion: @escaping (Result<XWing, APIError>) -> Void) {
 
         let endpoint: XWingRoute = .factions
         let request = endpoint.request
@@ -31,7 +31,7 @@ final class XWingAPI: APIClient, XWingService {
         }, completion: completion)
     }
 
-    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship?, APIError>) -> Void) {
+    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship, APIError>) -> Void) {
 
         let endpoint: XWingRoute = .pilots(faction, starship)
         let request = endpoint.request

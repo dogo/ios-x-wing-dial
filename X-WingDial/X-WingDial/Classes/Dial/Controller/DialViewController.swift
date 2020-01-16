@@ -51,7 +51,6 @@ final class DialViewController: UIViewController {
         api.fetchPilots(faction: faction, starship: ship.path) { result in
             switch result {
             case .success(let data):
-                guard let data = data else { return }
                 debugPrint(data)
             case .failure(let error):
                 debugPrint(error)

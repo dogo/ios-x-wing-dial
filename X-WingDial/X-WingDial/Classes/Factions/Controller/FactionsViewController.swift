@@ -36,7 +36,6 @@ class FactionsViewController: UIViewController {
         api.fetchFactions { [weak self] result in
             switch result {
             case .success(let data):
-                guard let data = data else { return }
                 self?.factionsView.updateSetList(data)
             case .failure(let error):
                 debugPrint(error)
