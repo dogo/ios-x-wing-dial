@@ -13,6 +13,12 @@ final class ActiveDialsDatasource: NSObject, UICollectionViewDataSource {
 
     private var collectionView: UICollectionView?
 
+    private var data = [Ship]() {
+        didSet {
+            collectionView?.reloadData()
+        }
+    }
+
     required init(collectionView: UICollectionView) {
         super.init()
         self.collectionView = collectionView
@@ -24,12 +30,13 @@ final class ActiveDialsDatasource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: ActiveDialCollectionCell.self)
+        cell.setup(with: "K-Wing")
 
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return data.count
     }
 }
 

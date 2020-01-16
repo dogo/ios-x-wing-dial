@@ -20,7 +20,6 @@ final class ActiveDialCollectionCell: UICollectionViewCell, Reusable {
 
     let title: UILabel = {
         let label = UILabel(frame: .zero)
-        label.text = "btl-s8-k-wing_dial"
         label.textColor = .black
         label.textAlignment = .center
         return label
@@ -34,6 +33,10 @@ final class ActiveDialCollectionCell: UICollectionViewCell, Reusable {
     @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func setup(with name: String) {
+        title.text = name
     }
 }
 
