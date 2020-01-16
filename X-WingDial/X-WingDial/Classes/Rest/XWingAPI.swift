@@ -12,12 +12,8 @@ final class XWingAPI: APIClient, XWingService {
 
     let session: URLSession
 
-    init(configuration: URLSessionConfiguration) {
-        self.session = URLSession(configuration: configuration)
-    }
-
-    convenience init() {
-        self.init(configuration: .default)
+    init(session: URLSession = .shared) {
+        self.session = session
     }
 
     func fetchFactions(completion: @escaping (Result<XWing, APIError>) -> Void) {

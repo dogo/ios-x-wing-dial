@@ -8,24 +8,21 @@
 
 import Foundation
 
-protocol Endpoint {
-
-    var baseURL: String { get }
-    var path: String { get }
-    var method: HttpMethod { get }
-    var headers: [String: String]? { get }
-}
-
 enum XWingRoute {
     case factions
     case pilots(_ faction: String, _ starship: String)
 }
 
-extension XWingRoute: Endpoint {
+extension XWingRoute: EndpointProtocol {
 
-    /// The target's base `URL`.
-    var baseURL: String {
-        return "https://djogopatrao.github.io"
+    /// The scheme subcomponent of the `URL`.
+     var scheme: HttpScheme {
+         return .https
+     }
+
+    /// The target's host `URL`.
+    var host: String {
+        return "djogopatrao.github.io"
     }
 
     /// The path to be appended to `baseURL` to form the full `URL`.
@@ -47,20 +44,22 @@ extension XWingRoute: Endpoint {
     }
 
     /// The headers to be used in the request.
-    var headers: [String: String]? {
+    var headers: HttpHeaders? {
         return ["Content-type": "application/json"]
     }
 
     /// The components of a URL.
     var urlComponents: URLComponents {
-        var components = URLComponents(string: baseURL)! // swiftlint:disable:this force_unwrapping
+        var components = URLComponents()
+        components.scheme = scheme.toString()
+        components.host = host
         components.path = path
         return components
     }
 
     /// The URLRequest with the given URL and httpMethod.
     var request: URLRequest {
-        var request = URLRequest(url: urlComponents.url!) // swiftlint:disable:this force_unwrapping
+        var request = URLRequest(with: urlComponents.url)
         request.httpMethod = method.toString()
         request.allHTTPHeaderFields = headers
         return request
