@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Starship: Codable {
+struct Starship: Codable, Storable {
     let name: String
     let xws: String
     let size: String
@@ -20,12 +20,12 @@ struct Starship: Codable {
     let pilots: [Pilot]
 }
 
-struct Action: Codable {
+struct Action: Codable, Storable {
     let difficulty: String
     let type: String
 }
 
-struct Pilot: Codable {
+struct Pilot: Codable, Storable {
     let name: String
     let caption: String?
     let initiative: Int
@@ -37,12 +37,12 @@ struct Pilot: Codable {
     let hyperspace: Bool
 }
 
-struct ShipAbility: Codable {
+struct ShipAbility: Codable, Storable {
     let name: String
     let text: String
 }
 
-struct Stat: Codable {
+struct Stat: Codable, Storable {
     let arc: String?
     let type: String
     let value: Int

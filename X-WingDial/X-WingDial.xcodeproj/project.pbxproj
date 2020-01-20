@@ -12,6 +12,15 @@
 		DD5639F123A84451007B1B06 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F023A84451007B1B06 /* Starship.swift */; };
 		DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F723A846A6007B1B06 /* FactionsTableView.swift */; };
 		DD5639FA23A846E6007B1B06 /* StarshipTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5639F923A846E6007B1B06 /* StarshipTableCell.swift */; };
+		DD5C2A2B23DC8E95007AAD62 /* XWing+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C2A2A23DC8E95007AAD62 /* XWing+CoreDataProperties.swift */; };
+		DD5C2A2D23DC9200007AAD62 /* Ship+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C2A2C23DC9200007AAD62 /* Ship+CoreDataProperties.swift */; };
+		DD5C2A2F23DC9251007AAD62 /* Faction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C2A2E23DC9251007AAD62 /* Faction+CoreDataProperties.swift */; };
+		DD6C24A823D13A9800780CD3 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C24A723D13A9800780CD3 /* DatabaseProtocol.swift */; };
+		DD6C24AB23D1611800780CD3 /* CoreDataDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C24A923D1611800780CD3 /* CoreDataDatabase.swift */; };
+		DD6C24AC23D1611800780CD3 /* CoreDataDatabase+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C24AA23D1611800780CD3 /* CoreDataDatabase+Operations.swift */; };
+		DD6C24AF23D1625800780CD3 /* XWingDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD6C24AD23D1625800780CD3 /* XWingDB.xcdatamodeld */; };
+		DD6C24B123D35CF600780CD3 /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C24B023D35CF600780CD3 /* Faction.swift */; };
+		DD6C24B323D35D1B00780CD3 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C24B223D35D1B00780CD3 /* Ship.swift */; };
 		DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4C823A5A56C00141179 /* AppDelegate.swift */; };
 		DD82E4CB23A5A56C00141179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */; };
 		DD82E4CD23A5A56C00141179 /* FactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82E4CC23A5A56C00141179 /* FactionsViewController.swift */; };
@@ -67,6 +76,15 @@
 		DD5639F023A84451007B1B06 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		DD5639F723A846A6007B1B06 /* FactionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionsTableView.swift; sourceTree = "<group>"; };
 		DD5639F923A846E6007B1B06 /* StarshipTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTableCell.swift; sourceTree = "<group>"; };
+		DD5C2A2A23DC8E95007AAD62 /* XWing+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XWing+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD5C2A2C23DC9200007AAD62 /* Ship+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ship+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD5C2A2E23DC9251007AAD62 /* Faction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Faction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD6C24A723D13A9800780CD3 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		DD6C24A923D1611800780CD3 /* CoreDataDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDatabase.swift; sourceTree = "<group>"; };
+		DD6C24AA23D1611800780CD3 /* CoreDataDatabase+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataDatabase+Operations.swift"; sourceTree = "<group>"; };
+		DD6C24AE23D1625800780CD3 /* XWindDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XWindDatabase.xcdatamodel; sourceTree = "<group>"; };
+		DD6C24B023D35CF600780CD3 /* Faction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faction.swift; sourceTree = "<group>"; };
+		DD6C24B223D35D1B00780CD3 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		DD82E4C523A5A56C00141179 /* X-WingDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X-WingDial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD82E4C823A5A56C00141179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD82E4CA23A5A56C00141179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +193,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DD6C249F23D13A5500780CD3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C24A923D1611800780CD3 /* CoreDataDatabase.swift */,
+				DD6C24AA23D1611800780CD3 /* CoreDataDatabase+Operations.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DD6C24A623D13A9800780CD3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C24A723D13A9800780CD3 /* DatabaseProtocol.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		DD82E4BC23A5A56C00141179 = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +289,7 @@
 			children = (
 				DD9BADF923BFA1CF00C02389 /* ImageAssets.swift */,
 				DD9BADF823BFA1CF00C02389 /* LocalizableStrings.swift */,
+				DD6C24AD23D1625800780CD3 /* XWingDB.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -343,8 +379,13 @@
 		DDFD44D423A67C10001E6004 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD5639EE23A83AEA007B1B06 /* XWing.swift */,
+				DD6C24B023D35CF600780CD3 /* Faction.swift */,
+				DD5C2A2E23DC9251007AAD62 /* Faction+CoreDataProperties.swift */,
+				DD6C24B223D35D1B00780CD3 /* Ship.swift */,
+				DD5C2A2C23DC9200007AAD62 /* Ship+CoreDataProperties.swift */,
 				DD5639F023A84451007B1B06 /* Starship.swift */,
+				DD5639EE23A83AEA007B1B06 /* XWing.swift */,
+				DD5C2A2A23DC8E95007AAD62 /* XWing+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,6 +406,7 @@
 				DDFD44DF23A67D4A001E6004 /* AppDelegate */,
 				DD1B5BE823A9D74B00F5B413 /* Appearance */,
 				DDFD44E423A67E23001E6004 /* Base */,
+				DD6C249F23D13A5500780CD3 /* Database */,
 				DDFD44D423A67C10001E6004 /* Model */,
 				DDB026C123B10DC1000584C1 /* Resources */,
 				DDFD44EA23A68443001E6004 /* Rest */,
@@ -377,6 +419,7 @@
 		DDFD44E423A67E23001E6004 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				DD6C24A623D13A9800780CD3 /* Database */,
 				DDD0934723A9A760000807B5 /* Protocol */,
 				DDFD44E523A67E2A001E6004 /* View */,
 			);
@@ -551,13 +594,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD82E4CD23A5A56C00141179 /* FactionsViewController.swift in Sources */,
+				DD6C24B323D35D1B00780CD3 /* Ship.swift in Sources */,
 				DD5639FA23A846E6007B1B06 /* StarshipTableCell.swift in Sources */,
 				DDD7632B23D091B1004F724B /* URLRequest+Utils.swift in Sources */,
 				DD9BADFB23BFA1CF00C02389 /* ImageAssets.swift in Sources */,
+				DD6C24AB23D1611800780CD3 /* CoreDataDatabase.swift in Sources */,
 				DDB026AC23B016C1000584C1 /* ActiveDialsDatasource.swift in Sources */,
+				DD6C24AF23D1625800780CD3 /* XWingDB.xcdatamodeld in Sources */,
 				DDD0933A23A99BBA000807B5 /* FactionHeaderView.swift in Sources */,
 				DD5639F123A84451007B1B06 /* Starship.swift in Sources */,
 				DDD7632623D09102004F724B /* EndpointProtocol.swift in Sources */,
+				DD6C24AC23D1611800780CD3 /* CoreDataDatabase+Operations.swift in Sources */,
 				DDFD450323A684EC001E6004 /* XWingServiceImpl.swift in Sources */,
 				DDD0932E23A93FF8000807B5 /* XWingTabBarViewController.swift in Sources */,
 				DD82E4C923A5A56C00141179 /* AppDelegate.swift in Sources */,
@@ -566,11 +613,14 @@
 				DDD0934023A9A445000807B5 /* DialViewController.swift in Sources */,
 				DDB026A923B01566000584C1 /* ActiveDialCollectionCell.swift in Sources */,
 				DDD0933823A99096000807B5 /* Split.swift in Sources */,
+				DD5C2A2D23DC9200007AAD62 /* Ship+CoreDataProperties.swift in Sources */,
 				DDFD44FB23A68443001E6004 /* HttpStatusCode.swift in Sources */,
+				DD6C24B123D35CF600780CD3 /* Faction.swift in Sources */,
 				DD5639F823A846A6007B1B06 /* FactionsTableView.swift in Sources */,
 				DD1B5BEA23A9D75D00F5B413 /* AppearanceProxyHelper.swift in Sources */,
 				DDD7632823D0912E004F724B /* HttpScheme.swift in Sources */,
 				DDFD44E723A67E57001E6004 /* BaseViewConfiguration.swift in Sources */,
+				DD5C2A2B23DC8E95007AAD62 /* XWing+CoreDataProperties.swift in Sources */,
 				DDFD450123A684EC001E6004 /* XWingRoute.swift in Sources */,
 				DDD0932123A84800000807B5 /* FactionsDatasource.swift in Sources */,
 				DDFD450023A684EC001E6004 /* XWingAPI.swift in Sources */,
@@ -583,7 +633,9 @@
 				DDFD44F823A68443001E6004 /* APIError.swift in Sources */,
 				DD9BADFA23BFA1CF00C02389 /* LocalizableStrings.swift in Sources */,
 				DDD0934423A9A4F8000807B5 /* DialView.swift in Sources */,
+				DD5C2A2F23DC9251007AAD62 /* Faction+CoreDataProperties.swift in Sources */,
 				DDD0933623A98F58000807B5 /* SectionsBuilder.swift in Sources */,
+				DD6C24A823D13A9800780CD3 /* DatabaseProtocol.swift in Sources */,
 				DDD0934623A9A753000807B5 /* BaseDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -892,6 +944,19 @@
 			productName = SketchKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DD6C24AD23D1625800780CD3 /* XWingDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD6C24AE23D1625800780CD3 /* XWindDatabase.xcdatamodel */,
+			);
+			currentVersion = DD6C24AE23D1625800780CD3 /* XWindDatabase.xcdatamodel */;
+			path = XWingDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD82E4BD23A5A56C00141179 /* Project object */;
 }
