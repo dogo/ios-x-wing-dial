@@ -35,7 +35,10 @@ extension APIClient {
             case 200...399:
                 if let data = data {
                     do {
-                        let model = try JSONDecoder().decode(decodingType, from: data)
+                        let decoder = JSONDecoder()
+                        decoder.userInfo[.context] = CoreDataDatabase().managedContext
+                        debugPrint("Response: ", data.prettyPrintedJSONString)
+                        let model = try decoder.decode(decodingType, from: data)
                         completion(model, nil)
                     } catch {
                         completion(nil, .jsonConversionFailure)
@@ -79,5 +82,17 @@ extension APIClient {
             uploadTasks.forEach { $0.cancel() }
             downloadTasks.forEach { $0.cancel() }
         }
+    }
+}
+
+extension Data {
+
+    var prettyPrintedJSONString: NSString {
+        guard let object = try? JSONSerialization.jsonObject(with: self, options: []),
+            let data = try? JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted]),
+            let prettyPrintedString = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else {
+                return "No data"
+        }
+        return prettyPrintedString
     }
 }

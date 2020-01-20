@@ -6,28 +6,38 @@
 //  Copyright © 2019 Diogo Autilio. All rights reserved.
 //
 
+import CoreData
 import Foundation
 
-struct XWing: Codable {
-    let factions: [Faction]
+@objc(XWing)
+class XWing: NSManagedObject, Codable {
+
+    enum CodingKeys: String, CodingKey {
+         case factions
+    }
+
+    required convenience init(from decoder: Decoder) throws {
+
+        guard let managedObjectContext = decoder.userInfo[.context] as? NSManagedObjectContext else {
+            fatalError("cannot Retrieve context")
+        }
+
+        guard let entity = NSEntityDescription.entity(forEntityName: "XWing", in: managedObjectContext) else {
+            fatalError("Failed to decode XWing")
+        }
+
+        self.init(entity: entity, insertInto: managedObjectContext)
+
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.factions = try container.decode([Faction].self, forKey: .factions)
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(factions, forKey: .factions)
+    }
 }
 
-struct Faction: Codable, Hashable {
-    let name: String
-    let icon: URL
-    let path: String
-    let ships: [Ship]
-
-    static func == (lhs: Faction, rhs: Faction) -> Bool {
-          return lhs.path == rhs.path
-      }
-
-      func hash(into hasher: inout Hasher) {
-          hasher.combine(path)
-      }
-}
-
-struct Ship: Codable {
-    let path: String
-    let title: String
+extension CodingUserInfoKey {
+   static let context = CodingUserInfoKey(rawValue: "context")!
 }

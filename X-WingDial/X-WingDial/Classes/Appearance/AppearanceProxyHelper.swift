@@ -16,4 +16,3 @@ enum AppearanceProxyHelper {
         tabBarAppearance.barTintColor = .black
     }
 }
-

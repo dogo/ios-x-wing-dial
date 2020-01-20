@@ -39,4 +39,3 @@ final class ActiveDialsDatasource: NSObject, UICollectionViewDataSource {
         return data.count
     }
 }
-
