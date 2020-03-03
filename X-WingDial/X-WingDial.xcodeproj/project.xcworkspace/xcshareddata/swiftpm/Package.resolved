@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/onevcat/Kingfisher",
         "state": {
           "branch": null,
-          "revision": "2f9d171f17869768f6dbec1d039b851e2503af35",
-          "version": "5.12.0"
+          "revision": "44bfa76787a0f07e4d5ae3304e9d4f631fd519bd",
+          "version": "5.13.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/dogo/SketchKit",
         "state": {
           "branch": null,
-          "revision": "40642d6a971fb0c56e8e99a229717e5a98cdb41d",
-          "version": "1.0.0"
+          "revision": "55986ada51d2a5517cbd20bd85667d485a52273f",
+          "version": "1.1.0"
         }
       }
     ]
