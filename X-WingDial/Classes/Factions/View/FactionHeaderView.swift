@@ -57,8 +57,8 @@ extension FactionHeaderView: BaseViewConfiguration {
         factionImageView.layout.applyConstraint { view in
             view.centerYAnchor(equalTo: contentView.centerYAnchor)
             view.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
-            view.heightAnchor(equalTo: 35)
-            view.widthAnchor(equalTo: 35)
+            view.heightAnchor(equalToConstant: 35)
+            view.widthAnchor(equalToConstant: 35)
         }
 
         titleLabel.layout.applyConstraint { view in

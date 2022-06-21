@@ -52,8 +52,8 @@ extension ActiveDialCollectionCell: BaseViewConfiguration {
             view.topAnchor(equalTo: contentView.topAnchor)
             view.leadingAnchor(equalTo: contentView.leadingAnchor)
             view.trailingAnchor(equalTo: contentView.trailingAnchor)
-            view.widthAnchor(equalTo: 180)
-            view.heightAnchor(equalTo: 180)
+            view.widthAnchor(equalToConstant: 180)
+            view.heightAnchor(equalToConstant: 180)
         }
 
         title.layout.applyConstraint { view in

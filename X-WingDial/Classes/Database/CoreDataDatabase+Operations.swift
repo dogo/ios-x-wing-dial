@@ -50,7 +50,7 @@ extension CoreDataDatabase {
         fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur3")
 
         let test = try managedContext.fetch(fetchRequest)
-        let objectToDelete = test[0] as! NSManagedObject
+        let objectToDelete = test[0] as! NSManagedObject // swiftlint:disable:this force_cast
 
         try self.writeSafely { [weak self] in
             self?.managedContext.delete(objectToDelete)
