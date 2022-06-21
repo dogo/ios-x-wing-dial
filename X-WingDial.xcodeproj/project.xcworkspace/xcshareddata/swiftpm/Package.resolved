@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "55591508c3c429cc8f048c5c12dd1cd46e66b41b",
+        "version" : "5.13.0"
+      }
+    },
+    {
+      "identity" : "reusable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliSoftware/Reusable",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8d05d4ff9684e42975d1f5efe54eeaa76fa924c5"
+      }
+    },
+    {
+      "identity" : "sketchkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dogo/SketchKit",
+      "state" : {
+        "revision" : "55986ada51d2a5517cbd20bd85667d485a52273f",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
