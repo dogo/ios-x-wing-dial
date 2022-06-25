@@ -32,7 +32,7 @@ class XWing: NSManagedObject, Codable {
         self.factions = try container.decode([Faction].self, forKey: .factions)
     }
 
-    public func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(factions, forKey: .factions)
     }

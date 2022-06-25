@@ -21,7 +21,8 @@ final class XWingAPI: APIClient, XWingService {
         let endpoint: XWingRoute = .factions
         let request = endpoint.request
 
-        self.request(request, decode: { json -> XWing? in
+        self.request(request,
+                     decode: { json -> XWing? in
             guard let result = json as? XWing else { return nil }
             return result
         }, completion: completion)
@@ -32,7 +33,8 @@ final class XWingAPI: APIClient, XWingService {
         let endpoint: XWingRoute = .pilots(faction, starship)
         let request = endpoint.request
 
-        self.request(request, decode: { json -> Starship? in
+        self.request(request,
+                     decode: { json -> Starship? in
             guard let result = json as? Starship else { return nil }
             return result
         }, completion: completion)

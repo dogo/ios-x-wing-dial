@@ -11,7 +11,8 @@ import Foundation
 
 extension XWing {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Faction> {
+    @nonobjc
+    public class func fetchRequest() -> NSFetchRequest<Faction> {
         return NSFetchRequest<Faction>(entityName: "Faction")
     }
 

@@ -11,7 +11,8 @@ import Foundation
 
 extension Ship {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Ship> {
+    @nonobjc
+    public class func fetchRequest() -> NSFetchRequest<Ship> {
         return NSFetchRequest<Ship>(entityName: "Ship")
     }
 

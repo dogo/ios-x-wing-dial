@@ -38,7 +38,7 @@ class Faction: NSManagedObject, Codable {
         self.ships = try container.decode([Ship].self, forKey: .ships)
     }
 
-    public func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(name, forKey: .name)
         try container.encode(icon, forKey: .icon)

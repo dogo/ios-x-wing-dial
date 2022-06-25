@@ -29,7 +29,7 @@ public extension Project {
                     .external(name: "SketchKit")
                 ],
                 coreDataModels: [
-                    CoreDataModel("X-WingDial/Classes/Resources/XWingDB.xcdatamodeld"),
+                    CoreDataModel("X-WingDial/Classes/Resources/XWingDB.xcdatamodeld")
                 ]
             ),
             Target(
