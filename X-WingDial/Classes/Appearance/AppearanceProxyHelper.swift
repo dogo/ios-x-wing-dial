@@ -14,5 +14,18 @@ enum AppearanceProxyHelper {
         let tabBarAppearance = UITabBar.appearance()
         tabBarAppearance.tintColor = .white
         tabBarAppearance.barTintColor = .black
+
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.backgroundColor = .black
+            UITabBar.appearance(whenContainedInInstancesOf: [UITabBarController.self]).scrollEdgeAppearance = appearance
+            UITabBar.appearance(whenContainedInInstancesOf: [UITabBarController.self]).standardAppearance = appearance
+        }
+    }
+
+    static func customizeUITableView() {
+        if #available(iOS 15.0, *) {
+            UITableView.appearance().sectionHeaderTopPadding = .zero
+        }
     }
 }
