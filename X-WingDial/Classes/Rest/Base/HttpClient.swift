@@ -42,9 +42,7 @@ extension HttpClient {
                 if let data = data {
                     do {
                         self?.logger.log(response: response, data: data, time: responseTime)
-                        let decoder = JSONDecoder()
-                        decoder.userInfo[.context] = CoreDataDatabase().managedContext
-                        let model = try decoder.decode(decodingType, from: data)
+                        let model = try JSONDecoder().decode(decodingType, from: data)
                         completion(model, nil)
                     } catch {
                         completion(nil, RequestError(statusCode, reason: .jsonConversionFailure))
@@ -99,17 +97,5 @@ extension HttpClient {
             reason = .requestCancelled
         }
         return RequestError(statusCode, reason: reason)
-    }
-}
-
-extension Data {
-
-    var prettyPrintedJSONString: NSString {
-        guard let object = try? JSONSerialization.jsonObject(with: self, options: []),
-            let data = try? JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted]),
-            let prettyPrintedString = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else {
-                return "No data"
-        }
-        return prettyPrintedString
     }
 }
