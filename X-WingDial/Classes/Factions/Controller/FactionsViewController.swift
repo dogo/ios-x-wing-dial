@@ -10,8 +10,20 @@ import UIKit
 
 class FactionsViewController: UIViewController {
 
-    private let api = XWingAPI()
+    private let service: XWingServiceProtocol
     private let factionsView = FactionsTableView()
+
+    // MARK: - Life Cycle
+
+    init(service: XWingServiceProtocol = XWingService()) {
+        self.service = service
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func loadView() {
         self.view = factionsView
@@ -23,7 +35,8 @@ class FactionsViewController: UIViewController {
         fetchFactionAndShips()
 
         factionsView.didSelectShip = { [weak self] faction, ship in
-            self?.navigationController?.pushViewController(DialViewController(with: faction.path, ship: ship), animated: true)
+            let controller = DialViewController(faction: faction.path, ship: ship)
+            self?.navigationController?.pushViewController(controller, animated: true)
         }
     }
 
@@ -33,7 +46,7 @@ class FactionsViewController: UIViewController {
     }
 
     private func fetchFactionAndShips() {
-        api.fetchFactions { [weak self] result in
+        service.fetchFactions { [weak self] result in
             switch result {
             case .success(let data):
                 self?.factionsView.updateSetList(data)

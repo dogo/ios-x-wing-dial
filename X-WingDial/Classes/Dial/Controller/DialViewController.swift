@@ -10,7 +10,7 @@ import UIKit
 
 final class DialViewController: UIViewController {
 
-    private let api = XWingAPI()
+    private let service: XWingServiceProtocol
     private let ship: Ship
     private let faction: String
 
@@ -21,7 +21,8 @@ final class DialViewController: UIViewController {
 
     // MARK: - Life Cycle
 
-    init(with faction: String, ship: Ship) {
+    init(service: XWingServiceProtocol = XWingService(), faction: String, ship: Ship) {
+        self.service = service
         self.faction = faction
         self.ship = ship
         super.init(nibName: nil, bundle: nil)
@@ -48,7 +49,7 @@ final class DialViewController: UIViewController {
     }
 
     private func fetchStarShipPilot() {
-        api.fetchPilots(faction: faction, starship: ship.path) { result in
+        service.fetchPilots(faction: faction, starship: ship.path) { result in
             switch result {
             case .success(let data):
                 debugPrint(data)

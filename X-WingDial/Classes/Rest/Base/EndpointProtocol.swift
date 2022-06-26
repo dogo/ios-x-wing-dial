@@ -8,13 +8,16 @@
 
 import Foundation
 
- typealias HttpHeaders = [String: String]
+typealias HttpHeaders = [String: String]
+typealias QueryParameters = [String: String]
+typealias BodyParameters = [String: Any]
 
- protocol EndpointProtocol {
-
+protocol EndpointProtocol {
     var scheme: HttpScheme { get }
     var host: String { get }
     var path: String { get }
+    var queryParameters: QueryParameters? { get }
+    var bodyParameters: BodyParameters? { get }
     var method: HttpMethod { get }
     var headers: HttpHeaders? { get }
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum XWingRoute {
+enum XWingEndpoint {
     case factions
     case pilots(_ faction: String, _ starship: String)
 }
 
-extension XWingRoute: EndpointProtocol {
+extension XWingEndpoint: EndpointProtocol {
 
     /// The scheme subcomponent of the `URL`.
      var scheme: HttpScheme {
@@ -35,6 +35,16 @@ extension XWingRoute: EndpointProtocol {
         }
     }
 
+    /// The query parameters to be used in the request.
+    var queryParameters: QueryParameters? {
+        return nil
+    }
+
+    /// The body parameters to be used in the request.
+    var bodyParameters: BodyParameters? {
+        return nil
+    }
+
     /// The HTTP method used in the request.
     var method: HttpMethod {
         switch self {
@@ -54,6 +64,7 @@ extension XWingRoute: EndpointProtocol {
         components.scheme = scheme.toString()
         components.host = host
         components.path = path
+        components.queryItems = queryParameters?.items
         return components
     }
 
@@ -62,6 +73,7 @@ extension XWingRoute: EndpointProtocol {
         var request = URLRequest(with: urlComponents.url)
         request.httpMethod = method.toString()
         request.allHTTPHeaderFields = headers
+        request.httpBody = bodyParameters?.dataEncoded
         return request
     }
 }

@@ -16,9 +16,8 @@ enum APIError: Error {
     case requestCancelled
 
     var localizedDescription: String {
-
         switch self {
-        case .requestFailed(let reason):
+        case let .requestFailed(reason):
             return "Request failed with reason: \(reason ?? "unknown")"
         case .invalidData:
             return "Invalid Data"
@@ -31,5 +30,15 @@ enum APIError: Error {
         case .requestCancelled:
             return "Request Cancelled"
         }
+    }
+}
+
+final class RequestError {
+    var reason: APIError
+    var statusCode: HttpStatusCode
+
+    init(_ statusCode: HttpStatusCode, reason: APIError) {
+        self.statusCode = statusCode
+        self.reason = reason
     }
 }

@@ -8,11 +8,29 @@
 
 import Foundation
 
-protocol XWingService {
+final class XWingService: XWingServiceProtocol {
 
-    func fetchFactions(completion: @escaping (Result<XWing, APIError>) -> Void)
+    private let client: HttpClientProtocol
 
-    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship, APIError>) -> Void)
+    init(client: HttpClientProtocol = HttpClient()) {
+        self.client = client
+    }
 
-    func cancelAllRequests()
+    func fetchFactions(completion: @escaping (Result<XWing, APIError>) -> Void) {
+        let endpoint: XWingEndpoint = .factions
+        let request = endpoint.request
+
+        client.request(request, completion: completion)
+    }
+
+    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship, APIError>) -> Void) {
+        let endpoint: XWingEndpoint = .pilots(faction, starship)
+        let request = endpoint.request
+
+        client.request(request, completion: completion)
+    }
+
+    func cancelAllRequests() {
+        client.cancelAllRequests()
+    }
 }

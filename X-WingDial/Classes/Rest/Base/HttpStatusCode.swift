@@ -1,4 +1,4 @@
-/*! \file HttpStatusCode.swift*/
+/*! \file HttpStatusCode.swift */
 //  HttpStatusCode.swift
 //
 //
@@ -19,7 +19,6 @@
 
 // swiftlint:disable file_length
 public enum HttpStatusCode: Int {
-
     public init(fromStringValue: String) {
         guard let intValue = Int(fromStringValue) else {
             self = .unknown
@@ -407,4 +406,12 @@ public enum HttpStatusCode: Int {
      */
     case expiredSession = -1
 }
+
+extension HttpStatusCode: Comparable {
+
+    public static func < (lhs: HttpStatusCode, rhs: HttpStatusCode) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+}
+
 // swiftlint:enable file_length
