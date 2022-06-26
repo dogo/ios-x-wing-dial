@@ -27,9 +27,6 @@ public extension Project {
                     .external(name: "Kingfisher"),
                     .external(name: "Reusable"),
                     .external(name: "SketchKit")
-                ],
-                coreDataModels: [
-                    CoreDataModel("X-WingDial/Classes/Resources/XWingDB.xcdatamodeld")
                 ]
             ),
             Target(

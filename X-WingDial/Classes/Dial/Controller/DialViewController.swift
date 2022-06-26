@@ -51,10 +51,10 @@ final class DialViewController: UIViewController {
     private func fetchStarShipPilot() {
         service.fetchPilots(faction: faction, starship: ship.path) { result in
             switch result {
-            case .success(let data):
-                debugPrint(data)
+            case .success:
+                debugPrint("[fetchPilots] Success")
             case .failure(let error):
-                debugPrint(error)
+                debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
             }
         }
     }
