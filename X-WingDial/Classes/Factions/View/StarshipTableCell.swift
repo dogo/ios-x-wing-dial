@@ -14,6 +14,7 @@ final class StarshipTableCell: UITableViewCell, Identifiable {
     private var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 17)
+        label.textColor = ColorName.text.color
         return label
     }()
 
@@ -48,13 +49,14 @@ extension StarshipTableCell: BaseViewConfiguration {
     }
 
     internal func setupConstraints() {
-        titleLabel.layout.applyConstraint { view in
-            view.centerYAnchor(equalTo: contentView.centerYAnchor)
-            view.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
+        titleLabel.layout.applyConstraint {
+            $0.centerYAnchor(equalTo: contentView.centerYAnchor)
+            $0.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
         }
     }
 
     internal func configureViews() {
         accessoryType = .disclosureIndicator
+        backgroundColor = ColorName.appTertiary.color
     }
 }

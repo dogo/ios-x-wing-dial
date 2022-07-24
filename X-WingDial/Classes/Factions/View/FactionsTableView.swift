@@ -18,6 +18,7 @@ final class FactionsTableView: UITableView {
         super.init(frame: frame, style: style)
         rowHeight = 44.0
         sectionHeaderHeight = 53
+        backgroundColor = ColorName.appTheme.color
         tableViewDatasource = FactionsDatasource(tableView: self, baseDelegate: self)
     }
 

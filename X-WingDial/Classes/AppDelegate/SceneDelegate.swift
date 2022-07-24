@@ -18,6 +18,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         AppearanceProxyHelper.customizeTabBar()
         AppearanceProxyHelper.customizeUITableView()
+        AppearanceProxyHelper.customizeNavigationBar()
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

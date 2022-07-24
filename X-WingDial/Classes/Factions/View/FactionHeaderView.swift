@@ -13,7 +13,8 @@ final class FactionHeaderView: UITableViewHeaderFooterView, Identifiable {
 
     private var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.font = UIFont.systemFont(ofSize: 17)
+        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = ColorName.textSection.color
         return label
     }()
 
@@ -53,16 +54,16 @@ extension FactionHeaderView: BaseViewConfiguration {
     }
 
     func setupConstraints() {
-        factionImageView.layout.applyConstraint { view in
-            view.centerYAnchor(equalTo: contentView.centerYAnchor)
-            view.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
-            view.heightAnchor(equalToConstant: 35)
-            view.widthAnchor(equalToConstant: 35)
+        factionImageView.layout.applyConstraint {
+            $0.centerYAnchor(equalTo: contentView.centerYAnchor)
+            $0.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
+            $0.heightAnchor(equalToConstant: 35)
+            $0.widthAnchor(equalToConstant: 35)
         }
 
-        titleLabel.layout.applyConstraint { view in
-            view.centerYAnchor(equalTo: contentView.centerYAnchor)
-            view.leadingAnchor(equalTo: factionImageView.trailingAnchor, constant: 12)
+        titleLabel.layout.applyConstraint {
+            $0.centerYAnchor(equalTo: contentView.centerYAnchor)
+            $0.leadingAnchor(equalTo: factionImageView.trailingAnchor, constant: 12)
         }
     }
 }
