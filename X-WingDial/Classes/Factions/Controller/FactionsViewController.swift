@@ -12,6 +12,7 @@ final class FactionsViewController: UIViewController {
 
     private var presenter: FactionsPresenterType
     private let factionsView = FactionsTableView()
+    private lazy var navigator = FactionsNavigator(self.navigationController)
 
     // MARK: - Life Cycle
 
@@ -36,8 +37,7 @@ final class FactionsViewController: UIViewController {
         presenter.fetchFactionAndShips()
 
         factionsView.didSelectShip = { [weak self] faction, ship in
-            let controller = DialViewController(faction: faction.path, ship: ship)
-            self?.navigationController?.pushViewController(controller, animated: true)
+            self?.navigator.navigate(to: .dial(path: faction.path, with: ship))
         }
     }
 
