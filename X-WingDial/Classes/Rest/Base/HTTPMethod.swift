@@ -22,6 +22,6 @@ enum HttpMethod: String {
     case connect = "CONNECT"
 
     func toString() -> String {
-        return self.rawValue
+        return rawValue
     }
 }

@@ -18,12 +18,12 @@ final class ActiveDialsCollection: UICollectionView {
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
-        self.backgroundColor = .white
-        self.delegate = self
+        backgroundColor = .white
+        delegate = self
 
-        self.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+        contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
 
-        if let layout = self.collectionViewLayout as? UICollectionViewFlowLayout {
+        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
             layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
             layout.minimumInteritemSpacing = 5

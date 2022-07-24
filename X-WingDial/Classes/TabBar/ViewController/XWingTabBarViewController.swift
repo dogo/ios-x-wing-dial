@@ -25,6 +25,6 @@ final class XWingTabBarViewController: UITabBarController {
                                            image: UIImage(named: "ic_dial_off"),
                                            selectedImage: UIImage(named: "ic_dial_on"))
 
-        self.viewControllers = [homeTab, dialstab]
+        viewControllers = [homeTab, dialstab]
     }
 }

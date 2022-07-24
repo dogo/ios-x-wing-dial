@@ -63,6 +63,5 @@ extension ActiveDialCollectionCell: BaseViewConfiguration {
         }
     }
 
-    func configureViews() {
-    }
+    func configureViews() {}
 }

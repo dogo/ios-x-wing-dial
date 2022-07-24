@@ -9,7 +9,7 @@
 import UIKit
 
 final class FactionsNavigator: Navigator {
-    
+
     enum Destination {
         case dial(path: String, with: Ship)
     }

@@ -6,8 +6,8 @@
 //  Copyright © 2019 Diogo Autilio. All rights reserved.
 //
 
-import XCTest
 @testable import X_WingDial
+import XCTest
 
 final class X_WingDialTests: XCTestCase {
 
@@ -26,7 +26,7 @@ final class X_WingDialTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

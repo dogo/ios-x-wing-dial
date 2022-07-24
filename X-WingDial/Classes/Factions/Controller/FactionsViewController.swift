@@ -28,7 +28,7 @@ final class FactionsViewController: UIViewController {
     }
 
     override func loadView() {
-        self.view = factionsView
+        view = factionsView
     }
 
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ final class FactionsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = L10n.xWingCompanion
+        navigationItem.title = L10n.xWingCompanion
     }
 }
 

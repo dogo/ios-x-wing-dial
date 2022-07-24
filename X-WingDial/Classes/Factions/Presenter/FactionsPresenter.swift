@@ -9,7 +9,7 @@
 import Foundation
 
 final class FactionsPresenter {
-    
+
     weak var controller: FactionsViewControllerType?
     private let service: XWingServiceProtocol
 
@@ -23,9 +23,9 @@ extension FactionsPresenter: FactionsPresenterType {
     func fetchFactionAndShips() {
         service.fetchFactions { [weak self] result in
             switch result {
-            case .success(let data):
+            case let .success(data):
                 self?.controller?.updateSetList(with: data)
-            case .failure(let error):
+            case let .failure(error):
                 debugPrint(error)
             }
         }

@@ -34,7 +34,7 @@ final class DialViewController: UIViewController {
     }
 
     override func loadView() {
-        self.view = dialView
+        view = dialView
     }
 
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ final class DialViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = ship.title
+        navigationItem.title = ship.title
     }
 
     private func fetchStarShipPilot() {
@@ -53,7 +53,7 @@ final class DialViewController: UIViewController {
             switch result {
             case .success:
                 debugPrint("[fetchPilots] Success")
-            case .failure(let error):
+            case let .failure(error):
                 debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
             }
         }

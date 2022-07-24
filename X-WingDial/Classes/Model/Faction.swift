@@ -15,10 +15,10 @@ struct Faction: Codable, Hashable {
     let ships: [Ship]
 
     static func == (lhs: Faction, rhs: Faction) -> Bool {
-          return lhs.path == rhs.path
-      }
+        return lhs.path == rhs.path
+    }
 
-      func hash(into hasher: inout Hasher) {
-          hasher.combine(path)
-      }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(path)
+    }
 }

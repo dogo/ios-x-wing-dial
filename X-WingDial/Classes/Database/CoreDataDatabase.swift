@@ -6,8 +6,8 @@
 //  Copyright © 2020 Diogo Autilio. All rights reserved.
 //
 
-import Foundation
 import CoreData
+import Foundation
 
 extension NSManagedObject: Storable {}
 
@@ -28,11 +28,9 @@ final class CoreDataDatabase: DatabaseProtocol {
         return container
     }()
 
-    lazy var managedContext: NSManagedObjectContext = {
-        return persistentContainer.viewContext
-    }()
+    lazy var managedContext: NSManagedObjectContext = persistentContainer.viewContext
 
-    func writeSafely(_ block: (() throws -> Void)) throws {
+    func writeSafely(_ block: () throws -> Void) throws {
         try managedContext.save()
         try block()
     }

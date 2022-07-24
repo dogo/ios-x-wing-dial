@@ -19,11 +19,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         AppearanceProxyHelper.customizeTabBar()
         AppearanceProxyHelper.customizeUITableView()
 
-         if let windowScene = scene as? UIWindowScene {
+        if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = XWingTabBarViewController()
             self.window = window
             window.makeKeyAndVisible()
-         }
+        }
     }
 }

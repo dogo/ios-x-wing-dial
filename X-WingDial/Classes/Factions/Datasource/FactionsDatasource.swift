@@ -12,7 +12,7 @@ final class FactionsDatasource: NSObject {
 
     private var tableView: UITableView?
     private var sections: [Faction] = []
-    private var starships: [Faction: [Ship]] = [ : ]
+    private var starships: [Faction: [Ship]] = [:]
     private weak var baseDelegate: BaseDelegate?
 
     required init(tableView: UITableView, baseDelegate: BaseDelegate) {
@@ -29,7 +29,7 @@ final class FactionsDatasource: NSObject {
     func updateDatasource(_ data: XWing) {
         sections = SectionsBuilder.factions(data.factions)
         starships = Split.starshipsByFaction(data.factions)
-        self.tableView?.reloadData()
+        tableView?.reloadData()
     }
 
     func getShip(at index: IndexPath) -> Ship? {

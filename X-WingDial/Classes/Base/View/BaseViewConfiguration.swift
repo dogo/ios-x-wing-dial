@@ -23,6 +23,5 @@ extension BaseViewConfiguration {
         configureViews()
     }
 
-    func configureViews() {
-    }
+    func configureViews() {}
 }

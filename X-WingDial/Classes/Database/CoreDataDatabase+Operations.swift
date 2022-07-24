@@ -6,8 +6,8 @@
 //  Copyright © 2020 Diogo Autilio. All rights reserved.
 //
 
-import Foundation
 import CoreData
+import Foundation
 
 extension CoreDataDatabase {
 
@@ -16,7 +16,7 @@ extension CoreDataDatabase {
             throw CoreDataError.objectCouldNotBeParsed
         }
 
-        try self.writeSafely { [weak self] in
+        try writeSafely { [weak self] in
             guard let self = self else { return }
             let entity = NSEntityDescription.entity(forEntityName: String(describing: storable), in: self.managedContext)!
             if let newObject = NSManagedObject(entity: entity, insertInto: self.managedContext) as? T {
@@ -30,13 +30,13 @@ extension CoreDataDatabase {
             throw CoreDataError.objectCouldNotBeParsed
         }
 
-        try self.writeSafely { [weak self] in
+        try writeSafely { [weak self] in
 //            self?.realm.add(storable)
         }
     }
 
     func update(block: @escaping () -> Void) throws {
-        try self.writeSafely {
+        try writeSafely {
             block()
         }
     }
@@ -52,7 +52,7 @@ extension CoreDataDatabase {
         let test = try managedContext.fetch(fetchRequest)
         let objectToDelete = test[0] as! NSManagedObject // swiftlint:disable:this force_cast
 
-        try self.writeSafely { [weak self] in
+        try writeSafely { [weak self] in
             self?.managedContext.delete(objectToDelete)
         }
     }
@@ -65,13 +65,13 @@ extension CoreDataDatabase {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: storable))
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
 
-        try self.writeSafely { [weak self] in
+        try writeSafely { [weak self] in
             try self?.managedContext.execute(deleteRequest)
         }
     }
 
     func reset() throws {
-        try self.writeSafely { [weak self] in
+        try writeSafely { [weak self] in
 //            self?.realm.deleteAll()
         }
     }
@@ -79,7 +79,7 @@ extension CoreDataDatabase {
     func fetch<T: Storable>(_ model: T.Type,
                             predicate: NSPredicate? = nil,
                             sorted: Sorted? = nil,
-                            completion: (([T]) -> Void)) throws {
+                            completion: ([T]) -> Void) throws {
         guard let storable = model as? NSManagedObject.Type else {
             throw CoreDataError.objectCouldNotBeParsed
         }

@@ -16,8 +16,8 @@ final class FactionsTableView: UITableView {
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
-        self.rowHeight = 44.0
-        self.sectionHeaderHeight = 53
+        rowHeight = 44.0
+        sectionHeaderHeight = 53
         tableViewDatasource = FactionsDatasource(tableView: self, baseDelegate: self)
     }
 
@@ -35,7 +35,7 @@ extension FactionsTableView: BaseDelegate {
 
     func didSelectRowAt(_ index: IndexPath) {
         if let ship = tableViewDatasource?.getShip(at: index),
-            let faction = tableViewDatasource?.getFaction(at: index) {
+           let faction = tableViewDatasource?.getFaction(at: index) {
             didSelectShip?(faction, ship)
         }
     }

@@ -16,9 +16,9 @@ enum XWingEndpoint {
 extension XWingEndpoint: EndpointProtocol {
 
     /// The scheme subcomponent of the `URL`.
-     var scheme: HttpScheme {
-         return .https
-     }
+    var scheme: HttpScheme {
+        return .https
+    }
 
     /// The target's host `URL`.
     var host: String {
@@ -30,7 +30,7 @@ extension XWingEndpoint: EndpointProtocol {
         switch self {
         case .factions:
             return "/xwing_data/factions_ships.json"
-        case .pilots(let faction, let starship):
+        case let .pilots(faction, starship):
             return "/xwing_dial/data/pilots/\(faction)/\(starship).json"
         }
     }

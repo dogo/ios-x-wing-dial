@@ -8,14 +8,14 @@
 
 import Foundation
 
- /// HTTP scheme definitions.
+/// HTTP scheme definitions.
 ///
 /// See https://en.wikipedia.org/wiki/List_of_URI_schemes
 enum HttpScheme: String {
     case http
     case https
 
-     func toString() -> String {
-        return self.rawValue
+    func toString() -> String {
+        return rawValue
     }
 }

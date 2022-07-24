@@ -6,8 +6,8 @@
 //  Copyright © 2019 Diogo Autilio. All rights reserved.
 //
 
-import UIKit
 import Kingfisher
+import UIKit
 
 final class FactionHeaderView: UITableViewHeaderFooterView, Identifiable {
 

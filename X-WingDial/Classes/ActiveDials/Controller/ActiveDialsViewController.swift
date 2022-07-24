@@ -13,11 +13,11 @@ final class ActiveDialsViewController: UIViewController {
     private let activeDialsView = ActiveDialsCollection()
 
     override func loadView() {
-        self.view = activeDialsView
+        view = activeDialsView
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = L10n.activeDials
+        navigationItem.title = L10n.activeDials
     }
 }

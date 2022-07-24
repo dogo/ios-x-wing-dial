@@ -50,8 +50,8 @@ final class DialView: UIView {
 extension DialView: BaseViewConfiguration {
 
     func buildViewHierarchy() {
-        self.addSubview(dialImage)
-        self.addSubview(dialSelector)
+        addSubview(dialImage)
+        addSubview(dialSelector)
     }
 
     func setupConstraints() {
