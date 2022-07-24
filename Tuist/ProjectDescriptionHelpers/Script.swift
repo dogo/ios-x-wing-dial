@@ -14,6 +14,10 @@ public extension Project {
                 name: "[SwiftGen] Run Script"
             ),
             TargetScript.pre(
+                script: "mint run swiftformat --config .swiftformat .",
+                name: "[SwiftFormat] Run Script"
+            ),
+            TargetScript.pre(
                 script: "mint run swiftlint",
                 name: "[SwiftLint] Run Script"
             )

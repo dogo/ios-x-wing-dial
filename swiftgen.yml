@@ -1,12 +1,12 @@
 input_dir: 'X-WingDial'
-output_dir: 'X-WingDial/Classes/Resources/'
+output_dir: 'X-WingDial/Classes/Generated/'
 strings:
   inputs: Localization/Base.lproj/Localizable.strings
   outputs:
-    - templateName: structured-swift4
+    - templateName: structured-swift5
       output: LocalizableStrings.swift
 xcassets:
   inputs: Assets.xcassets
   outputs:
-    - templateName: swift4
+    - templateName: swift5
       output: ImageAssets.swift
