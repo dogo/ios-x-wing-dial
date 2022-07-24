@@ -10,14 +10,15 @@ import UIKit
 
 final class FactionsViewController: UIViewController {
 
-    private let service: XWingServiceProtocol
+    private var presenter: FactionsPresenterType
     private let factionsView = FactionsTableView()
 
     // MARK: - Life Cycle
 
-    init(service: XWingServiceProtocol = XWingService()) {
-        self.service = service
+    init(presenter: FactionsPresenterType = FactionsPresenter()) {
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
+        self.presenter.controller = self
     }
 
     @available(*, unavailable)
@@ -32,7 +33,7 @@ final class FactionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fetchFactionAndShips()
+        presenter.fetchFactionAndShips()
 
         factionsView.didSelectShip = { [weak self] faction, ship in
             let controller = DialViewController(faction: faction.path, ship: ship)
@@ -44,15 +45,11 @@ final class FactionsViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationItem.title = L10n.xWingCompanion
     }
+}
 
-    private func fetchFactionAndShips() {
-        service.fetchFactions { [weak self] result in
-            switch result {
-            case .success(let data):
-                self?.factionsView.updateSetList(data)
-            case .failure(let error):
-                debugPrint(error)
-            }
-        }
+extension FactionsViewController: FactionsViewControllerType {
+
+    func updateSetList(with data: XWing) {
+        factionsView.updateSetList(data)
     }
 }

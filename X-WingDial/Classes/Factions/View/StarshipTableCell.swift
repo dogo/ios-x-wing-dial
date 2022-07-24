@@ -11,7 +11,7 @@ import Kingfisher
 
 final class StarshipTableCell: UITableViewCell, Identifiable {
 
-    var titleLabel: UILabel = {
+    private var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 17)
         return label
@@ -27,10 +27,6 @@ final class StarshipTableCell: UITableViewCell, Identifiable {
         fatalError("init(coder:) has not been implemented")
     }
 
-    internal func configureCell(with faction: Ship) {
-        titleLabel.text = faction.title
-    }
-
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
@@ -38,6 +34,10 @@ final class StarshipTableCell: UITableViewCell, Identifiable {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         // just hightlight
+    }
+
+    func configureCell(with faction: Ship) {
+        titleLabel.text = faction.title
     }
 }
 

@@ -11,13 +11,13 @@ import Kingfisher
 
 final class FactionHeaderView: UITableViewHeaderFooterView, Identifiable {
 
-    var titleLabel: UILabel = {
+    private var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 17)
         return label
     }()
 
-    var factionImageView: UIImageView = {
+    private var factionImageView: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.contentMode = .scaleAspectFit
         return image
@@ -33,15 +33,15 @@ final class FactionHeaderView: UITableViewHeaderFooterView, Identifiable {
         fatalError("init(coder:) has not been implemented")
     }
 
-    internal func configureHeader(with faction: Faction) {
-        titleLabel.text = faction.name
-        factionImageView.kf.setImage(with: faction.icon)
-    }
-
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
         factionImageView.image = nil
+    }
+
+    func configureHeader(with faction: Faction) {
+        titleLabel.text = faction.name
+        factionImageView.kf.setImage(with: faction.icon)
     }
 }
 

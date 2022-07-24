@@ -33,7 +33,7 @@ final class FactionsTableView: UITableView {
 
 extension FactionsTableView: BaseDelegate {
 
-    internal func didSelectRowAt(_ index: IndexPath) {
+    func didSelectRowAt(_ index: IndexPath) {
         if let ship = tableViewDatasource?.getShip(at: index),
             let faction = tableViewDatasource?.getFaction(at: index) {
             didSelectShip?(faction, ship)
