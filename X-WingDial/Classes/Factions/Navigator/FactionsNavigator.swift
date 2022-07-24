@@ -34,7 +34,7 @@ final class FactionsNavigator: Navigator {
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
         case let .dial(path, ship):
-            return DialViewController(faction: path, ship: ship)
+            return StarshipDetailsViewController(faction: path, ship: ship)
         }
     }
 }

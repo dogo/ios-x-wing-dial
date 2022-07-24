@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Starship: Codable {
     let name: String
@@ -16,13 +17,27 @@ struct Starship: Codable {
     let faction: String
     let stats: [Stat]
     let actions: [Action]
-    let icon: String?
+    let icon: URL?
     let pilots: [Pilot]
 }
 
 struct Action: Codable {
-    let difficulty: String
+    let difficulty: ActionType
     let type: String
+
+    enum ActionType: String, Codable {
+        case white = "White"
+        case red = "Red"
+
+        var color: UIColor {
+            switch self {
+            case .white:
+                return UIColor.white
+            case .red:
+                return UIColor.red
+            }
+        }
+    }
 }
 
 struct Pilot: Codable {
