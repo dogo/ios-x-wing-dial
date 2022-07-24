@@ -29,7 +29,7 @@ final class ActiveDialsDatasource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: ActiveDialCollectionCell.self)
-        cell.setup(with: "K-Wing")
+        cell.setup(with: data[indexPath.row].title)
 
         return cell
     }

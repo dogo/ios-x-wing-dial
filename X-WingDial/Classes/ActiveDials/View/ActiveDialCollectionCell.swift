@@ -10,14 +10,14 @@ import UIKit
 
 final class ActiveDialCollectionCell: UICollectionViewCell, Identifiable {
 
-    let dialImageView: UIImageView = {
+    private let dialImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = Asset.btlS8KWingDial.image
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
 
-    let title: UILabel = {
+    private let title: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = .black
         label.textAlignment = .center
@@ -47,19 +47,19 @@ extension ActiveDialCollectionCell: BaseViewConfiguration {
     }
 
     func setupConstraints() {
-        dialImageView.layout.applyConstraint { view in
-            view.topAnchor(equalTo: contentView.topAnchor)
-            view.leadingAnchor(equalTo: contentView.leadingAnchor)
-            view.trailingAnchor(equalTo: contentView.trailingAnchor)
-            view.widthAnchor(equalToConstant: 180)
-            view.heightAnchor(equalToConstant: 180)
+        dialImageView.layout.applyConstraint {
+            $0.topAnchor(equalTo: contentView.topAnchor)
+            $0.leadingAnchor(equalTo: contentView.leadingAnchor)
+            $0.trailingAnchor(equalTo: contentView.trailingAnchor)
+            $0.widthAnchor(equalToConstant: 180)
+            $0.heightAnchor(equalToConstant: 180)
         }
 
-        title.layout.applyConstraint { view in
-            view.topAnchor(equalTo: dialImageView.bottomAnchor)
-            view.leadingAnchor(equalTo: contentView.leadingAnchor)
-            view.trailingAnchor(equalTo: contentView.trailingAnchor)
-            view.bottomAnchor(equalTo: contentView.bottomAnchor)
+        title.layout.applyConstraint {
+            $0.topAnchor(equalTo: dialImageView.bottomAnchor)
+            $0.leadingAnchor(equalTo: contentView.leadingAnchor)
+            $0.trailingAnchor(equalTo: contentView.trailingAnchor)
+            $0.bottomAnchor(equalTo: contentView.bottomAnchor)
         }
     }
 
