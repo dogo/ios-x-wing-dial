@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Reusable
 
 final class ActiveDialsDatasource: NSObject, UICollectionViewDataSource {
 

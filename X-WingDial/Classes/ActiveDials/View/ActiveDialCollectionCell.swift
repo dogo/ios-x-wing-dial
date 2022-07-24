@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Reusable
 
-final class ActiveDialCollectionCell: UICollectionViewCell, Reusable {
+final class ActiveDialCollectionCell: UICollectionViewCell, Identifiable {
 
     let dialImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)

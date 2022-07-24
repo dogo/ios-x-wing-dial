@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import Reusable
 import Kingfisher
 
-final class StarshipTableCell: UITableViewCell, Reusable {
+final class StarshipTableCell: UITableViewCell, Identifiable {
 
     var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)

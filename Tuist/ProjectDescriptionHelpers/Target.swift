@@ -25,7 +25,6 @@ public extension Project {
                 scripts: Project.targetScripts(),
                 dependencies: [
                     .external(name: "Kingfisher"),
-                    .external(name: "Reusable"),
                     .external(name: "SketchKit")
                 ]
             ),

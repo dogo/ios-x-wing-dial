@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import Reusable
 import Kingfisher
 
-final class FactionHeaderView: UITableViewHeaderFooterView, Reusable {
+final class FactionHeaderView: UITableViewHeaderFooterView, Identifiable {
 
     var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
