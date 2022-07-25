@@ -30,7 +30,7 @@ struct Action: Codable {
         case red = "Red"
         case purple = "Purple"
 
-        var color: UIColor {
+        var tintColor: UIColor {
             switch self {
             case .white:
                 return UIColor.white
@@ -57,7 +57,7 @@ struct Action: Codable {
         case cloak = "Cloak"
         case calculate = "Calculate"
 
-        var icon: String {
+        var symbol: String {
             switch self {
             case .focus:
                 return "f"
@@ -105,10 +105,4 @@ struct Pilot: Codable {
 struct ShipAbility: Codable {
     let name: String
     let text: String
-}
-
-struct Stat: Codable {
-    let arc: String?
-    let type: String
-    let value: Int
 }

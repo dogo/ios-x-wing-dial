@@ -29,6 +29,7 @@ final class StarshipDetailsView: UIView {
     private let statsView: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
+        stackView.spacing = 4
         return stackView
     }()
 
@@ -63,7 +64,6 @@ final class StarshipDetailsView: UIView {
     }
 
     private func setupStarshipPilots(_ pilots: [Pilot]) {
-
         pilots.forEach {
             let view = PilotDetailsView(frame: .zero)
             view.setup(with: $0)
@@ -72,23 +72,23 @@ final class StarshipDetailsView: UIView {
     }
 
     private func setupStarshipActions(_ actions: [Action]) {
-
         actions.forEach {
             let actionLabel = UILabel(frame: .zero)
             actionLabel.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
             actionLabel.textAlignment = .center
-            actionLabel.text = $0.type.icon
-            actionLabel.textColor = $0.difficulty.color
+            actionLabel.text = $0.type.symbol
+            actionLabel.textColor = $0.difficulty.tintColor
             actionsView.addArrangedSubview(actionLabel)
         }
     }
 
     private func setupStarshipStats(_ stats: [Stat]) {
-
         stats.forEach {
             let actionLabel = UILabel(frame: .zero)
-            actionLabel.text = "\($0.type.capitalized) \($0.value)"
-            actionLabel.textColor = .white
+            actionLabel.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
+            actionLabel.textAlignment = .center
+            actionLabel.text = "\($0.arc?.symbol ?? $0.type.symbol)"
+            actionLabel.textColor = $0.type.tintColor
             statsView.addArrangedSubview(actionLabel)
         }
     }
