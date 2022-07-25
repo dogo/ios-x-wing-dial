@@ -44,8 +44,16 @@ extension HttpClient {
                         self?.logger.log(response: response, data: data, time: responseTime)
                         let model = try JSONDecoder().decode(decodingType, from: data)
                         completion(model, nil)
-                    } catch {
-                        completion(nil, RequestError(statusCode, reason: .jsonConversionFailure))
+                    } catch let DecodingError.keyNotFound(key, context) {
+                        completion(nil, RequestError(statusCode, reason: .keyNotFound(key: key, context: context.debugDescription)))
+                    } catch let DecodingError.valueNotFound(type, context) {
+                        completion(nil, RequestError(statusCode, reason: .valueNotFound(type: type, context: context.debugDescription)))
+                    } catch let DecodingError.typeMismatch(type, context) {
+                        completion(nil, RequestError(statusCode, reason: .typeMismatch(type: type, context: context.debugDescription)))
+                    } catch let DecodingError.dataCorrupted(context) {
+                        completion(nil, RequestError(statusCode, reason: .dataCorrupted(context: context.debugDescription)))
+                    } catch let error as NSError {
+                        completion(nil, RequestError(statusCode, reason: .jsonConversionFailure(domain: error.domain, description: error.localizedDescription)))
                     }
                 } else {
                     completion(nil, RequestError(statusCode, reason: .invalidData))
