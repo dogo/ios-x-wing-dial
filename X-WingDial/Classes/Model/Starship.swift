@@ -28,6 +28,7 @@ struct Action: Codable {
     enum ActionDifficulty: String, Codable {
         case white = "White"
         case red = "Red"
+        case purple = "Purple"
 
         var color: UIColor {
             switch self {
@@ -35,6 +36,8 @@ struct Action: Codable {
                 return UIColor.white
             case .red:
                 return UIColor.red
+            case .purple:
+                return UIColor.purple
             }
         }
     }
@@ -46,7 +49,7 @@ struct Action: Codable {
         case evade = "Evade"
         case reinforce = "Reinforce"
         case boost = "Boost"
-        case slam = "SLAM"
+        case slam = "Slam"
         case rotateArc = "Rotate Arc"
         case reload = "Reload"
         case jam = "Jam"
