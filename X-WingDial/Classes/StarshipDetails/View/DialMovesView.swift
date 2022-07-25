@@ -70,6 +70,6 @@ extension DialMovesView: BaseViewConfiguration {
     }
 
     func configureViews() {
-        backgroundColor = ColorName.appTertiary.color
+        backgroundColor = ColorPalette.appTertiary.color
     }
 }

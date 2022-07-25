@@ -22,10 +22,10 @@ struct Starship: Codable {
 }
 
 struct Action: Codable {
-    let difficulty: ActionType
-    let type: String
+    let difficulty: ActionDifficulty
+    let type: ActionType
 
-    enum ActionType: String, Codable {
+    enum ActionDifficulty: String, Codable {
         case white = "White"
         case red = "Red"
 
@@ -35,6 +35,53 @@ struct Action: Codable {
                 return UIColor.white
             case .red:
                 return UIColor.red
+            }
+        }
+    }
+
+    enum ActionType: String, Codable {
+        case focus = "Focus"
+        case lock = "Lock"
+        case barrelRoll = "Barrel Roll"
+        case evade = "Evade"
+        case reinforce = "Reinforce"
+        case boost = "Boost"
+        case slam = "SLAM"
+        case rotateArc = "Rotate Arc"
+        case reload = "Reload"
+        case jam = "Jam"
+        case coordinate = "Coordinate"
+        case cloak = "Cloak"
+        case calculate = "Calculate"
+
+        var icon: String {
+            switch self {
+            case .focus:
+                return "f"
+            case .lock:
+                return "l"
+            case .barrelRoll:
+                return "r"
+            case .evade:
+                return "e"
+            case .reinforce:
+                return "i"
+            case .boost:
+                return "b"
+            case .slam:
+                return "s"
+            case .rotateArc:
+                return "R"
+            case .reload:
+                return "="
+            case .jam:
+                return "j"
+            case .coordinate:
+                return "o"
+            case .cloak:
+                return "k"
+            case .calculate:
+                return "a"
             }
         }
     }

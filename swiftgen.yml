@@ -6,7 +6,7 @@ strings:
     - templateName: structured-swift5
       output: LocalizableStrings.swift
 xcassets:
-  inputs: Assets.xcassets
+  inputs: Resources/Assets.xcassets
   outputs:
     - templateName: swift5
       output: ImageAssets.swift
@@ -15,3 +15,10 @@ colors:
   outputs:
     templateName: swift5
     output: Colors.swift
+    params: { "enumName": "ColorPalette" }
+
+fonts:
+  inputs: Resources/xwing-symbols.ttf
+  outputs:
+    templateName: swift5
+    output: XWingSymbols.swift

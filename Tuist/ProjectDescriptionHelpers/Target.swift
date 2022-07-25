@@ -18,7 +18,8 @@ public extension Project {
                 infoPlist: "X-WingDial/Info.plist",
                 sources: ["X-WingDial/Classes/**"],
                 resources: [
-                    "X-WingDial/Assets.xcassets",
+                    "X-WingDial/Resources/Assets.xcassets",
+                    "X-WingDial/Resources/xwing-symbols.ttf",
                     "X-WingDial/Base.lproj/**",
                     "X-WingDial/Localization/**"
                 ],

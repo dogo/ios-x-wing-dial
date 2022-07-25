@@ -13,11 +13,11 @@ enum AppearanceProxyHelper {
     static func customizeTabBar() {
         let tabBarAppearance = UITabBar.appearance()
         tabBarAppearance.tintColor = .white
-        tabBarAppearance.barTintColor = ColorName.appTheme.color
+        tabBarAppearance.barTintColor = ColorPalette.appTheme.color
 
         if #available(iOS 15.0, *) {
             let appearance = UITabBarAppearance()
-            appearance.backgroundColor = ColorName.appTheme.color
+            appearance.backgroundColor = ColorPalette.appTheme.color
             UITabBar.appearance(whenContainedInInstancesOf: [UITabBarController.self]).scrollEdgeAppearance = appearance
             UITabBar.appearance(whenContainedInInstancesOf: [UITabBarController.self]).standardAppearance = appearance
         }
@@ -26,7 +26,7 @@ enum AppearanceProxyHelper {
     static func customizeUITableView() {
         if #available(iOS 15.0, *) {
             UITableView.appearance().sectionHeaderTopPadding = .zero
-            UITableViewHeaderFooterView.appearance().tintColor = ColorName.appSeconday.color
+            UITableViewHeaderFooterView.appearance().tintColor = ColorPalette.appSeconday.color
         }
     }
 
@@ -36,7 +36,7 @@ enum AppearanceProxyHelper {
             let navBarAppearance = UINavigationBarAppearance()
             navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
             navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-            navBarAppearance.backgroundColor = ColorName.appTheme.color
+            navBarAppearance.backgroundColor = ColorPalette.appTheme.color
 
             UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self]).standardAppearance = navBarAppearance
 
@@ -44,7 +44,7 @@ enum AppearanceProxyHelper {
             let scrollNavBarAppearance = UINavigationBarAppearance()
             scrollNavBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
             scrollNavBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-            scrollNavBarAppearance.backgroundColor = ColorName.appTheme.color
+            scrollNavBarAppearance.backgroundColor = ColorPalette.appTheme.color
 
             UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self]).scrollEdgeAppearance = scrollNavBarAppearance
             UINavigationBar.appearance().prefersLargeTitles = true
@@ -54,7 +54,7 @@ enum AppearanceProxyHelper {
             navigationBarAppearance.tintColor = .white
             navigationBarAppearance.barStyle = .black
             navigationBarAppearance.isTranslucent = true
-            navigationBarAppearance.barTintColor = ColorName.appTheme.color
+            navigationBarAppearance.barTintColor = ColorPalette.appTheme.color
             navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         }
     }

@@ -100,9 +100,9 @@ extension PilotDetailsView: BaseViewConfiguration {
     }
 
     func configureViews() {
-        backgroundColor = ColorName.appTertiary.color
+        backgroundColor = ColorPalette.appTertiary.color
         layer.borderWidth = 1.5
-        layer.borderColor = ColorName.appSeconday.color.cgColor
+        layer.borderColor = ColorPalette.appSeconday.color.cgColor
         layer.cornerRadius = 12
     }
 }

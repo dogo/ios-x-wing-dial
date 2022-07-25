@@ -14,7 +14,7 @@ final class FactionHeaderView: UITableViewHeaderFooterView, Identifiable {
     private var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.textColor = ColorName.textSection.color
+        label.textColor = ColorPalette.textSection.color
         return label
     }()
 

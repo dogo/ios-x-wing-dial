@@ -14,7 +14,7 @@ final class StarshipTableCell: UITableViewCell, Identifiable {
     private var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 17)
-        label.textColor = ColorName.text.color
+        label.textColor = ColorPalette.text.color
         return label
     }()
 
@@ -57,6 +57,6 @@ extension StarshipTableCell: BaseViewConfiguration {
 
     internal func configureViews() {
         accessoryType = .disclosureIndicator
-        backgroundColor = ColorName.appTertiary.color
+        backgroundColor = ColorPalette.appTertiary.color
     }
 }

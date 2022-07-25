@@ -22,6 +22,7 @@ final class StarshipDetailsView: UIView {
     private let actionsView: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
+        stackView.spacing = 4
         return stackView
     }()
 
@@ -74,7 +75,9 @@ final class StarshipDetailsView: UIView {
 
         actions.forEach {
             let actionLabel = UILabel(frame: .zero)
-            actionLabel.text = $0.type
+            actionLabel.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
+            actionLabel.textAlignment = .center
+            actionLabel.text = $0.type.icon
             actionLabel.textColor = $0.difficulty.color
             actionsView.addArrangedSubview(actionLabel)
         }
@@ -150,6 +153,6 @@ extension StarshipDetailsView: BaseViewConfiguration {
     }
 
     func configureViews() {
-        backgroundColor = ColorName.appTertiary.color
+        backgroundColor = ColorPalette.appTertiary.color
     }
 }
