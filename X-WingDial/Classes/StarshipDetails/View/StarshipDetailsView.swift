@@ -13,7 +13,7 @@ final class StarshipDetailsView: UIView {
     private let scrollView = UIScrollView(frame: .zero)
     private let containerView = UIView(frame: .zero)
 
-    private let shipImage: UIImageView = {
+    private let starshipImage: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.contentMode = .scaleAspectFit
         return image
@@ -56,7 +56,7 @@ final class StarshipDetailsView: UIView {
     }
 
     func setup(with data: Starship) {
-        shipImage.kf.setImage(with: data.icon)
+        starshipImage.kf.setImage(with: data.icon)
         setupStarshipActions(data.actions)
         setupStarshipStats(data.stats)
         setupStarshipPilots(data.pilots)
@@ -84,12 +84,9 @@ final class StarshipDetailsView: UIView {
 
     private func setupStarshipStats(_ stats: [Stat]) {
         stats.forEach {
-            let actionLabel = UILabel(frame: .zero)
-            actionLabel.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
-            actionLabel.textAlignment = .center
-            actionLabel.text = "\($0.arc?.symbol ?? $0.type.symbol)"
-            actionLabel.textColor = $0.type.tintColor
-            statsView.addArrangedSubview(actionLabel)
+            let view = StarshipStatsView(frame: .zero)
+            view.setup(with: $0)
+            statsView.addArrangedSubview(view)
         }
     }
 }
@@ -99,7 +96,7 @@ extension StarshipDetailsView: BaseViewConfiguration {
     func buildViewHierarchy() {
         addSubview(scrollView)
         scrollView.addSubview(containerView)
-        containerView.addSubview(shipImage)
+        containerView.addSubview(starshipImage)
         containerView.addSubview(actionsView)
         containerView.addSubview(statsView)
         containerView.addSubview(dialMovesView)
@@ -123,23 +120,23 @@ extension StarshipDetailsView: BaseViewConfiguration {
             $0.widthAnchor(equalTo: scrollView.widthAnchor)
         }
 
-        shipImage.layout.applyConstraint {
+        starshipImage.layout.applyConstraint {
             $0.topAnchor(equalTo: self.containerView.topAnchor, constant: 16)
             $0.leadingAnchor(equalTo: self.containerView.leadingAnchor, constant: 16)
         }
 
         actionsView.layout.applyConstraint {
-            $0.centerYAnchor(equalTo: self.shipImage.centerYAnchor)
-            $0.leadingAnchor(equalTo: self.shipImage.trailingAnchor, constant: 16)
+            $0.centerYAnchor(equalTo: self.starshipImage.centerYAnchor)
+            $0.leadingAnchor(equalTo: self.starshipImage.trailingAnchor, constant: 16)
         }
 
         statsView.layout.applyConstraint {
-            $0.centerYAnchor(equalTo: self.shipImage.centerYAnchor)
+            $0.centerYAnchor(equalTo: self.starshipImage.centerYAnchor)
             $0.leadingAnchor(equalTo: self.actionsView.trailingAnchor, constant: 16)
         }
 
         dialMovesView.layout.applyConstraint {
-            $0.topAnchor(equalTo: self.shipImage.bottomAnchor, constant: 32)
+            $0.topAnchor(equalTo: self.starshipImage.bottomAnchor, constant: 32)
             $0.leadingAnchor(equalTo: self.containerView.leadingAnchor)
             $0.trailingAnchor(equalTo: self.containerView.trailingAnchor)
         }
