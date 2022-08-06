@@ -19,11 +19,8 @@ final class StarshipDetailsView: UIView {
         return image
     }()
 
-    private let actionsView: UIStackView = {
-        let stackView = UIStackView(frame: .zero)
-        stackView.axis = .vertical
-        stackView.spacing = 4
-        stackView.alignment = .center
+    private let actionsView: ActionsView = {
+        let stackView = ActionsView(frame: .zero)
         return stackView
     }()
 
@@ -73,19 +70,8 @@ final class StarshipDetailsView: UIView {
     }
 
     private func setupStarshipActions(_ actions: [Action]) {
-        actions.forEach {
-
-            let horizontalActionsView = horizontalActionsView()
-            let actionLabel = buildActionLabel(with: $0.difficulty, type: $0.type)
-            horizontalActionsView.addArrangedSubview(actionLabel)
-
-            if let linked = $0.linked {
-                let actionLabel = buildActionLabel(with: linked.difficulty, type: linked.type)
-                horizontalActionsView.addArrangedSubview(separatorView())
-                horizontalActionsView.addArrangedSubview(actionLabel)
-            }
-
-            actionsView.addArrangedSubview(horizontalActionsView)
+        actions.forEach { action in
+            actionsView.setup(with: action)
         }
     }
 
@@ -95,30 +81,6 @@ final class StarshipDetailsView: UIView {
             view.setup(with: $0)
             statsView.addArrangedSubview(view)
         }
-    }
-
-    private func buildActionLabel(with difficulty: ActionDifficulty, type: ActionType) -> UILabel {
-        let label = UILabel(frame: .zero)
-        label.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
-        label.textAlignment = .center
-        label.text = type.symbol
-        label.textColor = difficulty.tintColor
-        return label
-    }
-
-    private func horizontalActionsView() -> UIStackView {
-        let stackView = UIStackView(frame: .zero)
-        stackView.axis = .horizontal
-        stackView.spacing = 4
-        return stackView
-    }
-
-    private func separatorView() -> UILabel {
-        let label = UILabel(frame: .zero)
-        label.font = .systemFont(ofSize: 12)
-        label.text = ">"
-        label.textColor = .white
-        return label
     }
 }
 
