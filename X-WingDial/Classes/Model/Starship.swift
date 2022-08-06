@@ -23,70 +23,39 @@ struct Starship: Codable {
 
 struct Action: Codable {
     let difficulty: ActionDifficulty
-    let type: ActionType
+    let type: `Type`
 
     enum ActionDifficulty: String, Codable {
-        case white = "White"
-        case red = "Red"
         case purple = "Purple"
+        case red = "Red"
+        case white = "White"
 
         var tintColor: UIColor {
             switch self {
-            case .white:
-                return UIColor.white
-            case .red:
-                return UIColor.red
             case .purple:
                 return UIColor.purple
+            case .red:
+                return UIColor.red
+            case .white:
+                return UIColor.white
             }
         }
     }
 
-    enum ActionType: String, Codable {
-        case focus = "Focus"
-        case lock = "Lock"
+    enum `Type`: String, Codable {
         case barrelRoll = "Barrel Roll"
-        case evade = "Evade"
-        case reinforce = "Reinforce"
         case boost = "Boost"
-        case slam = "Slam"
-        case rotateArc = "Rotate Arc"
-        case reload = "Reload"
-        case jam = "Jam"
-        case coordinate = "Coordinate"
-        case cloak = "Cloak"
         case calculate = "Calculate"
-
-        var symbol: String {
-            switch self {
-            case .focus:
-                return "f"
-            case .lock:
-                return "l"
-            case .barrelRoll:
-                return "r"
-            case .evade:
-                return "e"
-            case .reinforce:
-                return "i"
-            case .boost:
-                return "b"
-            case .slam:
-                return "s"
-            case .rotateArc:
-                return "R"
-            case .reload:
-                return "="
-            case .jam:
-                return "j"
-            case .coordinate:
-                return "o"
-            case .cloak:
-                return "k"
-            case .calculate:
-                return "a"
-            }
-        }
+        case cloak = "Cloak"
+        case coordinate = "Coordinate"
+        case evade = "Evade"
+        case focus = "Focus"
+        case jam = "Jam"
+        case lock = "Lock"
+        case reinforce = "Reinforce"
+        case reload = "Reload"
+        case rotateArc = "Rotate Arc"
+        case slam = "Slam"
     }
 }
 

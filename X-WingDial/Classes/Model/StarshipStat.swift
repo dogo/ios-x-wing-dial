@@ -11,28 +11,15 @@ import UIKit
 
 struct Stat: Codable {
 
-    let arc: ArcType?
-    let type: StatType
+    let arc: Arc?
+    let type: `Type`
     let value: Int
 
-    enum StatType: String, Codable {
+    enum `Type`: String, Codable {
         case attack
         case agility
         case hull
         case shields
-
-        var symbol: String {
-            switch self {
-            case .attack:
-                return "%"
-            case .agility:
-                return "^"
-            case .hull:
-                return "&"
-            case .shields:
-                return "*"
-            }
-        }
 
         var tintColor: UIColor {
             switch self {
@@ -48,7 +35,7 @@ struct Stat: Codable {
         }
     }
 
-    enum ArcType: String, Codable {
+    enum Arc: String, Codable {
         case frontArc = "Front Arc"
         case rearArc = "Rear Arc"
         case bullseyeArc = "Bullseye Arc"
@@ -56,24 +43,5 @@ struct Stat: Codable {
         case doubleTurretArc = "Double Turret Arc"
         case fullFrontArc = "Full Front Arc"
         case fullRearArc = "Full Rear Arc"
-
-        var symbol: String {
-            switch self {
-            case .frontArc:
-                return "{"
-            case .rearArc:
-                return "|"
-            case .bullseyeArc:
-                return "}"
-            case .singleTurretArc:
-                return "p"
-            case .doubleTurretArc:
-                return "q"
-            case .fullFrontArc:
-                return "~"
-            case .fullRearArc:
-                return "¡"
-            }
-        }
     }
 }
