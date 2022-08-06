@@ -96,7 +96,7 @@ extension SpecialAttribute {
     }
 }
 
-extension Action.`Type` {
+extension ActionType {
 
     var symbol: String {
         switch self {

@@ -23,40 +23,13 @@ struct Starship: Codable {
 
 struct Action: Codable {
     let difficulty: ActionDifficulty
-    let type: `Type`
+    let type: ActionType
+    let linked: Linked?
+}
 
-    enum ActionDifficulty: String, Codable {
-        case purple = "Purple"
-        case red = "Red"
-        case white = "White"
-
-        var tintColor: UIColor {
-            switch self {
-            case .purple:
-                return UIColor.purple
-            case .red:
-                return UIColor.red
-            case .white:
-                return UIColor.white
-            }
-        }
-    }
-
-    enum `Type`: String, Codable {
-        case barrelRoll = "Barrel Roll"
-        case boost = "Boost"
-        case calculate = "Calculate"
-        case cloak = "Cloak"
-        case coordinate = "Coordinate"
-        case evade = "Evade"
-        case focus = "Focus"
-        case jam = "Jam"
-        case lock = "Lock"
-        case reinforce = "Reinforce"
-        case reload = "Reload"
-        case rotateArc = "Rotate Arc"
-        case slam = "Slam"
-    }
+struct Linked: Codable {
+    let difficulty: ActionDifficulty
+    let type: ActionType
 }
 
 struct Pilot: Codable {
@@ -74,4 +47,37 @@ struct Pilot: Codable {
 struct ShipAbility: Codable {
     let name: String
     let text: String
+}
+
+enum ActionDifficulty: String, Codable {
+    case purple = "Purple"
+    case red = "Red"
+    case white = "White"
+
+    var tintColor: UIColor {
+        switch self {
+        case .purple:
+            return UIColor.purple
+        case .red:
+            return UIColor.red
+        case .white:
+            return UIColor.white
+        }
+    }
+}
+
+enum ActionType: String, Codable {
+    case barrelRoll = "Barrel Roll"
+    case boost = "Boost"
+    case calculate = "Calculate"
+    case cloak = "Cloak"
+    case coordinate = "Coordinate"
+    case evade = "Evade"
+    case focus = "Focus"
+    case jam = "Jam"
+    case lock = "Lock"
+    case reinforce = "Reinforce"
+    case reload = "Reload"
+    case rotateArc = "Rotate Arc"
+    case slam = "Slam"
 }
