@@ -55,8 +55,8 @@ final class ActionsView: UIStackView {
 
     private func separatorView() -> UILabel {
         let label = UILabel(frame: .zero)
-        label.font = .systemFont(ofSize: 12)
-        label.text = ">"
+        label.font = FontFamily.XWingSymbols.wingSymbols.font(size: 12)
+        label.text = ActionType.linked.symbol
         label.textColor = .white
         return label
     }

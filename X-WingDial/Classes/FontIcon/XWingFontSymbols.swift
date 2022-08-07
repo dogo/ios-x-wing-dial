@@ -101,31 +101,33 @@ extension ActionType {
     var symbol: String {
         switch self {
         case .focus:
-            return "f"
+            return "\u{0066}"
+        case .linked:
+            return "\u{003e}"
         case .lock:
-            return "l"
+            return "\u{006c}"
         case .barrelRoll:
-            return "r"
+            return "\u{0072}"
         case .evade:
-            return "e"
+            return "\u{0065}"
         case .reinforce:
-            return "i"
+            return "\u{0069}"
         case .boost:
-            return "b"
+            return "\u{0062}"
         case .slam:
-            return "s"
+            return "\u{0073}"
         case .rotateArc:
-            return "R"
+            return "\u{0052}"
         case .reload:
-            return "="
+            return "\u{003d}"
         case .jam:
-            return "j"
+            return "\u{006a}"
         case .coordinate:
-            return "o"
+            return "\u{006f}"
         case .cloak:
-            return "k"
+            return "\u{006b}"
         case .calculate:
-            return "a"
+            return "\u{0061}"
         }
     }
 }

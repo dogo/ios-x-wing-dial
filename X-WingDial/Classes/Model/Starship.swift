@@ -75,6 +75,7 @@ enum ActionType: String, Codable {
     case evade = "Evade"
     case focus = "Focus"
     case jam = "Jam"
+    case linked = "Linked"
     case lock = "Lock"
     case reinforce = "Reinforce"
     case reload = "Reload"
