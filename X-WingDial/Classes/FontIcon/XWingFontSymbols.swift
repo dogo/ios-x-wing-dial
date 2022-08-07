@@ -205,3 +205,57 @@ extension StarshipManeuvers {
         }
     }
 }
+
+extension Slot {
+
+    var symbol: String {
+        switch self {
+        case .astromech:
+            return "\u{0041}"
+        case .cannon:
+            return "\u{0043}"
+        case .cargo:
+            return "\u{0047}"
+        case .command:
+            return "\u{0056}"
+        case .configuration:
+            return "\u{006e}"
+        case .crew:
+            return "\u{0057}"
+        case .device:
+            return "\u{0042}"
+        case .forcePower:
+            return "\u{0046}"
+        case .gunner:
+            return "\u{0059}"
+        case .hardpoint:
+            return "\u{0048}"
+        case .hyperdrive:
+            return "─"
+        case .illicit:
+            return "\u{0049}"
+        case .missile:
+            return "\u{004d}"
+        case .modification:
+            return "\u{006d}"
+        case .sensor:
+            return "\u{0053}"
+        case .tacticalRelay:
+            return "\u{005a}"
+        case .talent:
+            return "\u{0045}"
+        case .team:
+            return "\u{0054}"
+        case .tech:
+            return "\u{0058}"
+        case .title:
+            return "\u{0074}"
+        case .torpedo:
+            return "\u{0050}"
+        case .turret:
+            return "\u{0055}"
+        case .unknown:
+            return "PANDA"
+        }
+    }
+}

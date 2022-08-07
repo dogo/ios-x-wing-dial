@@ -39,6 +39,12 @@ final class PilotDetailsView: UIView {
         return label
     }()
 
+    private let slotsLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
+        return label
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupBaseView()
@@ -65,6 +71,9 @@ final class PilotDetailsView: UIView {
         if let shipAbility = data.shipAbility {
             shipAbilityLabel.attributedText = replaceSpecialAttributes("\(shipAbility.name)\n\(shipAbility.text)")
         }
+
+        let slots = data.slots?.compactMap { $0.symbol }.joined()
+        slotsLabel.text = slots
     }
 
     func replaceSpecialAttributes(_ string: String) -> NSAttributedString? {
@@ -105,6 +114,7 @@ extension PilotDetailsView: BaseViewConfiguration {
         detailsStackView.addArrangedSubview(abilityLabel)
         detailsStackView.addArrangedSubview(initiativeLabel)
         detailsStackView.addArrangedSubview(shipAbilityLabel)
+        detailsStackView.addArrangedSubview(slotsLabel)
     }
 
     func setupConstraints() {

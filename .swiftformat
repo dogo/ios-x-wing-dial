@@ -8,3 +8,4 @@
 --disable unusedArguments
 --disable wrapMultilineStatementBraces
 --disable redundantReturn
+--disable preferKeyPath

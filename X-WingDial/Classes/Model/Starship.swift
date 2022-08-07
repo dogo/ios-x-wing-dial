@@ -40,7 +40,7 @@ struct Pilot: Codable {
     let xws: String
     let ability: String?
     let shipAbility: ShipAbility?
-    let slots: [String]?
+    let slots: [Slot]?
     let hyperspace: Bool
 }
 
@@ -80,4 +80,30 @@ enum ActionType: String, Codable {
     case reload = "Reload"
     case rotateArc = "Rotate Arc"
     case slam = "Slam"
+}
+
+enum Slot: String, Codable {
+    case astromech = "Astromech"
+    case cannon = "Cannon"
+    case cargo = "Cargo"
+    case command = "Command"
+    case configuration = "Configuration"
+    case crew = "Crew"
+    case device = "Device"
+    case forcePower = "Force Power"
+    case gunner = "Gunner"
+    case hardpoint = "Hardpoint"
+    case hyperdrive = "Hyperdrive"
+    case illicit = "Illicit"
+    case missile = "Missile"
+    case modification = "Modification"
+    case sensor = "Sensor"
+    case tacticalRelay = "Tactical Relay"
+    case talent = "Talent"
+    case team = "Team"
+    case tech = "Tech"
+    case title = "Title"
+    case torpedo = "Torpedo"
+    case turret = "Turret"
+    case unknown
 }
