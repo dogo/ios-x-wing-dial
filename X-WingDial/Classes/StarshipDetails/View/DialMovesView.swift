@@ -10,7 +10,7 @@ import UIKit
 
 final class DialMovesView: UIView {
 
-    private let actionsView: UIStackView = {
+    private let maneuversView: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
         stackView.alignment = .center
@@ -36,14 +36,21 @@ final class DialMovesView: UIView {
             let stackView = createHorizontalStackView()
 
             value.forEach {
-                let actionLabel = UILabel(frame: .zero)
-                actionLabel.text = $0.trimmingCharacters(in: .whitespacesAndNewlines)
-                actionLabel.textColor = .white
-                actionLabel.textAlignment = .center
-                stackView.addArrangedSubview(actionLabel)
+                let maneuverLabel = buildManeuver($0)
+                stackView.addArrangedSubview(maneuverLabel)
             }
-            actionsView.addArrangedSubview(stackView)
+            maneuversView.addArrangedSubview(stackView)
         }
+    }
+
+    private func buildManeuver(_ maneuver: String) -> UILabel {
+        let label = UILabel(frame: .zero)
+        label.font = FontFamily.XWingSymbols.wingSymbols.font(size: 20)
+        let starship = StarshipDial(maneuver)
+        label.text = starship.dial.maneuver.symbol
+        label.textColor = starship.dial.difficulty.tintColor
+        label.textAlignment = .center
+        return label
     }
 
     private func createHorizontalStackView() -> UIStackView {
@@ -58,12 +65,12 @@ final class DialMovesView: UIView {
 extension DialMovesView: BaseViewConfiguration {
 
     func buildViewHierarchy() {
-        addSubview(actionsView)
+        addSubview(maneuversView)
     }
 
     func setupConstraints() {
 
-        actionsView.layout.applyConstraint {
+        maneuversView.layout.applyConstraint {
             $0.centerYAnchor(equalTo: self.centerYAnchor)
             $0.centerXAnchor(equalTo: self.centerXAnchor)
         }

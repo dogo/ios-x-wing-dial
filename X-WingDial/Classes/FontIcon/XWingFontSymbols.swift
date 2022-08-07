@@ -167,3 +167,41 @@ extension Stat.Arc {
         }
     }
 }
+
+extension StarshipManeuvers {
+
+    var symbol: String {
+        switch self {
+        case .reverseBankLeft:
+            return "J"
+        case .reverseBankRight:
+            return "L"
+        case .reverseStraight:
+            return "K"
+        case .tallonRollLeft:
+            return ":"
+        case .tallonRollRight:
+            return ";"
+        case .segnorLoopLeft:
+            return "1"
+        case .segnorLoopRight:
+            return "3"
+        case .turnLeft:
+            return "4"
+        case .bankLeft:
+            return "7"
+        case .stationary:
+            return "5"
+        case .bankRight:
+            return "9"
+        case .turnRight:
+            return "6"
+        case .straight:
+            return "8"
+        case .koiogran:
+            return "2"
+        case .unknown:
+            return "PANDA"
+        }
+    }
+}
