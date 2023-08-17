@@ -14,7 +14,7 @@ public extension Project {
                 platform: .iOS,
                 product: .app,
                 bundleId: "br.com.anykey.X-WingDial",
-                deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad]),
+                deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad], supportsMacDesignedForIOS: false),
                 infoPlist: "X-WingDial/Info.plist",
                 sources: ["X-WingDial/Classes/**"],
                 resources: [
@@ -34,7 +34,7 @@ public extension Project {
                 platform: .iOS,
                 product: .unitTests,
                 bundleId: "br.com.anykey.X-WingDialTests",
-                deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad]),
+                deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad], supportsMacDesignedForIOS: false),
                 infoPlist: "X-WingDialTests/Info.plist",
                 sources: ["X-WingDialTests/**"],
                 dependencies: [

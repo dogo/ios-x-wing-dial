@@ -11,15 +11,18 @@ public extension Project {
         return [
             TargetScript.pre(
                 script: "mint run swiftgen",
-                name: "[SwiftGen] Run Script"
+                name: "[SwiftGen] Run Script",
+                basedOnDependencyAnalysis: false
             ),
             TargetScript.pre(
                 script: "mint run swiftformat --config .swiftformat .",
-                name: "[SwiftFormat] Run Script"
+                name: "[SwiftFormat] Run Script",
+                basedOnDependencyAnalysis: false
             ),
             TargetScript.pre(
                 script: "mint run swiftlint",
-                name: "[SwiftLint] Run Script"
+                name: "[SwiftLint] Run Script",
+                basedOnDependencyAnalysis: false
             )
         ]
     }
