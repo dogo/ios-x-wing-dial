@@ -40,7 +40,9 @@ final class DialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fetchStarShipPilot()
+        Task {
+            await fetchStarShipPilot()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,14 +50,12 @@ final class DialViewController: UIViewController {
         navigationItem.title = ship.title
     }
 
-    private func fetchStarShipPilot() {
-        service.fetchPilots(faction: faction, starship: ship.path) { result in
-            switch result {
-            case .success:
-                debugPrint("[fetchPilots] Success")
-            case let .failure(error):
-                debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
-            }
+    private func fetchStarShipPilot() async {
+        do {
+            let data = try await service.fetchPilots(faction: faction, starship: ship.path)
+            debugPrint("[fetchPilots] Success")
+        } catch {
+            debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
         }
     }
 }

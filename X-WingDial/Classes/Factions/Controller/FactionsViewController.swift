@@ -34,7 +34,9 @@ final class FactionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter.fetchFactionAndShips()
+        Task {
+            await presenter.fetchFactionAndShips()
+        }
 
         factionsView.didSelectShip = { [weak self] faction, ship in
             self?.navigator.navigate(to: .dial(path: faction.path, with: ship))

@@ -16,18 +16,18 @@ final class XWingService: XWingServiceProtocol {
         self.client = client
     }
 
-    func fetchFactions(completion: @escaping (Result<XWing, APIError>) -> Void) {
+    func fetchFactions() async throws -> XWing {
         let endpoint: XWingEndpoint = .factions
         let request = endpoint.request
 
-        client.request(request, completion: completion)
+        return try await client.request(request, decode: XWing.self)
     }
 
-    func fetchPilots(faction: String, starship: String, completion: @escaping (Result<Starship, APIError>) -> Void) {
+    func fetchPilots(faction: String, starship: String) async throws -> Starship {
         let endpoint: XWingEndpoint = .pilots(faction, starship)
         let request = endpoint.request
 
-        client.request(request, completion: completion)
+        return try await client.request(request, decode: Starship.self)
     }
 
     func cancelAllRequests() {

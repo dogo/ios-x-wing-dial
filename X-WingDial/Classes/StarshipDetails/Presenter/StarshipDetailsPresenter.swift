@@ -20,21 +20,21 @@ final class StarshipDetailsPresenter {
 
 extension StarshipDetailsPresenter: StarshipDetailsPresenterType {
 
-    func fetchFactionAndShips(faction: String, ship: String) {
-        service.fetchPilots(faction: faction, starship: ship) { [weak self] result in
-            switch result {
-            case let .success(data):
-                self?.controller?.setup(with: data)
-            case let .failure(error):
-                debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
+    func fetchFactionAndShips(faction: String, ship: String) async {
+        do {
+            let data = try await service.fetchPilots(faction: faction, starship: ship)
+            await MainActor.run {
+                controller?.setup(with: data)
             }
+        } catch {
+            debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
         }
     }
 }
 
 protocol StarshipDetailsPresenterType {
     var controller: StarshipDetailsViewControllerType? { get set }
-    func fetchFactionAndShips(faction: String, ship: String)
+    func fetchFactionAndShips(faction: String, ship: String) async
 }
 
 protocol StarshipDetailsViewControllerType: AnyObject {

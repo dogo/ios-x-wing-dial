@@ -20,21 +20,21 @@ final class FactionsPresenter {
 
 extension FactionsPresenter: FactionsPresenterType {
 
-    func fetchFactionAndShips() {
-        service.fetchFactions { [weak self] result in
-            switch result {
-            case let .success(data):
-                self?.controller?.updateSetList(with: data)
-            case let .failure(error):
-                debugPrint(error)
+    func fetchFactionAndShips() async {
+        do {
+            let data = try await service.fetchFactions()
+            await MainActor.run {
+                controller?.updateSetList(with: data)
             }
+        } catch {
+            debugPrint("[fetchFactionAndShips] Failure: ", error.localizedDescription)
         }
     }
 }
 
 protocol FactionsPresenterType {
     var controller: FactionsViewControllerType? { get set }
-    func fetchFactionAndShips()
+    func fetchFactionAndShips() async
 }
 
 protocol FactionsViewControllerType: AnyObject {

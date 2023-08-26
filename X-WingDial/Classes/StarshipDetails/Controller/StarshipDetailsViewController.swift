@@ -37,7 +37,9 @@ final class StarshipDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter.fetchFactionAndShips(faction: faction, ship: ship.path)
+        Task {
+            await presenter.fetchFactionAndShips(faction: faction, ship: ship.path)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
