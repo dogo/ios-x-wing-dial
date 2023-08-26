@@ -1,5 +1,5 @@
 //
-//  APIClient.swift
+//  HttpClient.swift
 //
 //  Created by Diogo Autilio on 15/08/19.
 //  Copyright © 2019 Diogo Autilio. All rights reserved.

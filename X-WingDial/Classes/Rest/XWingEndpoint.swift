@@ -1,5 +1,5 @@
 //
-//  XWingRoute.swift
+//  XWingEndpoint.swift
 //  X-WingDial
 //
 //  Created by Diogo Autilio on 14/12/19.

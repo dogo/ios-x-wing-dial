@@ -33,7 +33,7 @@ final class FactionsDatasource: NSObject {
     }
 
     func getShip(at index: IndexPath) -> Ship? {
-        return (starships[sections[index.section]]?[index.row])
+        return starships[sections[index.section]]?[index.row]
     }
 
     func getFaction(at index: IndexPath) -> Faction {

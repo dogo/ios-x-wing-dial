@@ -1,5 +1,5 @@
 //
-//  FactionsTableCell.swift
+//  StarshipTableCell.swift
 //  X-WingDial
 //
 //  Created by Diogo Autilio on 16/12/19.
@@ -44,18 +44,18 @@ final class StarshipTableCell: UITableViewCell, Identifiable {
 
 extension StarshipTableCell: BaseViewConfiguration {
 
-    internal func buildViewHierarchy() {
+    func buildViewHierarchy() {
         contentView.addSubview(titleLabel)
     }
 
-    internal func setupConstraints() {
+    func setupConstraints() {
         titleLabel.layout.applyConstraint {
             $0.centerYAnchor(equalTo: contentView.centerYAnchor)
             $0.leadingAnchor(equalTo: contentView.leadingAnchor, constant: 12)
         }
     }
 
-    internal func configureViews() {
+    func configureViews() {
         accessoryType = .disclosureIndicator
         backgroundColor = ColorPalette.appTertiary.color
     }
