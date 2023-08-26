@@ -24,11 +24,6 @@ struct Maneuvers {
 
     let maneuver: StarshipManeuvers
     let difficulty: StarshipMoveDifficulty
-
-    init(maneuver: StarshipManeuvers, difficulty: StarshipMoveDifficulty) {
-        self.maneuver = maneuver
-        self.difficulty = difficulty
-    }
 }
 
 enum StarshipManeuvers: String, CaseIterable {
