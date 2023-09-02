@@ -37,6 +37,9 @@ public extension Project {
                 deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad], supportsMacDesignedForIOS: false),
                 infoPlist: "X-WingDialTests/Info.plist",
                 sources: ["X-WingDialTests/**"],
+                resources: [
+                    "X-WingDialTests/Json/*.json"
+                ],
                 dependencies: [
                     .target(name: "X-WingDial"),
                     .external(name: "Quick"),

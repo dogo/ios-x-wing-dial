@@ -1,0 +1,341 @@
+{
+  "factions": [
+    {
+      "name": "Rebel Alliance",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/Rebel.png",
+      "path": "rebel-alliance",
+      "ships": [
+        {
+          "path": "arc-170-starfighter",
+          "title": "ARC-170 Starfighter"
+        },
+        {
+          "path": "attack-shuttle",
+          "title": "Attack Shuttle"
+        },
+        {
+          "path": "auzituck-gunship",
+          "title": "Auzituck"
+        },
+        {
+          "path": "rz-1-a-wing",
+          "title": "A-Wing"
+        },
+        {
+          "path": "a-sf-01-b-wing",
+          "title": "B-Wing"
+        },
+        {
+          "path": "e-wing",
+          "title": "E-Wing"
+        },
+        {
+          "path": "hwk-290-light-freighter",
+          "title": "HWK-290"
+        },
+        {
+          "path": "btl-s8-k-wing",
+          "title": "K-Wing"
+        },
+        {
+          "path": "sheathipede-class-shuttle",
+          "title": "Sheathipede"
+        },
+        {
+          "path": "t-65-x-wing",
+          "title": "T65 X-Wing"
+        },
+        {
+          "path": "ut-60d-u-wing",
+          "title": "U-Wing"
+        },
+        {
+          "path": "vcx-100-light-freighter",
+          "title": "VCX-100"
+        },
+        {
+          "path": "modified-yt-1300-light-freighter",
+          "title": "YT1300"
+        },
+        {
+          "path": "yt-2400-light-freighter",
+          "title": "YT2400"
+        },
+        {
+          "path": "btl-a4-y-wing",
+          "title": "Y-Wing"
+        },
+        {
+          "path": "tie-ln-fighter",
+          "title": "TIE-Fighter"
+        },
+        {
+          "path": "z-95-af4-headhunter",
+          "title": "Z95 Headhunter"
+        }
+      ]
+    },
+    {
+      "name": "Galactic Empire",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/Imperial.png",
+      "path": "galactic-empire",
+      "ships": [
+        {
+          "path": "alpha-class-star-wing",
+          "title": "Alpha-class"
+        },
+        {
+          "path": "vt-49-decimator",
+          "title": "VT-49 Decimator"
+        },
+        {
+          "path": "lambda-class-t-4a-shuttle",
+          "title": "Lambda-class"
+        },
+        {
+          "path": "tie-advanced-v1",
+          "title": "TIE-Adv. V1 Prototype"
+        },
+        {
+          "path": "tie-advanced-x1",
+          "title": "TIE-Advanced X1"
+        },
+        {
+          "path": "tie-ag-aggressor",
+          "title": "TIE-Agressor"
+        },
+        {
+          "path": "tie-sa-bomber",
+          "title": "TIE-Bomber"
+        },
+        {
+          "path": "tie-d-defender",
+          "title": "TIE-Defender"
+        },
+        {
+          "path": "tie-interceptor",
+          "title": "TIE-Interceptor"
+        },
+        {
+          "path": "tie-ln-fighter",
+          "title": "TIE-Fighter"
+        },
+        {
+          "path": "tie-ph-phantom",
+          "title": "TIE-Phantom"
+        },
+        {
+          "path": "tie-ca-punisher",
+          "title": "TIE-Punisher"
+        },
+        {
+          "path": "tie-reaper",
+          "title": "TIE-Reaper"
+        },
+        {
+          "path": "tie-sk-striker",
+          "title": "TIE-Striker"
+        }
+      ]
+    },
+    {
+      "name": "Scum and Villainy",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/Scum.png",
+      "path": "scum-and-villainy",
+      "ships": [
+        {
+          "path": "aggressor-assault-fighter",
+          "title": "Aggressor"
+        },
+        {
+          "path": "btl-a4-y-wing",
+          "title": "Y-Wing"
+        },
+        {
+          "path": "customized-yt-1300-light-freighter",
+          "title": "YT1300"
+        },
+        {
+          "path": "escape-craft",
+          "title": "Escape Craft"
+        },
+        {
+          "path": "fang-fighter",
+          "title": "Fang Fighter"
+        },
+        {
+          "path": "firespray-class-patrol-craft",
+          "title": "Firespray"
+        },
+        {
+          "path": "g-1a-starfighter",
+          "title": "G-1A"
+        },
+        {
+          "path": "hwk-290-light-freighter",
+          "title": "HWK-290"
+        },
+        {
+          "path": "jumpmaster-5000",
+          "title": "Jumpmaster-5000"
+        },
+        {
+          "path": "kihraxz-fighter",
+          "title": "Kihraxz Fighter"
+        },
+        {
+          "path": "lancer-class-pursuit-craft",
+          "title": "Lancer-Class"
+        },
+        {
+          "path": "m3-a-interceptor",
+          "title": "M3-A"
+        },
+        {
+          "path": "m12-l-kimogila-fighter",
+          "title": "Kimogila"
+        },
+        {
+          "path": "modified-tie-ln-fighter",
+          "title": "Modified TIE-Fighter"
+        },
+        {
+          "path": "quadrijet-transfer-spacetug",
+          "title": "Quadjumper"
+        },
+        {
+          "path": "scurrg-h-6-bomber",
+          "title": "Scurrg H6"
+        },
+        {
+          "path": "starviper-class-attack-platform",
+          "title": "Starviper"
+        },
+        {
+          "path": "yv-666-light-freighter",
+          "title": "YV666"
+        },
+        {
+          "path": "z-95-af4-headhunter",
+          "title": "Z95 Headhunter"
+        }
+      ]
+    },
+    {
+      "name": "Resistance",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/ResistanceIcon.png",
+      "path": "resistance",
+      "ships": [
+        {
+          "path": "mg-100-starfortress-sf-17",
+          "title": "MG-100 starfortress sf/17 (bomber)"
+        },
+        {
+          "path": "rz-2-a-wing",
+          "title": "RZ-2 A-Wing"
+        },
+        {
+          "path": "scavenged-yt-1300",
+          "title": "YT-1300"
+        },
+        {
+          "path": "t-70-x-wing",
+          "title": "T-70 X-Wing"
+        },
+        {
+          "path": "fireball",
+          "title": "Fireball"
+        },
+        {
+          "path": "resistance-transport",
+          "title": "Resistance Transport"
+        },
+        {
+          "path": "resistance-transport-pod",
+          "title": "Resistance Transport Pod"
+        }
+      ]
+    },
+    {
+      "name": "First Order",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/FirstOrderIcon.png",
+      "path": "first-order",
+      "ships": [
+        {
+          "path": "tie-fo-fighter",
+          "title": "TIE/FO Fighter"
+        },
+        {
+          "path": "tie-sf-fighter",
+          "title": "TIE/SF Fighter"
+        },
+        {
+          "path": "tie-vn-silencer",
+          "title": "TIE/VN Silencer"
+        },
+        {
+          "path": "upsilon-class-command-shuttle",
+          "title": "Morcegão-Class Command Shuttle"
+        },
+        {
+          "path": "tie-ba-interceptor",
+          "title": "TIE/ba interceptor"
+        }
+      ]
+    },
+    {
+      "name": "Galactic Republic",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/RepublicIcon.png",
+      "path": "galactic-republic",
+      "ships": [
+        {
+          "path": "arc-170-starfighter",
+          "title": "ARC-170 Starfighter"
+        },
+        {
+          "path": "delta-7-aethersprite",
+          "title": "Delta-7 Aethersprite"
+        },
+        {
+          "path": "v-19-torrent-starfighter",
+          "title": "V-19 Torrent Starfighter"
+        },
+        {
+          "path": "btl-b-y-wing",
+          "title": "BTL-B Y-Wing"
+        },
+        {
+          "path": "naboo-royal-n-1-starfighter",
+          "title": "Naboo Royal N-1 Starfighter"
+        }
+      ]
+    },
+    {
+      "name": "Separatist Alliance",
+      "icon": "https://infinitearenas.com/xw2/images/artwork/faction-icons/SeparatistIcon.png",
+      "path": "separatist-alliance",
+      "ships": [
+        {
+          "path": "belbullab-22-starfighter",
+          "title": "Belbullab-22"
+        },
+        {
+          "path": "hyena-class-droid-bomber",
+          "title": "Hyena-class Droid Bomber"
+        },
+        {
+          "path": "nantex-class-starfighter",
+          "title": "Nantex-class Starfighter"
+        },
+        {
+          "path": "sith-infiltrator",
+          "title": "Sith Infiltrator"
+        },
+        {
+          "path": "vulture-class-droid-fighter",
+          "title": "Vulture-Class Droid Fighter"
+        }
+      ]
+    }
+  ]
+}

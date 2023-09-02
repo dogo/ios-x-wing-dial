@@ -4,6 +4,7 @@ import ProjectDescriptionHelpers
 // MARK: - Project
 
 let options = Project.Options.options(
+    automaticSchemesOptions: .enabled(codeCoverageEnabled: true),
     disableBundleAccessors: true
 )
 
