@@ -42,6 +42,20 @@ struct Pilot: Codable {
     let shipAbility: ShipAbility?
     let slots: [Slot]?
     let hyperspace: Bool
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        name = try container.decode(String.self, forKey: .name)
+        caption = try container.decodeIfPresent(String.self, forKey: .caption)
+        initiative = try container.decode(Int.self, forKey: .initiative)
+        limited = try container.decode(Int.self, forKey: .limited)
+        xws = try container.decode(String.self, forKey: .xws)
+        ability = try container.decodeIfPresent(String.self, forKey: .ability)
+        shipAbility = try container.decodeIfPresent(ShipAbility.self, forKey: .shipAbility)
+        slots = try container.decodeIfPresent([Slot].self, forKey: .slots)
+        hyperspace = try container.decodeIfPresent(Bool.self, forKey: .hyperspace) ?? false
+    }
 }
 
 struct ShipAbility: Codable {
