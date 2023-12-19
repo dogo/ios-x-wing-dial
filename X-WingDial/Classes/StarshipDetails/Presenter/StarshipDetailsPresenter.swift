@@ -26,6 +26,8 @@ extension StarshipDetailsPresenter: StarshipDetailsPresenterType {
             await MainActor.run {
                 controller?.setup(with: data)
             }
+        } catch let apiError as APIError {
+            debugPrint("[fetchPilots] Failure: ", apiError.localizedDescription)
         } catch {
             debugPrint("[fetchPilots] Failure: ", error.localizedDescription)
         }

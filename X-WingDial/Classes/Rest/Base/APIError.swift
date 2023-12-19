@@ -7,12 +7,9 @@
 
 import Foundation
 
-enum APIError: Error {
-    case requestFailed(reason: String?)
-    case jsonConversionFailure(domain: String, description: String)
+enum APIError: Error, Equatable {
     case invalidData
     case responseUnsuccessful
-    case jsonParsingFailure
     case requestCancelled
     case keyNotFound(key: CodingKey, context: String)
     case valueNotFound(type: Any.Type, context: String)
@@ -21,16 +18,10 @@ enum APIError: Error {
 
     var localizedDescription: String {
         switch self {
-        case let .requestFailed(reason):
-            return "Request failed with reason: \(reason ?? "unknown")"
         case .invalidData:
             return "Invalid Data"
         case .responseUnsuccessful:
             return "Response Unsuccessful"
-        case .jsonParsingFailure:
-            return "JSON Parsing Failure"
-        case let .jsonConversionFailure(domain, description):
-            return "Error in read(from:ofType:) domain= \(domain), description= \(description)"
         case .requestCancelled:
             return "Request Cancelled"
         case let .keyNotFound(key, context):
@@ -43,14 +34,22 @@ enum APIError: Error {
             return "Data found to be corrupted in JSON: \(context)"
         }
     }
-}
 
-final class RequestError {
-    var reason: APIError
-    var statusCode: HttpStatusCode
-
-    init(_ statusCode: HttpStatusCode, reason: APIError) {
-        self.statusCode = statusCode
-        self.reason = reason
+    static func == (lhs: APIError, rhs: APIError) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidData, .invalidData),
+             (.responseUnsuccessful, .responseUnsuccessful),
+             (.requestCancelled, .requestCancelled):
+            return true
+        case let (.keyNotFound(lhsKey, lhsContext), .keyNotFound(rhsKey, rhsContext)):
+            return lhsKey.stringValue == rhsKey.stringValue && lhsContext == rhsContext
+        case let (.valueNotFound(lhsType, lhsContext), .valueNotFound(rhsType, rhsContext)),
+             let (.typeMismatch(lhsType, lhsContext), .typeMismatch(rhsType, rhsContext)):
+            return lhsType == rhsType && lhsContext == rhsContext
+        case let (.dataCorrupted(lhsContext), .dataCorrupted(rhsContext)):
+            return lhsContext == rhsContext
+        default:
+            return false
+        }
     }
 }

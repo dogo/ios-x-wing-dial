@@ -10,17 +10,17 @@ public extension Project {
     static func targetScripts() -> [TargetScript] {
         return [
             TargetScript.pre(
-                script: "mint run swiftgen",
+                script: "asdf exec swiftgen",
                 name: "[SwiftGen] Run Script",
                 basedOnDependencyAnalysis: false
             ),
             TargetScript.pre(
-                script: "mint run swiftformat --config .swiftformat .",
+                script: "asdf exec swiftformat --config .swiftformat .",
                 name: "[SwiftFormat] Run Script",
                 basedOnDependencyAnalysis: false
             ),
             TargetScript.pre(
-                script: "mint run swiftlint",
+                script: "asdf exec swiftlint",
                 name: "[SwiftLint] Run Script",
                 basedOnDependencyAnalysis: false
             )

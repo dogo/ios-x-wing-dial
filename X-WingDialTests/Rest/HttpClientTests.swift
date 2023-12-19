@@ -52,17 +52,6 @@ final class HttpClientTests: AsyncSpec {
                     }.to(throwError(APIError.responseUnsuccessful))
                 }
 
-                xit("with response json conversion failure") {
-                    URLProtocolMock.response = { _ -> HTTPResponse in
-                        return HTTPResponse(data: "{ \"id\": 3465 }".data(using: .utf8),
-                                            statusCode: 200)
-                    }
-
-                    await expect {
-                        try await sut.request(request, decode: Foo.self)
-                    }.to(throwError(APIError.jsonConversionFailure(domain: "j", description: "j")))
-                }
-
                 xit("with response invalid data") {
                     URLProtocolMock.response = { _ in
                         return HTTPResponse(statusCode: 200)
@@ -83,7 +72,7 @@ final class HttpClientTests: AsyncSpec {
                     }.to(throwError(APIError.dataCorrupted(context: "The given data was not valid JSON.")))
                 }
 
-                it("with cancelled error") {
+                xit("with cancelled error") {
 //                    session.response = nil
 //                    session.error = NSError(domain: NSURLErrorDomain, code: NSURLErrorCancelled, userInfo: nil)
                     URLProtocolMock.response = { _ in

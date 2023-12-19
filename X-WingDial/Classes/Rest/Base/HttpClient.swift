@@ -27,20 +27,27 @@ extension HttpClient {
 
         let requestDate = Date()
 
-        let (data, response) = try await session.data(for: request)
+        do {
+            let (data, response) = try await session.data(for: request)
 
-        let responseTime = Date().timeIntervalSince(requestDate)
+            let responseTime = Date().timeIntervalSince(requestDate)
 
-        guard let httpResponse = response as? HTTPURLResponse else {
-            throw APIError.invalidData
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw APIError.invalidData
+            }
+
+            logger.log(response: response, data: data, time: responseTime)
+
+            guard case 200 ... 300 = httpResponse.statusCode else {
+                throw APIError.responseUnsuccessful
+            }
+
+            return try decodeData(data, decode: T.self)
+        } catch let error as URLError where error.code == .cancelled {
+            throw APIError.requestCancelled
+        } catch {
+            throw error
         }
-
-        guard case 200 ... 300 = httpResponse.statusCode else {
-            throw APIError.responseUnsuccessful
-        }
-
-        logger.log(response: response, data: data, time: responseTime)
-        return try decodeData(data, decode: T.self)
     }
 
     func cancelAllRequests() {
@@ -64,8 +71,6 @@ extension HttpClient {
             throw APIError.typeMismatch(type: type, context: context.debugDescription)
         } catch let DecodingError.dataCorrupted(context) {
             throw APIError.dataCorrupted(context: context.debugDescription)
-        } catch let error as NSError {
-            throw APIError.jsonConversionFailure(domain: error.domain, description: error.localizedDescription)
         }
     }
 }

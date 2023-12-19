@@ -3,21 +3,25 @@
 
 import Foundation
 
-// swiftlint:disable superfluous_disable_command file_length implicit_return
+// swiftlint:disable superfluous_disable_command file_length implicit_return prefer_self_in_static_references
 
 // MARK: - Strings
 
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Active Dials
-  internal static let activeDials = L10n.tr("Localizable", "ACTIVE_DIALS")
+  /// Localizable.strings
+  ///   swdestiny-trades
+  /// 
+  ///   Created by Diogo Autilio on 10/01/17.
+  ///   Copyright © 2017 Diogo Autilio. All rights reserved.
+  internal static let activeDials = L10n.tr("Localizable", "ACTIVE_DIALS", fallback: "Active Dials")
   /// Dials
-  internal static let dials = L10n.tr("Localizable", "DIALS")
+  internal static let dials = L10n.tr("Localizable", "DIALS", fallback: "Dials")
   /// Home
-  internal static let home = L10n.tr("Localizable", "HOME")
+  internal static let home = L10n.tr("Localizable", "HOME", fallback: "Home")
   /// X-Wing Companion
-  internal static let xWingCompanion = L10n.tr("Localizable", "X_WING_COMPANION")
+  internal static let xWingCompanion = L10n.tr("Localizable", "X_WING_COMPANION", fallback: "X-Wing Companion")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
@@ -25,8 +29,8 @@ internal enum L10n {
 // MARK: - Implementation Details
 
 extension L10n {
-  private static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
-    let format = BundleToken.bundle.localizedString(forKey: key, value: nil, table: table)
+  private static func tr(_ table: String, _ key: String, _ args: CVarArg..., fallback value: String) -> String {
+    let format = BundleToken.bundle.localizedString(forKey: key, value: value, table: table)
     return String(format: format, locale: Locale.current, arguments: args)
   }
 }
