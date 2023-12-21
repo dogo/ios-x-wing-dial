@@ -14,6 +14,7 @@ final class DialMovesView: UIView {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
         stackView.alignment = .center
+        stackView.distribution = .fillEqually
         return stackView
     }()
 

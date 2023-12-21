@@ -16,6 +16,7 @@ final class ActionsView: UIStackView {
         axis = .vertical
         spacing = 4
         alignment = .center
+        distribution = .fillEqually
     }
 
     @available(*, unavailable)

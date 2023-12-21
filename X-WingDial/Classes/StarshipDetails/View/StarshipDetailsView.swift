@@ -13,6 +13,14 @@ final class StarshipDetailsView: UIView {
     private let scrollView = UIScrollView(frame: .zero)
     private let containerView = UIView(frame: .zero)
 
+    private let stackView = {
+        let stack = UIStackView(frame: .zero)
+        stack.spacing = 16
+        stack.distribution = .fillEqually
+        stack.alignment = .center
+        return stack
+    }()
+
     private let starshipImage: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.contentMode = .scaleAspectFit
@@ -28,6 +36,8 @@ final class StarshipDetailsView: UIView {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
         stackView.spacing = 4
+        stackView.alignment = .center
+        stackView.distribution = .fillEqually
         return stackView
     }()
 
@@ -90,9 +100,10 @@ extension StarshipDetailsView: BaseViewConfiguration {
         addSubview(scrollView)
         scrollView.addSubview(containerView)
         containerView.addSubview(starshipImage)
-        containerView.addSubview(actionsView)
-        containerView.addSubview(statsView)
-        containerView.addSubview(dialMovesView)
+        containerView.addSubview(stackView)
+        stackView.addArrangedSubview(actionsView)
+        stackView.addArrangedSubview(statsView)
+        stackView.addArrangedSubview(dialMovesView)
         containerView.addSubview(pilotDetailsView)
     }
 
@@ -115,27 +126,17 @@ extension StarshipDetailsView: BaseViewConfiguration {
 
         starshipImage.layout.applyConstraint {
             $0.topAnchor(equalTo: self.containerView.topAnchor, constant: 16)
-            $0.leadingAnchor(equalTo: self.containerView.leadingAnchor, constant: 16)
+            $0.centerXAnchor(equalTo: self.containerView.centerXAnchor)
         }
 
-        actionsView.layout.applyConstraint {
-            $0.centerYAnchor(equalTo: self.starshipImage.centerYAnchor)
-            $0.leadingAnchor(equalTo: self.starshipImage.trailingAnchor, constant: 16)
-        }
-
-        statsView.layout.applyConstraint {
-            $0.centerYAnchor(equalTo: self.starshipImage.centerYAnchor)
-            $0.leadingAnchor(equalTo: self.actionsView.trailingAnchor, constant: 16)
-        }
-
-        dialMovesView.layout.applyConstraint {
-            $0.topAnchor(equalTo: self.starshipImage.bottomAnchor, constant: 32)
-            $0.leadingAnchor(equalTo: self.containerView.leadingAnchor)
-            $0.trailingAnchor(equalTo: self.containerView.trailingAnchor)
+        stackView.layout.applyConstraint {
+            $0.topAnchor(equalTo: self.starshipImage.bottomAnchor)
+            $0.leadingAnchor(equalTo: containerView.leadingAnchor, constant: 16)
+            $0.trailingAnchor(equalTo: containerView.trailingAnchor, constant: -16)
         }
 
         pilotDetailsView.layout.applyConstraint {
-            $0.topAnchor(equalTo: self.dialMovesView.bottomAnchor, constant: 64)
+            $0.topAnchor(equalTo: self.stackView.bottomAnchor, constant: 16)
             $0.leadingAnchor(equalTo: self.containerView.leadingAnchor, constant: 16)
             $0.trailingAnchor(equalTo: self.containerView.trailingAnchor, constant: -16)
             $0.bottomAnchor(equalTo: self.containerView.bottomAnchor, constant: -16)
