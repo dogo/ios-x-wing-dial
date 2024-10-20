@@ -7,14 +7,16 @@ import ProjectDescription
 
 public extension Project {
 
+    private static let deploymentTarget: DeploymentTargets = .iOS("13.0")
+
     static func targets() -> [Target] {
         return [
-            Target(
+            .target(
                 name: "X-WingDial",
-                platform: .iOS,
+                destinations: [.iPhone, .iPad],
                 product: .app,
                 bundleId: "br.com.anykey.X-WingDial",
-                deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad], supportsMacDesignedForIOS: false),
+                deploymentTargets: deploymentTarget,
                 infoPlist: "X-WingDial/Info.plist",
                 sources: ["X-WingDial/Classes/**"],
                 resources: [
@@ -29,12 +31,12 @@ public extension Project {
                     .external(name: "SketchKit")
                 ]
             ),
-            Target(
+            .target(
                 name: "X-WingDialTests",
-                platform: .iOS,
+                destinations: [.iPhone, .iPad],
                 product: .unitTests,
                 bundleId: "br.com.anykey.X-WingDialTests",
-                deploymentTarget: .iOS(targetVersion: "13.0", devices: [.iphone, .ipad], supportsMacDesignedForIOS: false),
+                deploymentTargets: deploymentTarget,
                 infoPlist: "X-WingDialTests/Info.plist",
                 sources: ["X-WingDialTests/**"],
                 resources: [

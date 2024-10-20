@@ -81,8 +81,7 @@ identifier_name:
 excluded:
   - Pods
   - Carthage
-  - Tuist/Dependencies/Carthage
-  - Tuist/Dependencies/SwiftPackageManager
+  - Tuist/.build
 
 custom_rules:
   quickspec_class_name:

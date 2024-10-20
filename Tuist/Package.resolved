@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattgallagher/CwlCatchException.git",
       "state" : {
-        "revision" : "35f9e770f54ce62dd8526470f14c6e137cef3eea",
-        "version" : "2.1.1"
+        "revision" : "07b2ba21d361c223e25e3c1e924288742923f08c",
+        "version" : "2.2.1"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattgallagher/CwlPreconditionTesting.git",
       "state" : {
-        "revision" : "c21f7bab5ca8eee0a9998bbd17ca1d0eb45d4688",
-        "version" : "2.1.0"
+        "revision" : "0139c665ebb45e6a9fbdb68aabfd7c39f3fe0071",
+        "version" : "2.2.2"
       }
     },
     {
@@ -39,7 +39,7 @@
     {
       "identity" : "nimble",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Quick/Nimble",
+      "location" : "https://github.com/Quick/Nimble.git",
       "state" : {
         "revision" : "f552a16f434eef1f18b62985172489f41d37a18e",
         "version" : "12.2.0"
@@ -50,7 +50,6 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ashfurrow/Nimble-Snapshots",
       "state" : {
-        "branch" : "master",
         "revision" : "9e4ab0a00b3d0f1d6d2d358e5886532f87503d10"
       }
     },
@@ -68,8 +67,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dogo/SketchKit",
       "state" : {
-        "revision" : "edbe488e7272aefc52d3f878a71f6e61e4bda6d1",
-        "version" : "2.0.0"
+        "revision" : "9fc2dd2bf706e39f7241c00c1ffa69883d11a302",
+        "version" : "2.1.0"
       }
     }
   ],
