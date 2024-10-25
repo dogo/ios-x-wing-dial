@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Quick/Nimble.git",
       "state" : {
-        "revision" : "f552a16f434eef1f18b62985172489f41d37a18e",
-        "version" : "12.2.0"
+        "revision" : "6416749c3c0488664fff6b42f8bf3ea8dc282ca1",
+        "version" : "13.6.0"
       }
     },
     {
@@ -50,7 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ashfurrow/Nimble-Snapshots",
       "state" : {
-        "revision" : "9e4ab0a00b3d0f1d6d2d358e5886532f87503d10"
+        "revision" : "6aba4acd318d2aae8158b5f8829a4329d023ce54",
+        "version" : "9.8.0"
       }
     },
     {
@@ -58,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Quick/Quick",
       "state" : {
-        "revision" : "494eff9ad74a37047782b0d5d8d84c7ff49a60e4",
-        "version" : "7.2.0"
+        "revision" : "1163a1b1b114a657c7432b63dd1f92ce99fe11a6",
+        "version" : "7.6.2"
       }
     },
     {
@@ -69,6 +70,33 @@
       "state" : {
         "revision" : "9fc2dd2bf706e39f7241c00c1ffa69883d11a302",
         "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "swift-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-algorithms.git",
+      "state" : {
+        "revision" : "f6919dfc309e7f1b56224378b11e28bab5bccc42",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics.git",
+      "state" : {
+        "revision" : "0a5bc04095a675662cf24757cc0640aa2204253b",
+        "version" : "1.0.2"
       }
     }
   ],

@@ -80,7 +80,7 @@ identifier_name:
 
 excluded:
   - Pods
-  - Carthage
+  - X-WingDial/Classes/Generated
   - Tuist/.build
 
 custom_rules:

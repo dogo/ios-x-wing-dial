@@ -18,8 +18,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/dogo/SketchKit", from: "2.1.0"),
         .package(url: "https://github.com/onevcat/Kingfisher", exact: "5.15.8"),
-        .package(url: "https://github.com/Quick/Nimble", exact: "12.2.0"),
-        .package(url: "https://github.com/Quick/Quick", exact: "7.2.0"),
-        .package(url: "https://github.com/ashfurrow/Nimble-Snapshots", revision: "9e4ab0a00b3d0f1d6d2d358e5886532f87503d10")
+        .package(url: "https://github.com/Quick/Nimble", from: "13.6.0"),
+        .package(url: "https://github.com/Quick/Quick", from: "7.6.2"),
+        .package(url: "https://github.com/ashfurrow/Nimble-Snapshots", from: "9.8.0"),
     ]
 )
