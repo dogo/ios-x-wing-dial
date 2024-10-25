@@ -36,8 +36,8 @@ final class DialMovesView: UIView {
 
             let stackView = createHorizontalStackView()
 
-            value.forEach {
-                let maneuverLabel = buildManeuver($0)
+            for item in value {
+                let maneuverLabel = buildManeuver(item)
                 stackView.addArrangedSubview(maneuverLabel)
             }
             maneuversView.addArrangedSubview(stackView)

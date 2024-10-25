@@ -17,9 +17,9 @@ extension CoreDataDatabase {
         }
 
         try writeSafely { [weak self] in
-            guard let self = self else { return }
-            let entity = NSEntityDescription.entity(forEntityName: String(describing: storable), in: self.managedContext)!
-            if let newObject = NSManagedObject(entity: entity, insertInto: self.managedContext) as? T {
+            guard let self else { return }
+            let entity = NSEntityDescription.entity(forEntityName: String(describing: storable), in: managedContext)!
+            if let newObject = NSManagedObject(entity: entity, insertInto: managedContext) as? T {
                 completion(newObject)
             }
         }
@@ -57,7 +57,7 @@ extension CoreDataDatabase {
         }
     }
 
-    func deleteAll<T: Storable>(_ model: T.Type) throws {
+    func deleteAll(_ model: (some Storable).Type) throws {
         guard let storable = model as? NSManagedObject.Type else {
             throw CoreDataError.objectCouldNotBeParsed
         }
@@ -86,11 +86,11 @@ extension CoreDataDatabase {
 
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: storable))
 
-        if let predicate = predicate {
+        if let predicate {
             fetchRequest.predicate = predicate
         }
 
-        if let sorted = sorted {
+        if let sorted {
             let indexSort = NSSortDescriptor(key: sorted.key, ascending: sorted.ascending)
             fetchRequest.sortDescriptors = [indexSort]
         }

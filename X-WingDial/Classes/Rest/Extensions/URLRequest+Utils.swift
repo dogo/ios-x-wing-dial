@@ -11,7 +11,7 @@ import Foundation
 extension URLRequest {
 
     init(with url: URL?) {
-        guard let url = url else {
+        guard let url else {
             preconditionFailure("Invalid URL")
         }
         self = URLRequest(url: url)

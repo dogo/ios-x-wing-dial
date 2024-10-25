@@ -72,23 +72,23 @@ final class StarshipDetailsView: UIView {
     }
 
     private func setupStarshipPilots(_ pilots: [Pilot]) {
-        pilots.forEach {
+        for pilot in pilots {
             let view = PilotDetailsView(frame: .zero)
-            view.setup(with: $0)
+            view.setup(with: pilot)
             pilotDetailsView.addArrangedSubview(view)
         }
     }
 
     private func setupStarshipActions(_ actions: [Action]) {
-        actions.forEach { action in
+        for action in actions {
             actionsView.setup(with: action)
         }
     }
 
     private func setupStarshipStats(_ stats: [Stat]) {
-        stats.forEach {
+        for stat in stats {
             let view = StarshipStatsView(frame: .zero)
-            view.setup(with: $0)
+            view.setup(with: stat)
             statsView.addArrangedSubview(view)
         }
     }
