@@ -80,7 +80,7 @@ enum ActionDifficulty: String, Codable {
     }
 }
 
-enum ActionType: String, Codable {
+enum ActionType: String, Codable, CaseIterable {
     case barrelRoll = "Barrel Roll"
     case boost = "Boost"
     case calculate = "Calculate"
@@ -95,6 +95,31 @@ enum ActionType: String, Codable {
     case reload = "Reload"
     case rotateArc = "Rotate Arc"
     case slam = "Slam"
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let raw = try container.decode(String.self)
+
+        // Try exact rawValue match first
+        if let exact = ActionType(rawValue: raw) {
+            self = exact
+            return
+        }
+
+        // Try case-insensitive match against the defined rawValues
+        let lower = raw.lowercased()
+        if let match = ActionType.allCases.first(where: { $0.rawValue.lowercased() == lower }) {
+            self = match
+            return
+        }
+
+        throw DecodingError.dataCorruptedError(in: container, debugDescription: "Unknown ActionType value: \(raw)")
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(rawValue)
+    }
 }
 
 enum Slot: String, Codable {
